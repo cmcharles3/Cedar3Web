@@ -186,9 +186,29 @@
     "simba": {
       "clockInTime": "2026-10-01T06:02:40.692Z",
       "jobId": "GENERAL"
+    },
+    "talent": {
+      "clockInTime": "2026-10-01T06:05:52.973Z",
+      "jobId": "GENERAL"
     }
   },
   "auditLog": [
+    {
+      "ts": "2026-10-01T06:05:52.973Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-01T06:05:50.132Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
     {
       "ts": "2026-10-01T06:03:35.561Z",
       "actor": "admin:charles",

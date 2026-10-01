@@ -87,3 +87,5 @@
 {"ts":"2026-10-01T06:02:38.554Z","actor":"tech:simba","action":"LOGIN","details":{"ip":"100.123.31.7"}}
 {"ts":"2026-10-01T06:02:40.692Z","actor":"simba","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
 {"ts":"2026-10-01T06:03:35.561Z","actor":"admin:charles","action":"LOGIN","details":{"ip":"100.120.179.48"}}
+{"ts":"2026-10-01T06:05:50.132Z","actor":"tech:talent","action":"LOGIN","details":{"ip":"100.123.31.7"}}
+{"ts":"2026-10-01T06:05:52.973Z","actor":"talent","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
