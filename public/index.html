@@ -22,7 +22,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
 
@@ -64,10 +64,8 @@
                     </button>
                 </nav>
 
-                <!-- Right actions -->
+                <!-- Right Actions -->
                 <div class="flex items-center space-x-2.5">
-
-                    <!-- User identity chip -->
                     <div id="user-chip" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-200 dark:border-slate-600">
                         <i id="user-chip-icon" class="fa-solid fa-user-shield text-amber-500"></i>
                         <div class="text-[11px] leading-tight">
@@ -75,17 +73,18 @@
                             <p id="user-chip-role" class="text-slate-500 dark:text-slate-400">—</p>
                         </div>
                     </div>
-					<button onclick="Jobs.openSNLookup()" title="S/N & Repair History Lookup"
-						class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 transition flex items-center space-x-1.5 text-xs font-semibold">
-						<i class="fa-solid fa-magnifying-glass-location text-emerald-600"></i>
-						<span class="hidden lg:inline">S/N Lookup</span>
-					</button>
 
-						<button onclick="Jobs.openCreate()"
-						class="bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 rounded-lg text-sm font-semibold flex items-center space-x-2 shadow-sm transition">
-						<i class="fa-solid fa-plus"></i>
-						<span class="hidden sm:inline">New Job Ticket</span>
-					</button>
+                    <button onclick="Jobs.openSNLookup()" title="S/N & Repair History Lookup"
+                        class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 transition flex items-center space-x-1.5 text-xs font-semibold">
+                        <i class="fa-solid fa-magnifying-glass-location text-emerald-600"></i>
+                        <span class="hidden lg:inline">S/N Lookup</span>
+                    </button>
+
+                    <button onclick="Jobs.openCreate()"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 rounded-lg text-sm font-semibold flex items-center space-x-2 shadow-sm transition">
+                        <i class="fa-solid fa-plus"></i>
+                        <span class="hidden sm:inline">New Job Ticket</span>
+                    </button>
 
                     <button onclick="App.toggleDarkMode()" title="Toggle Dark Mode" class="p-2 rounded-lg text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 transition">
                         <i class="fa-solid fa-moon dark:hidden text-lg"></i>
@@ -99,28 +98,12 @@
                 </div>
             </div>
         </div>
-
-        <!-- Mobile nav -->
-        <div class="md:hidden flex border-t border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 p-1">
-            <button onclick="App.switchTab('dashboard')" data-tab="dashboard" class="mobile-nav-btn flex-1 py-2 text-xs font-semibold text-center rounded-md bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-400 shadow-sm">
-                <i class="fa-solid fa-gauge-high mb-0.5 block"></i> Dashboard
-            </button>
-            <button onclick="App.switchTab('clockin')" data-tab="clockin" class="mobile-nav-btn flex-1 py-2 text-xs font-semibold text-center rounded-md text-slate-600 dark:text-slate-400">
-                <i class="fa-solid fa-clock mb-0.5 block"></i> Clock-In
-            </button>
-            <button onclick="App.switchTab('jobs')" data-tab="jobs" class="mobile-nav-btn flex-1 py-2 text-xs font-semibold text-center rounded-md text-slate-600 dark:text-slate-400">
-                <i class="fa-solid fa-list-check mb-0.5 block"></i> Jobs
-            </button>
-            <button onclick="App.switchTab('logs')" data-tab="logs" class="mobile-nav-btn flex-1 py-2 text-xs font-semibold text-center rounded-md text-slate-600 dark:text-slate-400">
-                <i class="fa-solid fa-file-invoice-dollar mb-0.5 block"></i> Logs
-            </button>
-        </div>
     </header>
 
-    <!-- ================= MAIN ================= -->
+    <!-- ================= MAIN CONTENT ================= -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
 
-        <!-- ========== TAB: DASHBOARD ========== -->
+        <!-- DASHBOARD TAB -->
         <section id="tab-dashboard" class="tab-content space-y-6">
             <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-emerald-950 text-white p-6 rounded-2xl shadow-md border border-slate-700 relative overflow-hidden">
                 <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -143,12 +126,8 @@
                 </div>
             </div>
 
-            <!-- Technician cards -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="dashboard-cards">
-                <!-- Populated by dashboard.js -->
-            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="dashboard-cards"></div>
 
-            <!-- Activity stream -->
             <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
                 <h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
                     <i class="fa-solid fa-stream text-emerald-600"></i>
@@ -161,580 +140,252 @@
             </div>
         </section>
 
-        <!-- ========== TAB: CLOCK-IN ========== -->
-<section id="tab-clockin" class="tab-content hidden space-y-6">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- CLOCK-IN TAB -->
+        <section id="tab-clockin" class="tab-content hidden space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-5">
+                    <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-700">
+                        <div>
+                            <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="fa-solid fa-clock text-emerald-600"></i> Workstation Clock-In Terminal
+                            </h2>
+                            <p class="text-xs text-slate-500">Signed in as <span id="clock-greeting" class="font-bold text-slate-700 dark:text-slate-300">—</span>.</p>
+                        </div>
+                        <span id="clock-status-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-400">READY TO CLOCK IN</span>
+                    </div>
 
-        <!-- Clock-In Action Panel -->
-        <div class="lg:col-span-2 bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-5">
-            <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-700">
-                <div>
-                    <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                        <i class="fa-solid fa-clock text-emerald-600"></i>
-                        Workstation Clock-In Terminal
-                    </h2>
-                    <p class="text-xs text-slate-500">
-                        Signed in as <span id="clock-greeting" class="font-bold text-slate-700 dark:text-slate-300">—</span>.
-                        Record your shift, pick your job, and log notes.
-                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase mb-1">Staff Member</label>
+                            <select id="tech-select" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-60">
+                                <option>Loading…</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase mb-1">Target Job / Activity</label>
+                            <select id="job-select" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-60">
+                                <option value="GENERAL">-- General Workshop Duty --</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <button id="btn-clock-in" onclick="ClockIn.clockIn()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center space-x-2 text-sm disabled:opacity-50">
+                            <i class="fa-solid fa-play"></i><span>Clock In Shift</span>
+                        </button>
+                        <button id="btn-clock-out" onclick="ClockIn.clockOut()" disabled class="flex-1 bg-rose-600 hover:bg-rose-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center space-x-2 text-sm disabled:opacity-50">
+                            <i class="fa-solid fa-stop"></i><span>Clock Out Shift</span>
+                        </button>
+                    </div>
+
+                    <div class="space-y-2 pt-2">
+                        <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase">Log Tasks / Repair Notes:</label>
+                        <textarea id="task-notes" rows="6" disabled placeholder="Notes are enabled once you clock in." class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-xs focus:ring-2 focus:ring-emerald-500 outline-none resize-none font-mono disabled:opacity-60"></textarea>
+                    </div>
                 </div>
-                <span id="clock-status-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-400">
-                    READY TO CLOCK IN
-                </span>
-            </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase mb-1">
-                        Staff Member
-                    </label>
-                    <select id="tech-select" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-sm font-semibold outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-60">
-                        <option>Loading…</option>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col justify-between space-y-6">
+                    <div>
+                        <h3 class="font-bold text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">Live Active Session</h3>
+                        <div class="bg-slate-50 dark:bg-slate-900/80 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 text-center space-y-2 mb-4">
+                            <span class="text-xs font-semibold text-slate-400 uppercase tracking-widest block">Active Duration</span>
+                            <div id="session-timer" class="text-3xl font-mono font-bold text-slate-900 dark:text-white">00:00:00</div>
+                            <p id="session-since" class="text-[11px] text-slate-500">Not currently on shift</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-emerald-50 dark:bg-emerald-950/40 rounded-xl border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-300 space-y-1">
+                        <p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-shield-halved"></i> Session Integrity</p>
+                        <p class="text-[11px] leading-relaxed">Timestamps and job notes are synced in real time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KANBAN JOBS TAB -->
+        <section id="tab-jobs" class="tab-content hidden space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center space-x-2 w-full sm:w-auto">
+                    <div class="relative w-full sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+                        <input type="text" id="job-search-input" onkeyup="Jobs.render()" placeholder="Search jobs, devices, clients, S/N..." class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg pl-8 pr-3 py-1.5 text-xs focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                    <select id="job-tech-filter" onchange="Jobs.render()" class="bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-1.5 text-xs outline-none">
+                        <option value="ALL">All Staff</option>
+                        <option value="Receptionist">Receptionist</option>
+                        <option value="Talent">Talent</option>
+                        <option value="Simba">Simba</option>
                     </select>
                 </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase mb-1">
-                        Target Job / Activity
-                    </label>
-                    <select id="job-select" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500 disabled:opacity-60">
-                        <option value="GENERAL">-- General Workshop Duty --</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
-                <button id="btn-clock-in" onclick="ClockIn.clockIn()"
-                        class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center space-x-2 text-sm disabled:opacity-50 disabled:cursor-not-allowed">
-                    <i class="fa-solid fa-play"></i>
-                    <span>Clock In Shift</span>
-                </button>
-                <button id="btn-clock-out" onclick="ClockIn.clockOut()" disabled
-                        class="flex-1 bg-rose-600 hover:bg-rose-700 text-white font-bold py-3.5 px-4 rounded-xl shadow-md transition flex items-center justify-center space-x-2 text-sm disabled:opacity-50 disabled:cursor-not-allowed">
-                    <i class="fa-solid fa-stop"></i>
-                    <span>Clock Out Shift</span>
-                </button>
-            </div>
-
-            <div class="space-y-2 pt-2">
-                <label class="block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase">
-                    Log Tasks / Client Calls / Printer Repair Notes:
-                </label>
-                <textarea id="task-notes" rows="6" disabled
-                          placeholder="Notes are enabled once you clock in."
-                          class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-3 text-xs focus:ring-2 focus:ring-emerald-500 outline-none resize-none font-mono disabled:opacity-60"></textarea>
-            </div>
-        </div>
-
-        <!-- Live Session Panel -->
-        <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col justify-between space-y-6">
-            <div>
-                <h3 class="font-bold text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">
-                    Live Active Session
-                </h3>
-
-                <div class="bg-slate-50 dark:bg-slate-900/80 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 text-center space-y-2 mb-4">
-                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-widest block">Active Duration</span>
-                    <div id="session-timer" class="text-3xl font-mono font-bold text-slate-900 dark:text-white">00:00:00</div>
-                    <p id="session-since" class="text-[11px] text-slate-500">Not currently on shift</p>
-                </div>
-
-                <div class="bg-slate-50 dark:bg-slate-900/80 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 text-center space-y-1">
-                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-widest block">Session Labor Value</span>
-                    <div id="session-earnings" class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">R0.00</div>
-                    <p class="text-[10px] text-slate-400">Estimated, based on your hourly rate</p>
-                </div>
-                <div id="session-earnings-card" class="bg-slate-50 dark:bg-slate-900/80 p-5 rounded-2xl border border-slate-200 dark:border-slate-700 text-center space-y-1">
-                    <span class="text-xs font-semibold text-slate-400 uppercase tracking-widest block">Session Labor Value</span>
-                    <div id="session-earnings" class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">R0.00</div>
-                    <p class="text-[10px] text-slate-400">Estimated, based on your hourly rate</p>
-                </div>
-
-            </div>
-
-            <div class="p-4 bg-emerald-50 dark:bg-emerald-950/40 rounded-xl border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-300 space-y-1">
-                <p class="font-bold flex items-center gap-1.5">
-                    <i class="fa-solid fa-shield-halved"></i> Session Integrity
-                </p>
-                <p class="text-[11px] leading-relaxed">
-                    Your clock-in/out and notes are permanently recorded with timestamps on the server.
-                    Admins can view your active shift remotely. Notes are required to clock out.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Quick Jobs List -->
-    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-        <div class="flex justify-between items-center mb-4">
-            <h3 class="font-bold text-slate-900 dark:text-white text-base flex items-center gap-2">
-                <i class="fa-solid fa-list text-emerald-600"></i>
-                Your Active Jobs
-            </h3>
-            <button onclick="App.switchTab('jobs')" class="text-xs text-emerald-600 hover:underline font-semibold">
-                View Full Kanban Board &rarr;
-            </button>
-        </div>
-        <div id="quick-jobs-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <p class="text-xs text-slate-400 italic col-span-3 text-center py-6">Loading jobs…</p>
-        </div>
-    </div>
-</section>
-
-        <!-- ========== TAB: JOBS KANBAN ========== -->
-<section id="tab-jobs" class="tab-content hidden space-y-6">
-
-    <!-- Filters bar -->
-    <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
-        <div class="flex items-center space-x-2 w-full sm:w-auto">
-            <div class="relative w-full sm:w-64">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
-                <input type="text" id="job-search-input" onkeyup="Jobs.render()"
-                       placeholder="Search jobs, devices, clients, S/N..."
-                       class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg pl-8 pr-3 py-1.5 text-xs focus:ring-2 focus:ring-emerald-500 outline-none">
-            </div>
-			<div class="flex items-center gap-2">
-			<button onclick="Jobs.openSNLookup()" class="bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-3 py-2 rounded-lg border border-emerald-200 dark:border-emerald-800 transition flex items-center gap-1.5">
-				<i class="fa-solid fa-magnifying-glass-location"></i> S/N Lookup
-			</button>
-			<button onclick="Jobs.exportAllCSV()" class="bg-blue-50 dark:bg-blue-950/50 hover:bg-blue-100 text-blue-700 dark:text-blue-300 text-xs font-semibold px-3 py-2 rounded-lg border border-blue-200 dark:border-blue-800 transition flex items-center gap-1.5">
-				<i class="fa-solid fa-file-csv text-blue-600"></i> Export CSV
-			</button>
-			<button onclick="Jobs.openCreate()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5 shadow-sm">
-				<i class="fa-solid fa-plus"></i> New Job Ticket
-			</button>
-		</div>
-            <select id="job-tech-filter" onchange="Jobs.render()"
-                    class="bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-1.5 text-xs outline-none">
-                <option value="ALL">All Staff</option>
-                <option value="Receptionist">Receptionist</option>
-                <option value="Talent">Talent</option>
-                <option value="Simba">Simba</option>
-            </select>
-        </div>
-        <button onclick="Jobs.refresh()" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5">
-            <i class="fa-solid fa-rotate"></i> Refresh
-        </button>
-    </div>
-
-    <!-- Kanban columns -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="bg-slate-200/60 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/60 flex flex-col min-h-[500px]">
-            <div class="flex justify-between items-center mb-3">
-                <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span> Received / Pending
-                </h4>
-                <span id="count-pending" class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-300">0</span>
-            </div>
-            <div id="kanban-pending" class="space-y-3 flex-1 custom-scrollbar overflow-y-auto max-h-[650px] p-1"></div>
-        </div>
-
-        <div class="bg-blue-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-blue-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
-            <div class="flex justify-between items-center mb-3">
-                <h4 class="font-bold text-xs uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Under Repair
-                </h4>
-                <span id="count-in-progress" class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-200 dark:bg-blue-900/60 text-blue-800 dark:text-blue-200">0</span>
-            </div>
-            <div id="kanban-in-progress" class="space-y-3 flex-1 custom-scrollbar overflow-y-auto max-h-[650px] p-1"></div>
-        </div>
-
-        <div class="bg-amber-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-amber-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
-            <div class="flex justify-between items-center mb-3">
-                <h4 class="font-bold text-xs uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> On Hold / Parts
-                </h4>
-                <span id="count-on-hold" class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-200 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200">0</span>
-            </div>
-            <div id="kanban-on-hold" class="space-y-3 flex-1 custom-scrollbar overflow-y-auto max-h-[650px] p-1"></div>
-        </div>
-
-        <div class="bg-emerald-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-emerald-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
-            <div class="flex justify-between items-center mb-3">
-                <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Completed
-                </h4>
-                <span id="count-completed" class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-200 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200">0</span>
-            </div>
-            <div id="kanban-completed" class="space-y-3 flex-1 custom-scrollbar overflow-y-auto max-h-[650px] p-1"></div>
-        </div>
-    </div>
-</section>
-
-        <!-- ========== TAB: LOGS ========== -->
-<section id="tab-logs" class="tab-content hidden space-y-6">
-    <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
-
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div>
-                <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                    <i class="fa-solid fa-clock-rotate-left text-emerald-600"></i>
-                    Time Logs & Workroom History
-                </h2>
-                <p class="text-xs text-slate-500">Recorded shifts, front desk operations, and printer repair logs.</p>
-            </div>
-
-            <div class="flex items-center space-x-2">
-                <button id="btn-export-logs" onclick="Logs.exportCSV()" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-2 transition">
-                    <i class="fa-solid fa-file-csv text-emerald-500"></i> Export CSV
-                </button>
-                <button id="btn-refresh-logs" onclick="Logs.refresh()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-rotate"></i> Refresh
-                </button>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-            <input type="text" id="log-search" onkeyup="Logs.render()"
-                   placeholder="Search logs by staff member or notes..."
-                   class="bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg p-2 text-xs outline-none focus:ring-2 focus:ring-emerald-500">
-
-            <select id="log-tech-filter" onchange="Logs.render()"
-                    class="bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg p-2 text-xs outline-none">
-                <option value="ALL">Filter by Staff Member</option>
-                <option value="reception">Receptionist</option>
-                <option value="talent">Talent</option>
-                <option value="simba">Simba</option>
-            </select>
-
-            <div class="text-right flex items-center justify-end text-xs font-semibold text-slate-600 dark:text-slate-300">
-                Total Logged Value: <span id="logs-total-value" class="text-emerald-600 dark:text-emerald-400 ml-1 font-bold">••••••</span>
-            </div>
-        </div>
-
-        <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700">
-            <table class="w-full text-left text-xs">
-                <thead class="bg-slate-100 dark:bg-slate-900/80 text-slate-600 dark:text-slate-300 uppercase font-semibold">
-                    <tr>
-                        <th class="p-3">Staff Member</th>
-                        <th class="p-3">Clock In</th>
-                        <th class="p-3">Clock Out</th>
-                        <th class="p-3">Duration</th>
-                        <th class="p-3">Logged Tasks & Repairs</th>
-                        <th class="p-3 text-right">Earned Value (ZAR)</th>
-                    </tr>
-                </thead>
-                <tbody id="logs-table-body" class="divide-y divide-slate-200 dark:divide-slate-700 font-medium">
-                    <tr><td colspan="6" class="p-6 text-center text-slate-400 italic">Loading…</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-    </main>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 dark:text-slate-400 mt-auto">
-        <p>©2026 🦄 Charles Chiparo 🦄 · Cedar3 Technology</p>
-    </footer>
-	
-	<!-- ========== MODAL: Job Create / Edit ========== -->
-<div id="modal-job" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-700 my-8">
-        <div class="flex justify-between items-center mb-4 pb-3 border-b border-slate-200 dark:border-slate-700">
-            <div>
-                <h3 id="job-modal-title" class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
-                    <i class="fa-solid fa-file-invoice text-emerald-600"></i> New Job Ticket
-                </h3>
-                <p class="text-xs text-slate-500">Cedar3 Technology Hardware Intake & Repair</p>
-            </div>
-            <button onclick="Jobs.closeJobModal()" class="text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark text-lg"></i>
-            </button>
-        </div>
-
-        <form id="job-form" onsubmit="Jobs.saveJob(event)" class="space-y-3 text-xs">
-            <input type="hidden" id="job-id">
-
-            <!-- Client -->
-            <div class="bg-slate-50 dark:bg-slate-900/80 p-3 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
-                <span class="font-bold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider block">1. Client Information</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold mb-1">Client's Name</label>
-                        <input type="text" id="job-customer" required placeholder="e.g. Apex Logistics"
-                               class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500">
-                    </div>
-                    <div>
-                        <label class="block font-semibold mb-1">Contact No</label>
-                        <input type="text" id="job-phone" placeholder="e.g. 082 123 4567"
-                               class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500">
-                    </div>
-                </div>
-                <div>
-                    <label class="block font-semibold mb-1">Address</label>
-                    <input type="text" id="job-address" placeholder="e.g. 14 Cedar Avenue, Midrand"
-                           class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500">
-                </div>
-            </div>
-
-            <!-- Hardware -->
-            <div class="bg-slate-50 dark:bg-slate-900/80 p-3 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
-                <span class="font-bold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider block">2. Machine Specifications</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold mb-1">Machine Model No.</label>
-                        <input type="text" id="job-device" required placeholder="e.g. Epson EcoTank L3150"
-                               class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500">
-                    </div>
-                    <div>
-                        <label class="block font-semibold mb-1">Serial Number (S/N)</label>
-                        <input type="text" id="job-sn" placeholder="e.g. X9YK084920"
-                               class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500 font-mono">
-                    </div>
-                </div>
-                <div>
-                    <label class="block font-semibold mb-1">Cables & Accessories Included</label>
-                    <input type="text" id="job-cables" placeholder="e.g. Power Cable, USB Cable"
-                           class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500">
-                </div>
-            </div>
-
-            <!-- Faults & Assignment -->
-            <div class="bg-slate-50 dark:bg-slate-900/80 p-3 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
-                <span class="font-bold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider block">3. Faults & Assignment</span>
-                <div>
-                    <label class="block font-semibold mb-1">Faults / Error Codes</label>
-                    <textarea id="job-faults" rows="2" placeholder="e.g. Paper Jam / Error E-04 / Red light"
-                              class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500 font-mono"></textarea>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold mb-1">Assigned Technician</label>
-                        <select id="job-assigned-tech" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none">
-                            <option value="Receptionist">Receptionist</option>
-                            <option value="Talent">Talent</option>
-                            <option value="Simba">Simba</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block font-semibold mb-1">Priority</label>
-                        <select id="job-priority" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none">
-                            <option value="Normal">Normal</option>
-                            <option value="High">High</option>
-                            <option value="Urgent">Urgent</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold mb-1">Job Stage</label>
-                        <select id="job-status" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none">
-                            <option value="Pending">Pending</option>
-                            <option value="In Progress">In Progress</option>
-                            <option value="On Hold">On Hold</option>
-                            <option value="Completed">Completed</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block font-semibold mb-1">Follow-Up</label>
-                        <select id="job-followup" class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none">
-                            <option value="Client Notified">Client Notified</option>
-                            <option value="Needs Call">Needs Call</option>
-                            <option value="Waiting Parts">Waiting Parts</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Checklist -->
-            <div class="bg-slate-50 dark:bg-slate-900/80 p-3 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
-                <div class="flex justify-between items-center">
-                    <span class="font-bold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider block">4. Repair Checklist</span>
-                    <button type="button" onclick="Jobs.addChecklistItem()" class="text-[11px] font-semibold text-emerald-600 hover:underline">
-                        <i class="fa-solid fa-plus"></i> Add step
+                <div class="flex items-center gap-2">
+                    <button onclick="Jobs.openSNLookup()" class="bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-3 py-2 rounded-lg border border-emerald-200 dark:border-emerald-800 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-magnifying-glass-location"></i> S/N Lookup
+                    </button>
+                    <button onclick="Jobs.openCreate()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-plus"></i> New Job Ticket
+                    </button>
+                    <button onclick="Jobs.refresh()" class="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold px-3 py-2 rounded-lg transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-rotate"></i> Refresh
                     </button>
                 </div>
-                <div id="checklist-editor" class="space-y-2"></div>
-                <p class="text-[10px] text-slate-400">Empty rows are ignored when saving.</p>
             </div>
 
-            <!-- Report & Cost -->
-            <div class="bg-slate-50 dark:bg-slate-900/80 p-3 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
-                <span class="font-bold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider block">5. Technician Report & Billing</span>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block font-semibold mb-1">Work Report</label>
-                        <textarea id="job-tech-report" rows="2" placeholder="What was done..."
-                                  class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500 font-mono"></textarea>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-slate-200/60 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700/60 flex flex-col min-h-[500px]">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span> Pending</h4>
+                        <span id="count-pending" class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-300 dark:bg-slate-700">0</span>
                     </div>
-                    <div>
-                        <label class="block font-semibold mb-1">Parts Needed</label>
-                        <textarea id="job-parts-needed" rows="2" placeholder="e.g. 1x Pickup Roller"
-                                  class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500 font-mono"></textarea>
+                    <div id="kanban-pending" class="space-y-3 flex-1 overflow-y-auto max-h-[650px]"></div>
+                </div>
+
+                <div class="bg-blue-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-blue-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Under Repair</h4>
+                        <span id="count-in-progress" class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-200 dark:bg-blue-900/60">0</span>
                     </div>
+                    <div id="kanban-in-progress" class="space-y-3 flex-1 overflow-y-auto max-h-[650px]"></div>
+                </div>
+
+                <div class="bg-amber-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-amber-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> On Hold / Parts</h4>
+                        <span id="count-on-hold" class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-200 dark:bg-amber-900/60">0</span>
+                    </div>
+                    <div id="kanban-on-hold" class="space-y-3 flex-1 overflow-y-auto max-h-[650px]"></div>
+                </div>
+
+                <div class="bg-emerald-50/50 dark:bg-slate-800/50 p-4 rounded-xl border border-emerald-200/60 dark:border-slate-700/60 flex flex-col min-h-[500px]">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="font-bold text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Completed</h4>
+                        <span id="count-completed" class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-200 dark:bg-emerald-900/60">0</span>
+                    </div>
+                    <div id="kanban-completed" class="space-y-3 flex-1 overflow-y-auto max-h-[650px]"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIME LOGS TAB -->
+        <section id="tab-logs" class="tab-content hidden space-y-6">
+            <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-4">
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-emerald-600"></i> Time Logs & Workroom History</h2>
+                <div id="logs-table-body" class="space-y-2">Loading logs…</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-4 text-center text-xs text-slate-500 mt-auto">
+        <p>©2026 🦄 Charles Chiparo 🦄 · Cedar3 Technology</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./js/config.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/clockin.js"></script>
+    <script src="./js/jobs.js"></script>
+    <script src="./js/logs.js"></script>
+    <script src="./js/app.js"></script>
+
+   <!-- ================= MODAL: NEW / EDIT JOB TICKET ================= -->
+<div id="modal-job" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-xl w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-700 max-h-[90vh] flex flex-col my-auto">
+        <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-700 mb-4">
+            <h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-ticket text-emerald-600"></i> Workshop Job Ticket
+            </h3>
+            <button onclick="Jobs.closeJobModal()" class="text-slate-400 hover:text-slate-600 text-lg font-bold">&times;</button>
+        </div>
+
+        <!-- Scrollable Form Container to Prevent Overlapping -->
+        <form id="job-form" onsubmit="Jobs.saveJob(event)" class="space-y-4 text-xs flex-1 overflow-y-auto pr-2 custom-scrollbar">
+            <div>
+                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Client Name</label>
+                <input type="text" id="job-customer" required placeholder="e.g. Metro Health / Sipho Khumalo" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Contact Phone</label>
+                    <input type="text" id="job-phone" required placeholder="e.g. 083 456 7890" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
                 </div>
                 <div>
-                    <label class="block font-semibold mb-1">Total Cost (ZAR R)</label>
-                    <input type="number" step="0.01" id="job-cost" placeholder="0.00"
-                           class="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-2 outline-none focus:ring-2 focus:ring-emerald-500 font-bold text-emerald-600">
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Assigned Technician</label>
+                    <select id="job-assigned-tech" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+                        <option value="Receptionist">Receptionist (Lean)</option>
+                        <option value="Talent">Talent</option>
+                        <option value="Simba">Simba</option>
+                    </select>
                 </div>
             </div>
 
-            <div class="pt-2 flex justify-end space-x-2">
-                <button type="button" onclick="Jobs.closeJobModal()" class="px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold">Cancel</button>
-                <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-lg shadow-sm">Save Job Card</button>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Machine Model</label>
+                    <input type="text" id="job-device" required placeholder="e.g. Epson EcoTank L3150" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Serial Number (S/N)</label>
+                    <input type="text" id="job-sn" required placeholder="e.g. EP-3150-884920" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+                </div>
+            </div>
+
+            <div>
+                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Cables & Accessories Included</label>
+                <input type="text" id="job-cables" placeholder="Power Cable, USB Cable" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+            </div>
+
+            <div>
+                <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Fault Description / Error Codes</label>
+                <textarea id="job-faults" rows="2" required placeholder="Paper jam, red light flashing..." class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5 resize-none"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Job Stage</label>
+                    <select id="job-status" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+                        <option value="Pending">Pending</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="On Hold">On Hold / Parts</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 dark:text-slate-300 mb-1">Estimated Cost (ZAR)</label>
+                    <input type="number" id="job-cost" value="450.00" step="0.01" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5">
+                </div>
+            </div>
+
+            <div class="pt-4 flex justify-end gap-2 border-t border-slate-200 dark:border-slate-700">
+                <button type="button" onclick="Jobs.closeJobModal()" class="px-4 py-2 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold rounded-xl">Cancel</button>
+                <button type="submit" class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-md">Save Job Ticket</button>
             </div>
         </form>
     </div>
 </div>
 
-<!-- ========== MODAL: S/N Lookup ========== -->
+<!-- ================= MODAL: SERIAL NUMBER LOOKUP ================= -->
 <div id="modal-sn-history" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-700 max-h-[85vh] flex flex-col">
-        <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-700">
-            <div>
-                <h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
-                    <i class="fa-solid fa-magnifying-glass-location text-emerald-600"></i> Repair History Lookup
-                </h3>
-                <p class="text-xs text-slate-500">Search by S/N, phone, client name, or device.</p>
-            </div>
-            <button onclick="document.getElementById('modal-sn-history').classList.add('hidden')" class="text-slate-400 hover:text-slate-600">
-                <i class="fa-solid fa-xmark text-lg"></i>
-            </button>
+    <div class="bg-white dark:bg-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-700 max-h-[85vh] flex flex-col my-auto">
+        <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-700 mb-4">
+            <h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass-location text-emerald-600"></i> Serial Number Search
+            </h3>
+            <button onclick="document.getElementById('modal-sn-history').classList.add('hidden')" class="text-slate-400 hover:text-slate-600 text-lg font-bold">&times;</button>
         </div>
 
-        <div class="py-4 space-y-3">
+        <div class="space-y-3 flex-1 flex flex-col overflow-hidden">
             <div class="flex gap-2">
-                <input type="text" id="sn-search-query" onkeyup="if(event.key === 'Enter') Jobs.doSNLookup()"
-                       placeholder="Serial number, phone, or client name..."
-                       class="flex-1 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5 text-xs outline-none focus:ring-2 focus:ring-emerald-500 font-mono">
-                <button onclick="Jobs.doSNLookup()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-1.5">
-                    <i class="fa-solid fa-search"></i> Lookup
-                </button>
-            </div>
-        </div>
-
-        <div id="sn-history-results" class="flex-1 overflow-y-auto space-y-3 custom-scrollbar pr-1"></div>
-    </div>
-</div>
-
-<!-- ========== MODAL: Invoice / Quote ========== -->
-<div id="modal-invoice" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white text-slate-900 rounded-2xl max-w-2xl w-full p-8 shadow-2xl border border-slate-300 my-8">
-        <div id="invoice-printable-area" class="space-y-5">
-            <div class="flex justify-between items-start border-b-2 border-slate-900 pb-4">
-                <div>
-                    <h2 class="text-2xl font-black uppercase tracking-wide text-slate-900">Cedar3 Technology</h2>
-                    <p class="text-xs font-bold text-slate-600">TAX INVOICE / OFFICIAL QUOTATION</p>
-                    <p class="text-[11px] text-slate-500">Reg No: 2024/382910/07 | Email: cedar3tech@gmail.com</p>
-                </div>
-                <div class="text-right">
-                    <span id="invoice-type-badge" class="inline-block px-3 py-1 bg-emerald-700 text-white font-mono font-bold text-sm rounded uppercase">TAX INVOICE</span>
-                    <p id="invoice-doc-num" class="text-xs font-mono font-bold mt-1 text-slate-800">INV-JOB-101</p>
-                    <p id="invoice-doc-date" class="text-xs font-mono text-slate-600">Date: 2026/02/21</p>
-                </div>
+                <input type="text" id="sn-search-query" onkeyup="Jobs.doSNLookup()" placeholder="Enter S/N, Client Name, or Phone..." class="flex-1 bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl p-2.5 text-xs font-semibold outline-none focus:ring-2 focus:ring-emerald-500">
+                <button onclick="Jobs.doSNLookup()" class="bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-xs font-bold shadow">Search</button>
             </div>
 
-            <div class="grid grid-cols-2 gap-4 text-xs font-mono border border-slate-200 rounded-lg p-3 bg-slate-50">
-                <div>
-                    <p class="font-bold uppercase text-[10px] text-slate-500">Billed To:</p>
-                    <p><strong id="inv-client-name" class="text-sm font-bold text-slate-900">—</strong></p>
-                    <p id="inv-client-phone" class="text-slate-700">Phone: —</p>
-                    <p id="inv-client-address" class="text-slate-700">Address: —</p>
-                </div>
-                <div class="text-right">
-                    <p class="font-bold uppercase text-[10px] text-slate-500">Hardware Reference:</p>
-                    <p id="inv-device-model" class="font-bold text-slate-900">—</p>
-                    <p id="inv-sn" class="text-slate-700">S/N: —</p>
-                    <p id="inv-assigned-tech" class="text-slate-700">Tech: —</p>
-                </div>
-            </div>
-
-            <div class="border border-slate-300 rounded-lg overflow-hidden text-xs">
-                <table class="w-full text-left font-mono">
-                    <thead class="bg-slate-100 border-b border-slate-300 font-bold uppercase text-[10px]">
-                        <tr>
-                            <th class="p-2.5">Description</th>
-                            <th class="p-2.5 text-right">Amount (ZAR)</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-200">
-                        <tr>
-                            <td class="p-2.5">
-                                <p class="font-bold text-slate-900" id="inv-line-service">Workshop Diagnostic & Repair Labor</p>
-                                <p class="text-[11px] text-slate-500" id="inv-line-tech-notes">—</p>
-                            </td>
-                            <td class="p-2.5 text-right font-bold text-slate-900" id="inv-labor-cost">R0.00</td>
-                        </tr>
-                        <tr>
-                            <td class="p-2.5">
-                                <p class="font-bold text-slate-900">Replacement Parts & Materials</p>
-                                <p class="text-[11px] text-slate-500" id="inv-line-parts">—</p>
-                            </td>
-                            <td class="p-2.5 text-right font-bold text-slate-900">Included</td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="bg-slate-50 border-t border-slate-300 font-bold">
-                        <tr>
-                            <td class="p-2.5 text-right uppercase text-slate-700">Total Amount Due:</td>
-                            <td class="p-2.5 text-right text-base text-emerald-800" id="inv-total-amount">R0.00</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-
-            <div class="border-2 border-dashed border-emerald-600 rounded-xl p-4 bg-emerald-50/50 text-xs font-mono space-y-1.5">
-                <div class="flex items-center gap-2 font-bold text-emerald-900 uppercase text-[11px]">
-                    <i class="fa-solid fa-building-columns text-emerald-700"></i>
-                    <span>Cedar3 Technology Banking Details for EFT Payments:</span>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-800 pt-1">
-                    <p><strong>Bank:</strong> First National Bank (FNB)</p>
-                    <p><strong>Account Type:</strong> Business Cheque</p>
-                    <p><strong>Account Number:</strong> 6289 1042 981</p>
-                    <p><strong>Branch Code:</strong> 250655</p>
-                    <p class="col-span-2"><strong>Payment Reference:</strong> <span id="inv-bank-ref" class="text-emerald-800 font-bold underline">JOB-101</span></p>
-                </div>
-                <p class="text-[10px] text-slate-500 italic pt-1 border-t border-emerald-200">Please email proof of payment to cedar3tech@gmail.com using the job reference above.</p>
-            </div>
-        </div>
-
-        <div class="mt-4 p-3 bg-blue-50 rounded-xl border border-blue-200 flex items-center justify-between text-xs font-mono">
-            <div class="flex items-center gap-2 text-blue-900 font-semibold">
-                <i class="fa-solid fa-receipt text-blue-600 text-base"></i>
-                <span>Express Invoice Bridge</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <button onclick="Jobs.copyInvoiceText()" class="px-2.5 py-1 bg-white border border-blue-300 hover:bg-blue-100 text-blue-800 font-bold rounded text-[11px] flex items-center gap-1">
-                    <i class="fa-solid fa-copy"></i> Copy Data
-                </button>
-            </div>
-        </div>
-
-        <div class="mt-4 border-t pt-4 flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center gap-2">
-                <button onclick="Jobs.setInvoiceMode('INVOICE')" id="btn-toggle-invoice" class="px-3 py-1.5 rounded-lg bg-emerald-600 text-white text-xs font-bold">Tax Invoice</button>
-                <button onclick="Jobs.setInvoiceMode('QUOTE')" id="btn-toggle-quote" class="px-3 py-1.5 rounded-lg bg-slate-200 text-slate-800 text-xs font-bold">Quotation</button>
-            </div>
-            <div class="flex items-center gap-2">
-                <button onclick="document.getElementById('modal-invoice').classList.add('hidden')" class="px-3.5 py-2 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold text-xs">Close</button>
-                <button onclick="Jobs.sendInvoiceWhatsApp()" class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5">
-                    <i class="fa-brands fa-whatsapp text-sm"></i> Send via WhatsApp
-                </button>
-                <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center gap-1.5 shadow-md">
-                    <i class="fa-solid fa-print"></i> Print
-                </button>
+            <div id="sn-history-results" class="space-y-2 flex-1 overflow-y-auto custom-scrollbar pt-2">
+                <p class="text-xs text-slate-400 italic text-center py-4">Enter a query above to search past repairs.</p>
             </div>
         </div>
     </div>
 </div>
-
-            <!-- Hardware -->
-            <div class="bg-slate-50 dark
-
-    <!-- Toast container -->
-    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none"></div>
-
-    <!-- Scripts (order matters) -->
-    <script src="/js/config.js"></script>
-    <script src="/js/api.js"></script>
-    <script src="/js/utils.js"></script>
-    <script src="/js/dashboard.js"></script>
-    <script src="/js/clockin.js"></script>
-    <script src="/js/jobs.js"></script>
-    <script src="/js/logs.js"></script>
-    <script src="/js/app.js"></script>
 </body>
 </html>

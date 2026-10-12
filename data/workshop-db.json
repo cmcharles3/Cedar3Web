@@ -133,9 +133,478 @@
       "createdBy": "talent",
       "updatedAt": "2026-09-30T12:53:23.256Z",
       "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-991",
+      "customer": "Cedar3 Technology",
+      "phone": "0744247628",
+      "address": "",
+      "device": "Samsung M2070",
+      "sn": "SL-M2070F/XFA",
+      "cables": "",
+      "faults": "Error #U1-2320\nIt Was not Picking",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "I Changed the Fuser Unit, the Pickup Roller and Separation Pad",
+      "partsNeeded": "Paper Tray",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-01T06:12:51.889Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-01T14:45:46.275Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-137",
+      "customer": "Eastrand boards",
+      "phone": "",
+      "address": "",
+      "device": "Canon Isensys MF237 W",
+      "sn": "",
+      "cables": "",
+      "faults": "fuser Drive gear finished",
+      "assignedTech": "Talent",
+      "priority": "High",
+      "status": "In Progress",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "Drive Gear",
+      "cost": 600,
+      "checklist": [],
+      "createdAt": "2026-10-01T06:19:57.057Z",
+      "createdBy": "talent"
+    },
+    {
+      "id": "JOB-971",
+      "customer": "Cedar3 Technology",
+      "phone": "0744247628",
+      "address": "",
+      "device": "Hp OfficeJet Pro 7740",
+      "sn": "CN89T35158",
+      "cables": "",
+      "faults": "Error Code M Cartridge not Being Supplied",
+      "assignedTech": "Simba",
+      "priority": "High",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "K Cartridge \nC Cartridge \nM Cartridge\nY Cartridge",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-01T14:40:13.354Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-01T14:45:19.231Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-931",
+      "customer": "cedar3 tech",
+      "phone": "",
+      "address": "",
+      "device": "epson l6190",
+      "sn": "",
+      "cables": "",
+      "faults": "encoder strip dirty",
+      "assignedTech": "Talent",
+      "priority": "Urgent",
+      "status": "In Progress",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-01T15:29:40.366Z",
+      "createdBy": "talent",
+      "updatedAt": "2026-10-05T15:03:01.966Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-984",
+      "customer": "Anthony",
+      "phone": "083 303 9777",
+      "address": "",
+      "device": "hp deskjet ink advantage 2545",
+      "sn": "CN49A3B0HS",
+      "cables": "POWER SUPPLY",
+      "faults": "FATAL ERROR",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-02T12:01:59.717Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-03T13:41:07.389Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-684",
+      "customer": "Antony",
+      "phone": "083 303 9777",
+      "address": "",
+      "device": "Hp Laser 107w",
+      "sn": "CNB1N6Y5XH",
+      "cables": "POWER SUPPLY",
+      "faults": "-Cartridge not Installed Error\n-Broken Contacts",
+      "assignedTech": "Simba",
+      "priority": "High",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "-Changed the Cartridge Chip Reader on the Power Supply\n-Cleaned the Pickup Rollers",
+      "partsNeeded": "",
+      "cost": 650,
+      "checklist": [],
+      "createdAt": "2026-10-02T12:11:01.431Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-02T12:12:31.569Z",
+      "updatedBy": "reception"
+    },
+    {
+      "id": "JOB-713",
+      "customer": "Cedar3 Sales",
+      "phone": "",
+      "address": "",
+      "device": "Canon G7040",
+      "sn": "KMLL04538",
+      "cables": "",
+      "faults": "Not printing well",
+      "assignedTech": "Simba",
+      "priority": "High",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "Filled the Ink \nCleaned the Encoder Strip",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-02T12:17:42.952Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-05T09:08:25.919Z",
+      "updatedBy": "reception"
+    },
+    {
+      "id": "JOB-716",
+      "customer": "LF Electronics",
+      "phone": "0114253920",
+      "address": "",
+      "device": "Canon Image Runner 2224N",
+      "sn": "212SE00902",
+      "cables": "N/A",
+      "faults": "",
+      "assignedTech": "Talent",
+      "priority": "High",
+      "status": "In Progress",
+      "followup": "Waiting Parts",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-02T14:29:27.672Z",
+      "createdBy": "reception"
+    },
+    {
+      "id": "JOB-575",
+      "customer": "Assess Tech",
+      "phone": "",
+      "address": "",
+      "device": "Canon G7040",
+      "sn": "KNEA03714",
+      "cables": "",
+      "faults": "",
+      "assignedTech": "Simba",
+      "priority": "Urgent",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "-Refilling all Ink\n-Print Head Service",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-05T06:27:43.433Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-07T12:04:22.884Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-772",
+      "customer": "Cedar3 Cafe",
+      "phone": "",
+      "address": "",
+      "device": "Brother MFC-L5700DN",
+      "sn": "E75671B7N394271",
+      "cables": "",
+      "faults": "Printing Faded Letters",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "In Progress",
+      "followup": "Client Notified",
+      "techReport": "I Refilled the Toner",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-05T15:02:26.527Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-10-06T07:27:09.277Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-106",
+      "customer": "Mzimande",
+      "phone": "082 669 7046",
+      "address": "",
+      "device": "Epson L565",
+      "sn": "VJHY002163",
+      "cables": "Power Supply",
+      "faults": "Paper Jam\nNo Black Ink",
+      "assignedTech": "Simba",
+      "priority": "High",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "-Cleared the Paper Jam Erro by Applying the Grease on the Print Head Carriage (Rail).\n-Filled the Black Ink.\n-Opened the Printer to Access the Print Head.\n-Cleaned the Print Head Manually.\n-Cleaned the Pickup Rollers.",
+      "partsNeeded": "",
+      "cost": 1250,
+      "checklist": [],
+      "createdAt": "2026-10-06T07:46:12.643Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-10-07T12:03:52.545Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-963",
+      "customer": "Snowy",
+      "phone": "083 791 1239",
+      "address": "",
+      "device": "Canon Pixma MX494",
+      "sn": "KJPC24040",
+      "cables": "N/A",
+      "faults": "Error B204",
+      "assignedTech": "Simba",
+      "priority": "High",
+      "status": "In Progress",
+      "followup": "Needs Call",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "checklist": [],
+      "createdAt": "2026-10-07T13:50:44.056Z",
+      "createdBy": "reception"
+    },
+    {
+      "id": "JOB-167",
+      "customer": "Shika Trans",
+      "phone": "082 686 2097",
+      "address": "",
+      "device": "Epson L5290",
+      "sn": "X8GW005283",
+      "cables": "N/A",
+      "faults": "ADF pickup mechanism service",
+      "assignedTech": "Talent",
+      "priority": "High",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "i replaced the adf pickup panel and adjusted paper settings",
+      "partsNeeded": "ADF pickup panel",
+      "cost": 700,
+      "checklist": [],
+      "createdAt": "2026-10-07T13:58:10.875Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-10-07T14:04:22.211Z",
+      "updatedBy": "talent"
     }
   ],
   "logs": [
+    {
+      "id": "LOG-1791787159952",
+      "employee": "reception",
+      "clockIn": "2026-10-12T06:38:55.844Z",
+      "clockOut": "2026-10-12T06:39:19.952Z",
+      "hoursWorked": 0.006696666666666667,
+      "earnedAmount": 0.1515082956259427,
+      "tasks": "11"
+    },
+    {
+      "id": "LOG-1791786911619",
+      "employee": "talent",
+      "clockIn": "2026-10-12T06:32:06.763Z",
+      "clockOut": "2026-10-12T06:35:11.619Z",
+      "hoursWorked": 0.05134888888888889,
+      "earnedAmount": 1.3940874811463047,
+      "tasks": "thtf"
+    },
+    {
+      "id": "LOG-1791472134342",
+      "employee": "reception",
+      "clockIn": "2026-10-08T06:08:44.250Z",
+      "clockOut": "2026-10-08T15:08:54.342Z",
+      "hoursWorked": 9.002803333333333,
+      "earnedAmount": 203.68333333333334,
+      "tasks": "Made a quote for a client \nWent to ares tech to replace the waste tank \nSamsung Xpress 4300 to scan and send- Ares tech \nEpson to scan from the Screen - Ares Tech"
+    },
+    {
+      "id": "LOG-1791471910422",
+      "employee": "talent",
+      "clockIn": "2026-10-08T06:08:40.703Z",
+      "clockOut": "2026-10-08T15:05:10.422Z",
+      "hoursWorked": 8.941588611111111,
+      "earnedAmount": 242.75806184012066,
+      "tasks": "samsung proxpress m4070 \nadf issues and laser unit was dirty \ncleaned the snanner glass \ncleared pickup roller error \npaper jam issues solved \n\nepson l6190 still working on it"
+    },
+    {
+      "id": "LOG-1791393334009",
+      "employee": "talent",
+      "clockIn": "2026-10-07T06:26:19.042Z",
+      "clockOut": "2026-10-07T17:15:34.009Z",
+      "hoursWorked": 10.820824166666666,
+      "earnedAmount": 293.77803167420814,
+      "tasks": "Canon imagerunner still checking\nI Checked Samsung M4070, needs parts\n-Fixed an Epson L5290 for a clients, it has been collected."
+    },
+    {
+      "id": "LOG-1791386867033",
+      "employee": "simba",
+      "clockIn": "2026-10-07T06:25:11.183Z",
+      "clockOut": "2026-10-07T15:27:47.033Z",
+      "hoursWorked": 9.043291666666667,
+      "earnedAmount": 184.13942307692307,
+      "tasks": "-Cleared the Paper Jam Error by Applying the Grease on the Print Head Carriage (Rail).\n-Filled the Black Ink.\n-Opened the Printer to Access the Print Head.\n-Cleaned the Print Head Manually.\n-Cleaned the Pickup Rollers.\n-Closed the Brother printer but still printing a bit faded.\n-Opened a Canon MX494 printer, still checking it up"
+    },
+    {
+      "id": "LOG-1791386599983",
+      "employee": "reception",
+      "clockIn": "2026-10-07T06:24:39.386Z",
+      "clockOut": "2026-10-07T15:23:19.983Z",
+      "hoursWorked": 8.977943611111112,
+      "earnedAmount": 203.12089617898445,
+      "tasks": "received x2 printers. \nMade call`s to clients updating them on their printers. \nChecked in with clients we once offered service."
+    },
+    {
+      "id": "LOG-1791300299187",
+      "employee": "simba",
+      "clockIn": "2026-10-06T06:24:39.874Z",
+      "clockOut": "2026-10-06T15:24:59.187Z",
+      "hoursWorked": 9.005364722222222,
+      "earnedAmount": 183.36715497737555,
+      "tasks": "I opened the Brother printer to check the laser unit but not yet done with it , because i was still busy with an Epson L565 for a client , which is now working but still want to double check it tomorrow"
+    },
+    {
+      "id": "LOG-1791299660374",
+      "employee": "reception",
+      "clockIn": "2026-10-06T06:04:11.127Z",
+      "clockOut": "2026-10-06T15:14:20.374Z",
+      "hoursWorked": 9.169235277777778,
+      "earnedAmount": 207.44876194067373,
+      "tasks": "Delivered cartridges to William Hills Secondary School x4 Hp toner 106a \nChecked the keyboards if they were working '\nReceived x1 printer from MC Mzimande \nMade x2 quotes for client`s  \nReceived x2 calls from a client`s enquiring about our services \nCalled smart office regarding [parts for the LF Printer"
+    },
+    {
+      "id": "LOG-1791299659698",
+      "employee": "talent",
+      "clockIn": "2026-10-06T06:09:40.761Z",
+      "clockOut": "2026-10-06T15:14:19.697Z",
+      "hoursWorked": 9.077482222222223,
+      "earnedAmount": 246.44748114630468,
+      "tasks": "eastrand boards canon printer was jamming i managed to fix it its now printing \nCanon imagerunner LF printer is still jamming and giviong problems"
+    },
+    {
+      "id": "LOG-1791213646417",
+      "employee": "reception",
+      "clockIn": "2026-10-05T06:32:40.750Z",
+      "clockOut": "2026-10-05T15:20:46.417Z",
+      "hoursWorked": 8.801574166666667,
+      "earnedAmount": 199.13063725490198,
+      "tasks": "I went to deliver the Canon Maxify GX7040 to Assess Tech and tried to install to install drivers \nI went to Natalie to change the maintenance box, and I had to reset the printer \nSpoke to part serve regarding the canon image runner 2224 pickup roller that's needed for the printer\nMade a quote for Anthony \nCalled Smart office regarding the lower paper feed guide \nDouble checked last month`s invoices"
+    },
+    {
+      "id": "LOG-1791213086961",
+      "employee": "talent",
+      "clockIn": "2026-10-05T06:14:01.178Z",
+      "clockOut": "2026-10-05T15:11:26.961Z",
+      "hoursWorked": 8.957161944444444,
+      "earnedAmount": 243.1808672699849,
+      "tasks": "canon imagerunner 2224N i called Lf to give them an update \nI figured out that the printer had a broken paper guide so im \nstill looking for the part to replace\n\neastrand boards .their fuser is  jamming so im still working on it\n\ntested hp ink advantage it is working perfectly"
+    },
+    {
+      "id": "LOG-1791212686509",
+      "employee": "simba",
+      "clockIn": "2026-10-05T06:03:08.067Z",
+      "clockOut": "2026-10-05T15:04:46.507Z",
+      "hoursWorked": 9.027344444444445,
+      "earnedAmount": 183.81470588235294,
+      "tasks": "Filled Ink in Canon GX7040 and Cleaned it\nChecked the Brother from Cafe,still checking it"
+    },
+    {
+      "id": "LOG-1791034909521",
+      "employee": "simba",
+      "clockIn": "2026-10-03T07:24:43.300Z",
+      "clockOut": "2026-10-03T13:41:49.521Z",
+      "hoursWorked": 6.285061388888889,
+      "earnedAmount": 127.97636312217193,
+      "tasks": "STILL WORKING ON THE CANON G7040 FOR CEDAR3 TECH"
+    },
+    {
+      "id": "LOG-1791034842274",
+      "employee": "talent",
+      "clockIn": "2026-10-03T07:10:07.461Z",
+      "clockOut": "2026-10-03T13:40:42.274Z",
+      "hoursWorked": 6.5096702777777775,
+      "earnedAmount": 176.7331297134238,
+      "tasks": "EPSON IMAGERUNNER FOR LF STILL CHECKING IT \nGORDON PRINTER HP INK ADVANTAGE FIXED \nHP OFFICEJET FOR VINCENT FIXED"
+    },
+    {
+      "id": "LOG-1790955567688",
+      "employee": "simba",
+      "clockIn": "2026-10-02T06:05:47.588Z",
+      "clockOut": "2026-10-02T15:39:27.688Z",
+      "hoursWorked": 9.56113888888889,
+      "earnedAmount": 194.68382352941177,
+      "tasks": "Hp Laser 107w Flixed (Changed the Cartridge Chip Reader and Cleaned Pickup Rollers)\nCanon G7040 still Working on it.\nIts Giving a Lot of Errors"
+    },
+    {
+      "id": "LOG-1790955387678",
+      "employee": "talent",
+      "clockIn": "2026-10-02T06:08:40.547Z",
+      "clockOut": "2026-10-02T15:36:27.678Z",
+      "hoursWorked": 9.463091944444445,
+      "earnedAmount": 256.9165233785822,
+      "tasks": "Hp ink advantage needs printheads but the fatal error was removed \nepson l 6190 still havng isses \ncanon imagerunner .im still checking it\n\n09++++++++++++++"
+    },
+    {
+      "id": "LOG-1790953602569",
+      "employee": "reception",
+      "clockIn": "2026-10-02T06:07:31.631Z",
+      "clockOut": "2026-10-02T15:06:42.569Z",
+      "hoursWorked": 8.986371666666667,
+      "earnedAmount": 203.31157616892912,
+      "tasks": "Cleaned the screen and x2 keyboards \nSpoke to Assess Tech Regarding the printer Canon GX7040 \nReceived 2 printers \nMade a quote \nFollowed up with the cartridges regarding the HP that a client a brought in \nMade calls to suppliers enquiring on products"
+    },
+    {
+      "id": "LOG-1790868714432",
+      "employee": "talent",
+      "clockIn": "2026-10-01T06:05:52.973Z",
+      "clockOut": "2026-10-01T15:31:54.432Z",
+      "hoursWorked": 9.433738611111112,
+      "earnedAmount": 256.11960030165915,
+      "tasks": "Epson is printing double images  im still working on it\neastrand printer is jamming it needs a cartridge replacement"
+    },
+    {
+      "id": "LOG-1790868455740",
+      "employee": "reception",
+      "clockIn": "2026-10-01T06:13:25.284Z",
+      "clockOut": "2026-10-01T15:27:35.740Z",
+      "hoursWorked": 9.236237777777777,
+      "earnedAmount": 208.9646556058321,
+      "tasks": "Checked with clients regarding payments \ntasted the Epson L6190"
+    },
+    {
+      "id": "LOG-1790868371527",
+      "employee": "simba",
+      "clockIn": "2026-10-01T06:02:40.692Z",
+      "clockOut": "2026-10-01T15:26:11.527Z",
+      "hoursWorked": 9.391898611111111,
+      "earnedAmount": 191.23775452488687,
+      "tasks": "Samsung M2070 is Working (needs a tray)\nHp OfficeJet Pro 7740 needs Cartridges"
+    },
     {
       "id": "LOG-1790783731897",
       "employee": "talent",
@@ -184,15 +653,1401 @@
   ],
   "sessions": {
     "simba": {
-      "clockInTime": "2026-10-01T06:02:40.692Z",
+      "clockInTime": "2026-10-08T06:14:37.509Z",
       "jobId": "GENERAL"
     },
     "talent": {
-      "clockInTime": "2026-10-01T06:05:52.973Z",
+      "clockInTime": "2026-10-12T06:35:20.823Z",
       "jobId": "GENERAL"
     }
   },
   "auditLog": [
+    {
+      "ts": "2026-10-12T06:41:56.661Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.102.163.10"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:40:57.892Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.102.163.10"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:39:19.953Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 0.006696666666666667,
+        "earned": 0.1515082956259427
+      }
+    },
+    {
+      "ts": "2026-10-12T06:38:55.844Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:38:45.946Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.102.163.10"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:38:32.649Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.102.163.10"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:37:50.784Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.102.163.10"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:35:20.823Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:35:11.619Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 0.05134888888888889,
+        "earned": 1.3940874811463047
+      }
+    },
+    {
+      "ts": "2026-10-12T06:32:06.763Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:32:02.692Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:29:53.995Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "ts": "2026-10-12T06:28:59.343Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-08T15:08:54.342Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.002803333333333,
+        "earned": 203.68333333333334
+      }
+    },
+    {
+      "ts": "2026-10-08T15:05:10.423Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.941588611111111,
+        "earned": 242.75806184012066
+      }
+    },
+    {
+      "ts": "2026-10-08T14:23:56.507Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:14:37.509Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:14:34.421Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:08:44.250Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:08:40.704Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:08:34.370Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-08T06:08:21.354Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-08T05:55:36.244Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-07T17:15:34.009Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 10.820824166666666,
+        "earned": 293.77803167420814
+      }
+    },
+    {
+      "ts": "2026-10-07T15:27:47.033Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.043291666666667,
+        "earned": 184.13942307692307
+      }
+    },
+    {
+      "ts": "2026-10-07T15:23:19.983Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.977943611111112,
+        "earned": 203.12089617898445
+      }
+    },
+    {
+      "ts": "2026-10-07T14:04:22.211Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-167",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-07T13:58:10.875Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-167",
+        "customer": "Shika Trans"
+      }
+    },
+    {
+      "ts": "2026-10-07T13:50:44.056Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-963",
+        "customer": "Snowy"
+      }
+    },
+    {
+      "ts": "2026-10-07T12:04:22.884Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-575",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-07T12:03:52.545Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-106",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-07T12:03:43.027Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-106",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-07T06:26:55.762Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-106",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-07T06:26:19.042Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-07T06:26:16.133Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-07T06:25:11.184Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-07T06:25:09.617Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-07T06:24:39.386Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-07T06:24:03.485Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-06T15:24:59.187Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.005364722222222,
+        "earned": 183.36715497737555
+      }
+    },
+    {
+      "ts": "2026-10-06T15:14:20.374Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.169235277777778,
+        "earned": 207.44876194067373
+      }
+    },
+    {
+      "ts": "2026-10-06T15:14:19.698Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.077482222222223,
+        "earned": 246.44748114630468
+      }
+    },
+    {
+      "ts": "2026-10-06T10:56:19.066Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:52.669Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:52.512Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:52.318Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:52.137Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:51.905Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:51.311Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T10:55:49.476Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-06T08:02:27.565Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-106",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-06T08:02:15.611Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-106",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-06T07:46:12.643Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-106",
+        "customer": "Mzimande"
+      }
+    },
+    {
+      "ts": "2026-10-06T07:27:09.277Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-772",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-06T06:24:39.874Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-06T06:24:35.448Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-06T06:09:40.761Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-06T06:09:37.257Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-06T06:04:11.127Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-06T06:04:09.530Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-05T18:07:24.178Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-05T17:38:22.827Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-05T17:12:18.504Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-05T15:20:46.417Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.801574166666667,
+        "earned": 199.13063725490198
+      }
+    },
+    {
+      "ts": "2026-10-05T15:11:26.961Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.957161944444444,
+        "earned": 243.1808672699849
+      }
+    },
+    {
+      "ts": "2026-10-05T15:04:46.509Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.027344444444445,
+        "earned": 183.81470588235294
+      }
+    },
+    {
+      "ts": "2026-10-05T15:03:01.966Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-931",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-05T15:02:26.527Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-772",
+        "customer": "Cedar3 Cafe"
+      }
+    },
+    {
+      "ts": "2026-10-05T09:08:25.919Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-713",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-05T09:07:39.218Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-575",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-05T09:07:22.219Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-713",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-05T06:32:40.750Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:32:17.157Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:27:43.434Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-575",
+        "customer": "Assess Tech"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:14:01.178Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:13:58.972Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:03:08.067Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-05T06:03:06.816Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-04T18:10:32.137Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-04T18:10:22.745Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-04T18:10:15.945Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-04T18:10:10.818Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-03T13:55:57.774Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-03T13:41:49.521Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 6.285061388888889,
+        "earned": 127.97636312217193
+      }
+    },
+    {
+      "ts": "2026-10-03T13:41:07.389Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-984",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-03T13:40:42.274Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 6.5096702777777775,
+        "earned": 176.7331297134238
+      }
+    },
+    {
+      "ts": "2026-10-03T13:39:06.594Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-03T07:27:04.328Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.65.190.76"
+      }
+    },
+    {
+      "ts": "2026-10-03T07:24:43.300Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-03T07:24:39.811Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-03T07:10:07.461Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-03T07:10:05.726Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:50:51.653Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:50:33.625Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:49:11.961Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:48:59.965Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:48:39.175Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T16:48:24.500Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password",
+        "ip": "100.120.179.48"
+      }
+    },
+    {
+      "ts": "2026-10-02T15:39:27.688Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.56113888888889,
+        "earned": 194.68382352941177
+      }
+    },
+    {
+      "ts": "2026-10-02T15:36:27.678Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.463091944444445,
+        "earned": 256.9165233785822
+      }
+    },
+    {
+      "ts": "2026-10-02T15:06:42.569Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.986371666666667,
+        "earned": 203.31157616892912
+      }
+    },
+    {
+      "ts": "2026-10-02T14:29:27.672Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-716",
+        "customer": "LF Electronics"
+      }
+    },
+    {
+      "ts": "2026-10-02T12:17:42.952Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-713",
+        "customer": "Cedar3 Sales"
+      }
+    },
+    {
+      "ts": "2026-10-02T12:12:31.569Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-684",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-02T12:12:18.450Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-684",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-02T12:11:01.431Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-684",
+        "customer": "Antony"
+      }
+    },
+    {
+      "ts": "2026-10-02T12:05:36.016Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-984",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-02T12:03:54.951Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-984",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-02T12:01:59.717Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-984",
+        "customer": "Athony"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:08:40.547Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:08:37.564Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:08:10.023Z",
+      "actor": "tech:talent",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong PIN",
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:07:31.631Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:07:28.304Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:05:47.588Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-02T06:05:43.244Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.123.31.7"
+      }
+    },
+    {
+      "ts": "2026-10-01T15:31:54.433Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.433738611111112,
+        "earned": 256.11960030165915
+      }
+    },
+    {
+      "ts": "2026-10-01T15:29:40.366Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-931",
+        "customer": "cedar3 tech"
+      }
+    },
+    {
+      "ts": "2026-10-01T15:27:35.740Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.236237777777777,
+        "earned": 208.9646556058321
+      }
+    },
+    {
+      "ts": "2026-10-01T15:26:11.527Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.391898611111111,
+        "earned": 191.23775452488687
+      }
+    },
+    {
+      "ts": "2026-10-01T14:45:46.275Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-991",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T14:45:19.231Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-971",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T14:45:11.368Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-991",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T14:40:25.819Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-971",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T14:40:13.354Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-971",
+        "customer": "Cedar3 Technology"
+      }
+    },
+    {
+      "ts": "2026-10-01T12:49:27.233Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.65.190.76"
+      }
+    },
+    {
+      "ts": "2026-10-01T11:33:54.165Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-991",
+        "changes": [
+          "id",
+          "customer",
+          "phone",
+          "address",
+          "device",
+          "sn",
+          "cables",
+          "faults",
+          "assignedTech",
+          "priority",
+          "status",
+          "followup",
+          "techReport",
+          "partsNeeded",
+          "cost",
+          "checklist"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T11:17:02.491Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-991",
+        "changes": [
+          "status"
+        ]
+      }
+    },
+    {
+      "ts": "2026-10-01T06:19:57.057Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-137",
+        "customer": "Eastrand boards"
+      }
+    },
+    {
+      "ts": "2026-10-01T06:13:25.284Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-10-01T06:13:22.504Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {
+        "ip": "100.119.142.78"
+      }
+    },
+    {
+      "ts": "2026-10-01T06:12:51.890Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-991",
+        "customer": "Cedar3 Technology"
+      }
+    },
     {
       "ts": "2026-10-01T06:05:52.973Z",
       "actor": "talent",

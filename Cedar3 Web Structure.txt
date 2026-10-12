@@ -1,0 +1,20 @@
+wdd131/
+└── project/
+    ├── index.html
+    ├── about.html
+    ├── services.html
+    ├── gallery.html
+    ├── contact.html
+    ├── references.html
+    ├── siteplan.html
+    ├── styles/
+    │   └── styles.css
+    ├── scripts/
+    │   └── script.js
+    └── images/
+        ├── logo.png          ← YOUR logo
+        ├── printer.svg       ← placeholder (we'll generate)
+        ├── server.svg        ← placeholder
+        ├── gallery-1.svg
+        ├── ...
+        └── gallery-6.svg

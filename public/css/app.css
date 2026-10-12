@@ -1,31 +1,52 @@
-body { font-family: 'Inter', sans-serif; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
-.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+/* Custom Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(156, 163, 175, 0.4);
-    border-radius: 9999px;
+    background-color: #cbd5e1;
+    border-radius: 20px;
 }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgba(107, 114, 128, 0.7);
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #334155;
 }
 
-/* Tab visibility */
-.tab-content.hidden { display: none; }
-
-/* Connection status dot */
-.conn-online { background-color: #22c55e; }
-.conn-offline { background-color: #ef4444; }
-.conn-checking { background-color: #f59e0b; }
-
-/* Toast animations */
-@keyframes slideInRight {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
+/* Connection Badge Indicator Animations */
+.conn-checking {
+    background-color: #f59e0b;
+    animation: pulse 1.5s infinite;
 }
-@keyframes slideOutRight {
-    from { opacity: 1; transform: translateX(0); }
-    to { opacity: 0; transform: translateX(20px); }
+.conn-online {
+    background-color: #22c55e;
 }
-.toast-enter { animation: slideInRight 0.25s ease-out forwards; }
-.toast-exit { animation: slideOutRight 0.25s ease-in forwards; }
+.conn-offline {
+    background-color: #ef4444;
+}
+
+/* Print Styles for Invoices and Quotes */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #modal-invoice, #modal-invoice * {
+        visibility: visible;
+    }
+    #modal-invoice {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white !important;
+        padding: 0 !important;
+    }
+    #modal-invoice .no-print {
+        display: none !important;
+    }
+}

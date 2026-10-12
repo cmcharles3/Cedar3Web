@@ -1,0 +1,1863 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cedar3 Technology (Pty) Ltd — expert printer repairs, office equipment maintenance, and IT hardware support in Benoni South, Johannesburg.">
+  <title>Cedar3 Technology | Professional Office Equipment Solutions</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Cedar3 Technology (Pty) Ltd logo" class="brand-logo" width="120" height="60">
+        <span class="brand-name">Cedar3 Technology</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+  <div class="hero-inner">
+    <h1>Expert Printer Repairs &amp; Office Support</h1>
+    <p>Keeping your business printing reliably with professional maintenance, diagnostics, and repairs across Benoni &amp; Johannesburg.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </div>
+</section>
+
+    <section class="intro">
+      <h2>Welcome to Cedar3 Technology</h2>
+      <p>Based in Benoni South, Cedar3 Technology (Pty) Ltd is a specialist office equipment and IT support workshop serving businesses across the East Rand and greater Johannesburg. Our in-house technicians handle everything from routine printer maintenance to complex hardware diagnostics &mdash; with the speed your operations depend on.</p>
+    </section>
+
+    <section class="highlights">
+      <h2>What We Do Best</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Multifunction Printer Repairs</h3>
+          <p>Full diagnostics, printhead maintenance, toner system support, and mechanical repair for HP, Canon, Epson, Brother, Ricoh, Kyocera, and Konica Minolta multifunction printers.</p>
+        </article>
+        <article class="card">
+          <h3>Computer &amp; IT Support</h3>
+          <p>Desktop and laptop hardware troubleshooting, component upgrades, peripheral setup, and workshop-level technical assistance to keep your team productive.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="interactive-box">
+      <h2>Client Welcome Portal</h2>
+      <p id="welcome-message">Loading visitor session&hellip;</p>
+    </section>
+
+    <section class="cta-band">
+      <h2>Ready to get your equipment back online?</h2>
+      <p>Log a support request and our team will respond within one business day.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Cedar3 Technology (Pty) Ltd. All rights reserved.</p>
+      <p>25 Birmingham Road, Benoni South, Johannesburg</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+=====================================================
+
+
+About
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Cedar3 Technology (Pty) Ltd — a Benoni-based office equipment and IT support company committed to excellence.">
+  <title>About Us | Cedar3 Technology</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Cedar3 Technology (Pty) Ltd logo" class="brand-logo" width="120" height="60">
+        <span class="brand-name">Cedar3 Technology</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>About Cedar3 Technology</h1>
+      <p>A proudly South African technical services company, committed to excellence in office equipment and IT support.</p>
+    </section>
+
+    <section>
+      <h2>Our Story</h2>
+      <p>Cedar3 Technology (Pty) Ltd was founded on a simple observation: when a business printer or workstation fails, the whole office slows down. Downtime costs money, frustrates staff, and hurts customer service. We built our workshop in Benoni South to give local businesses a faster, more reliable option than waiting on distant service contracts.</p>
+      <p>Today we support corporate, SME, and private clients across the East Rand and Johannesburg with on-site and workshop-based repairs, preventative maintenance, and hardware supply. Every job &mdash; from a single desktop to a fleet of multifunction printers &mdash; is handled with the same commitment to excellence.</p>
+    </section>
+
+    <section>
+      <h2>Mission, Vision &amp; Values</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Mission</h3>
+          <p>To keep our clients' offices productive through fast, honest, and technically excellent equipment support.</p>
+        </article>
+        <article class="card">
+          <h3>Vision</h3>
+          <p>To be the most trusted independent office equipment service provider in Gauteng.</p>
+        </article>
+        <article class="card">
+          <h3>Values</h3>
+          <p>Integrity, craftsmanship, and a genuine commitment to every client&rsquo;s uptime.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why Choose Cedar3?</h2>
+      <ul class="feature-list">
+        <li>Experienced in-house workshop technicians</li>
+        <li>Multi-brand expertise across leading printer and PC manufacturers</li>
+        <li>Fast turnaround times with clear, upfront communication</li>
+        <li>Local Benoni base with Johannesburg-wide coverage</li>
+        <li>Transparent pricing &mdash; no hidden call-out fees</li>
+        <li>Preventative maintenance contracts available</li>
+      </ul>
+    </section>
+
+    <section class="cta-band">
+      <h2>Work with us</h2>
+      <p>Whether you need a one-off repair or an ongoing maintenance partner, our team is ready.</p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Cedar3 Technology (Pty) Ltd. All rights reserved.</p>
+      <p>25 Birmingham Road, Benoni South, Johannesburg</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+=====================================================
+
+
+
+
+Services
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printer repairs, IT hardware support, and preventative maintenance from Cedar3 Technology in Benoni South, Johannesburg.">
+  <title>Services &amp; Solutions | Cedar3 Technology</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Cedar3 Technology (Pty) Ltd logo" class="brand-logo" width="120" height="60">
+        <span class="brand-name">Cedar3 Technology</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>Our Technical Services</h1>
+      <p>Filter through our specialized support categories below, or use the quick estimator to get an idea of turnaround time.</p>
+    </section>
+
+    <section>
+      <h2>Browse Services</h2>
+      <div class="filter-bar">
+        <button type="button" class="btn filter-btn active" data-filter="all">All Services</button>
+        <button type="button" class="btn filter-btn" data-filter="printer">Printers</button>
+        <button type="button" class="btn filter-btn" data-filter="it">IT Support</button>
+        <button type="button" class="btn filter-btn" data-filter="maintenance">Maintenance</button>
+      </div>
+
+      <div id="services-container" class="grid-3">
+        <!-- Dynamically populated via JavaScript using template literals -->
+      </div>
+    </section>
+
+    <section class="interactive-box">
+      <h2>Service Quick Estimator</h2>
+      <p>Select a service category to estimate turnaround time:</p>
+      <label for="estimator-select">Service Type</label>
+      <select id="estimator-select">
+        <option value="">-- Select Service Type --</option>
+        <option value="printer">Multifunction Printer Diagnostic</option>
+        <option value="it">Hardware / PC Repair</option>
+        <option value="maintenance">Preventative Maintenance Service</option>
+        <option value="toner">Toner &amp; Consumables</option>
+        <option value="network">Network Setup</option>
+      </select>
+      <div id="estimator-result" class="result-box" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Cedar3 Technology (Pty) Ltd. All rights reserved.</p>
+      <p>25 Birmingham Road, Benoni South, Johannesburg</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+==================================================
+
+
+
+Gallery
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery of printer repairs, server infrastructure, and IT support work completed by Cedar3 Technology.">
+  <title>Gallery | Cedar3 Technology</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Cedar3 Technology (Pty) Ltd logo" class="brand-logo" width="120" height="60">
+        <span class="brand-name">Cedar3 Technology</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>Our Work in Action</h1>
+      <p>A look inside our workshop and the equipment we service every day.</p>
+    </section>
+
+    <section>
+      <h2>Workshop &amp; Field Gallery</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/gallery-1.svg" alt="Technician servicing a multifunction printer" loading="lazy" width="400" height="300">
+          <figcaption>Multifunction printer servicing</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-2.svg" alt="Server rack installation and network cabling" loading="lazy" width="400" height="300">
+          <figcaption>Server &amp; network infrastructure</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-3.svg" alt="Desktop PC hardware diagnostics on a workbench" loading="lazy" width="400" height="300">
+          <figcaption>Desktop hardware diagnostics</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-4.svg" alt="Printer printhead cleaning and calibration" loading="lazy" width="400" height="300">
+          <figcaption>Printhead cleaning &amp; calibration</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-5.svg" alt="Toner cartridges and consumables inventory" loading="lazy" width="400" height="300">
+          <figcaption>Toner &amp; consumables supply</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-6.svg" alt="On-site office equipment repair visit" loading="lazy" width="400" height="300">
+          <figcaption>On-site office support</figcaption>
+        </figure>
+      </div>
+
+      <p class="gallery-outro">Have a piece of equipment that needs attention? <a href="contact.html">Log a support request</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Cedar3 Technology (Pty) Ltd. All rights reserved.</p>
+      <p>25 Birmingham Road, Benoni South, Johannesburg</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+====================================================
+
+
+Contact
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Cedar3 Technology in Benoni South to log a printer repair, IT support, or maintenance request.">
+  <title>Contact Us | Cedar3 Technology</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="" class="brand-logo" width="120" height="60">
+        <span class="brand-name">Cedar3 Technology</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <h1>Get in Touch</h1>
+      <p>Visit us in Benoni South, call us directly, or submit a support request &mdash; we respond within one business day.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-info">
+        <h2>Visit or Call Us</h2>
+        <address>
+          <p><strong>Cedar3 Technology (Pty) Ltd</strong></p>
+          <p>25 Birmingham Road<br>Benoni South<br>Johannesburg, Gauteng</p>
+          <p>Phone: <a href="tel:+27110000000" aria-label="Call Cedar3 Technology at plus 27 11 000 0000">+27 76 484 7360</a></p>
+          <p>Email: <a href="mailto:info@cedar3tech.co.za">info@cedar3tech.co.za</a></p>
+        </address>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h2>Log a Support Request</h2>
+        <form id="contact-form" novalidate>
+          <fieldset>
+            <legend>Your Details</legend>
+
+            <div class="form-row">
+              <label for="fullname">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                minlength="2"
+                maxlength="60"
+                autocomplete="name"
+                placeholder="e.g. Thandi Mokoena">
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="80"
+                autocomplete="email"
+                placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone Number (optional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                maxlength="20"
+                autocomplete="tel"
+                placeholder="e.g. 011 000 0000">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Equipment Details</legend>
+
+            <div class="form-row">
+              <label for="service-type">Service Type <span class="required-mark" aria-hidden="true">*</span></label>
+              <select id="service-type" name="service-type" required>
+                <option value="">-- Please select --</option>
+                <option value="printer">Printer Repair / Maintenance</option>
+                <option value="it">Computer / IT Hardware Support</option>
+                <option value="maintenance">Preventative Maintenance Contract</option>
+                <option value="toner">Toner &amp; Consumables</option>
+                <option value="network">Network / Peripheral Setup</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="device">Equipment Type / Brand <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="device"
+                name="device"
+                required
+                minlength="2"
+                maxlength="80"
+                placeholder="e.g. HP LaserJet Pro M404">
+            </div>
+
+            <div class="form-row">
+              <label for="message">Issue Description <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                maxlength="1000"
+                placeholder="Describe the problem you are experiencing..."></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Consent</legend>
+
+            <div class="form-row checkbox-row">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I consent to Cedar3 Technology contacting me about this request. <span class="required-mark" aria-hidden="true">*</span></label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn">Submit Support Request</button>
+        </form>
+        <div id="form-feedback" class="result-box" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Cedar3 Technology (Pty) Ltd. All rights reserved.</p>
+      <p>25 Birmingham Road, Benoni South, Johannesburg</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+====================================================
+
+
+References
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References | Cedar3 Technology</title>
+</head>
+<body>
+  <h1>Website References &amp; Citations</h1>
+  <p>The following external resources and assets were utilized in the development of this project website:</p>
+  <ul>
+    <li>Placeholder images created as original SVG assets for this project.</li>
+    <li>Brand and product names (HP, Canon, Epson, Brother, Ricoh, Kyocera, Konica Minolta) are trademarks of their respective owners and are referenced for descriptive purposes only.</li>
+    <li>Business logo provided by Cedar3 Technology (Pty) Ltd.</li>
+    <li>Course guidelines and standards provided by the BYU-Idaho WDD 131 curriculum.</li>
+  </ul>
+  <p><a href="index.html">Return to Home</a></p>
+</body>
+</html>
+
+
+=====================================================
+
+CSS
+
+/* =========================================================
+   Cedar3 Technology — Main Stylesheet
+   Mobile-first, responsive, PARC-aligned
+   ========================================================= */
+
+/* ---------- 1. Design Tokens ---------- */
+:root {
+  /* Brand palette (derived from Cedar3 logo) */
+  --color-primary:      #0B4F87;
+  --color-primary-dark: #083A63;
+  --color-secondary:    #2E7DB8;
+  --color-accent:       #9CCDE8;
+  --color-bg:           #F7FAFC;
+  --color-surface:      #FFFFFF;
+  --color-text:         #1F2933;
+  --color-text-muted:   #52606D;
+  --color-success:      #1E7A46;
+  --color-error:        #B3261E;
+
+  /* Typography */
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body:    system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Layout */
+  --max-width: 1100px;
+  --radius:    6px;
+  --shadow:    0 2px 8px rgba(11, 79, 135, 0.12);
+
+  /* Transitions */
+  --transition: 0.2s ease-in-out;
+}
+
+/* ---------- 2. Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1, h2, h3, p, ul, ol, figure, blockquote {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ---------- 3. Base Typography ---------- */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+h2 { font-size: clamp(1.35rem, 3vw, 1.85rem); }
+h3 { font-size: 1.15rem; }
+
+p {
+  max-width: 65ch;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* ---------- 4. Accessibility: Skip Link & Focus ---------- */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-sm);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  text-decoration: none;
+  z-index: 1000;
+  transition: top var(--transition);
+}
+
+.skip-link:focus {
+  top: var(--space-xs);
+  color: var(--color-surface);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+/* ---------- 5. Header ---------- */
+.site-header {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--color-surface);
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  background: var(--color-surface);
+  padding: 4px;
+  border-radius: var(--radius);
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-surface);
+}
+
+/* ---------- 6. Navigation ---------- */
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xs) var(--space-sm);
+}
+
+.nav-list a {
+  color: var(--color-surface);
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  background-color: var(--color-secondary);
+  color: var(--color-surface);
+}
+
+.nav-list a.active {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* ---------- 7. Main Layout & Sections ---------- */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-sm) var(--space-xl);
+}
+
+main > section {
+  margin-bottom: var(--space-xl);
+}
+
+
+/* ---------- 8. Hero (photo background + overlay) ---------- */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--radius);
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+  color: var(--color-surface);
+
+  /* Photo background */
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Animate on load */
+  animation: hero-zoom 8s ease-out forwards;
+}
+
+/* Dark blue overlay so text stays readable on any photo */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 79, 135, 0.85),
+    rgba(8, 58, 99, 0.75)
+  );
+  z-index: -1;
+}
+
+/* Subtle zoom-in from 1.08 → 1.0 on page load */
+@keyframes hero-zoom {
+  from { background-size: 108% auto; }
+  to   { background-size: 100% auto; }
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: var(--color-surface);
+  margin-bottom: var(--space-sm);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.hero p {
+  color: var(--color-surface);
+  margin: 0 auto var(--space-md);
+  font-size: 1.05rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+  opacity: 0.98;
+}
+
+.hero .btn {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.hero .btn:hover,
+.hero .btn:focus-visible {
+  background-color: var(--color-surface);
+  color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+
+/* ---------- 9. Page Intro (inner pages) ---------- */
+.page-intro {
+  text-align: center;
+  padding: var(--space-md) 0;
+  border-bottom: 3px solid var(--color-accent);
+}
+
+.page-intro p {
+  margin: var(--space-xs) auto 0;
+  color: var(--color-text-muted);
+}
+
+/* ---------- 10. Buttons ---------- */
+.btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--color-primary-dark);
+  color: var(--color-surface);
+  transform: translateY(-1px);
+}
+
+/* Filter buttons — override for state */
+.filter-btn {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.filter-btn:hover,
+.filter-btn:focus-visible {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+/* ---------- 11. Cards & Grids ---------- */
+.grid-2,
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(11, 79, 135, 0.18);
+}
+
+.card h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- 12. Feature List (About page) ---------- */
+.feature-list li {
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-md);
+  position: relative;
+  border-bottom: 1px solid rgba(11, 79, 135, 0.1);
+}
+
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-success);
+  font-weight: 700;
+}
+
+/* ---------- 13. Interactive Box ---------- */
+.interactive-box {
+  background-color: var(--color-accent);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow);
+}
+
+.interactive-box h2 {
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.interactive-box select,
+.interactive-box input {
+  margin-top: var(--space-xs);
+}
+
+/* ---------- 14. Filter Bar ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+/* ---------- 15. Gallery ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+.gallery-item {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
+
+.gallery-item:hover {
+  transform: translateY(-3px);
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gallery-item figcaption {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.gallery-outro {
+  margin-top: var(--space-md);
+  text-align: center;
+}
+
+/* ---------- 16. Contact Page ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.contact-info address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin-bottom: var(--space-xs);
+}
+
+/* ---------- 17. Form ---------- */
+form fieldset {
+  border: 1px solid rgba(11, 79, 135, 0.25);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  background-color: var(--color-surface);
+}
+
+/* ---------- 17b. Checkbox Row ---------- */
+.checkbox-row {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-xs);
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.checkbox-row label {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Required marker */
+.required-mark {
+  color: var(--color-error);
+  font-weight: 700;
+}
+
+/* Select styling (matches other inputs) */
+.form-row select {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(11, 79, 135, 0.35);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-row select:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(46, 125, 184, 0.2);
+  outline: none;
+}
+
+form legend {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  padding: 0 var(--space-xs);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-sm);
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text);
+}
+
+.form-row input,
+.form-row textarea {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(11, 79, 135, 0.35);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(46, 125, 184, 0.2);
+  outline: none;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ---------- 18. Result Boxes (JS feedback) ---------- */
+.result-box {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.result-box:empty {
+  display: none;
+}
+
+.result-box.success {
+  border-left: 4px solid var(--color-success);
+  color: var(--color-success);
+}
+
+.result-box.error {
+  border-left: 4px solid var(--color-error);
+  color: var(--color-error);
+}
+
+/* ---------- 19. CTA Band ---------- */
+.cta-band {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-surface);
+  padding: var(--space-lg) var(--space-md);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.cta-band h2 {
+  color: var(--color-surface);
+  margin-bottom: var(--space-xs);
+}
+
+.cta-band p {
+  color: var(--color-surface);
+  opacity: 0.95;
+  margin: 0 auto var(--space-md);
+}
+
+.cta-band .btn {
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+
+.cta-band .btn:hover,
+.cta-band .btn:focus-visible {
+  background-color: var(--color-surface);
+  color: var(--color-primary-dark);
+}
+
+/* ---------- 20. Footer ---------- */
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-surface);
+  padding: var(--space-md) var(--space-sm);
+  margin-top: var(--space-xl);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-inner p {
+  margin: 0 auto var(--space-xs);
+  color: var(--color-surface);
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.footer-inner a {
+  color: var(--color-accent);
+}
+
+.footer-inner a:hover,
+.footer-inner a:focus-visible {
+  color: var(--color-surface);
+}
+
+/* =========================================================
+   21. Responsive Breakpoints (mobile-first)
+   ========================================================= */
+
+/* Tablet: 600px+ */
+@media (min-width: 600px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 900px+ */
+@media (min-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1.4fr;
+    align-items: start;
+  }
+
+  .hero {
+    padding: var(--space-xl);
+  }
+}
+
+/* ---------- 22. Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+.hero { animation: none; }
+}
+
+/* ---------- 23. Portal (index page) ---------- */
+.portal-greeting {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.portal-sub {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.portal-input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.portal-input {
+  flex: 1 1 200px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(11, 79, 135, 0.35);
+  border-radius: var(--radius);
+  font: inherit;
+}
+
+.portal-btn {
+  padding: 0.6rem 1.2rem;
+}
+
+/* ---------- 24. Service Cards (services page) ---------- */
+.badge {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: var(--space-xs);
+}
+
+.turnaround {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  margin-top: var(--space-xs);
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--space-md);
+}
+
+=====================================================
+
+Scripts
+
+/* =========================================================
+   Cedar3 Technology — Main Script
+   Modules:
+     1. Visitor Portal (localStorage)
+     2. Services Catalog (array of objects + filter)
+     3. Service Estimator (switch + conditionals)
+     4. Contact Form (validation + localStorage)
+     5. Helpers
+   ========================================================= */
+
+'use strict';
+
+/* =========================================================
+   1. SERVICES CATALOG — Data layer
+   ========================================================= */
+
+const services = [
+  {
+    id: 1,
+    title: 'Multifunction Printer Diagnostic',
+    category: 'printer',
+    categoryLabel: 'Printers',
+    description: 'Full inspection of print quality, paper path, and firmware; report issued same day.',
+    turnaround: '24 hours'
+  },
+  {
+    id: 2,
+    title: 'Printhead & Roller Maintenance',
+    category: 'printer',
+    categoryLabel: 'Printers',
+    description: 'Deep-clean, alignment, and replacement of worn rollers and printheads.',
+    turnaround: '24–48 hours'
+  },
+  {
+    id: 3,
+    title: 'Toner & Consumables Replacement',
+    category: 'printer',
+    categoryLabel: 'Printers',
+    description: 'Genuine and compatible toner supply, installation, and waste-toner service.',
+    turnaround: 'Same day'
+  },
+  {
+    id: 4,
+    title: 'Desktop & Laptop Hardware Repair',
+    category: 'it',
+    categoryLabel: 'IT Support',
+    description: 'Diagnostics and repair for motherboards, storage, RAM, and power issues.',
+    turnaround: '48–72 hours'
+  },
+  {
+    id: 5,
+    title: 'Component Upgrades',
+    category: 'it',
+    categoryLabel: 'IT Support',
+    description: 'SSD, RAM, and GPU upgrades to extend the life of existing machines.',
+    turnaround: '24 hours'
+  },
+  {
+    id: 6,
+    title: 'Peripheral Setup & Support',
+    category: 'it',
+    categoryLabel: 'IT Support',
+    description: 'Printers, scanners, and multi-device network configuration for your office.',
+    turnaround: 'On-site, same day'
+  },
+  {
+    id: 7,
+    title: 'Preventative Maintenance Contracts',
+    category: 'maintenance',
+    categoryLabel: 'Maintenance',
+    description: 'Scheduled monthly or quarterly servicing for printer fleets.',
+    turnaround: 'Scheduled'
+  },
+  {
+    id: 8,
+    title: 'Annual Equipment Health Check',
+    category: 'maintenance',
+    categoryLabel: 'Maintenance',
+    description: 'A full audit of all office equipment with a written report and recommendations.',
+    turnaround: '5 business days'
+  }
+];
+
+/* =========================================================
+   2. HELPER FUNCTIONS
+   ========================================================= */
+
+/**
+ * Format a Date object as a readable local string.
+ * @param {Date} date
+ * @returns {string}
+ */
+function formatDate(date) {
+  return date.toLocaleDateString('en-ZA', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
+/**
+ * Safely read a JSON value from localStorage.
+ * @param {string} key
+ * @param {*} fallback
+ */
+function readStorage(key, fallback = null) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw === null ? fallback : JSON.parse(raw);
+  } catch (err) {
+    console.warn(`Could not read "${key}" from localStorage:`, err);
+    return fallback;
+  }
+}
+
+/**
+ * Safely write a JSON value to localStorage.
+ * @param {string} key
+ * @param {*} value
+ */
+function writeStorage(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch (err) {
+    console.warn(`Could not write "${key}" to localStorage:`, err);
+  }
+}
+
+/* =========================================================
+   3. MODULE: VISITOR PORTAL (index.html)
+   ========================================================= */
+
+/**
+ * Initialise the "Client Welcome Portal" on the home page.
+ * Uses localStorage to greet returning visitors by name and
+ * to display how many times they've visited.
+ */
+function initVisitorPortal() {
+  const target = document.getElementById('welcome-message');
+  if (!target) return; // Not on this page — exit quietly.
+
+  const VISIT_KEY = 'cedar3.visitCount';
+  const NAME_KEY = 'cedar3.visitorName';
+
+  const previousVisits = readStorage(VISIT_KEY, 0);
+  const visitorName = readStorage(NAME_KEY, null);
+  const newVisitCount = previousVisits + 1;
+
+  writeStorage(VISIT_KEY, newVisitCount);
+
+  // Build the message — conditionally.
+  let greeting;
+
+  if (newVisitCount === 1) {
+    greeting = `Welcome to Cedar3 Technology! This is your first visit.`;
+  } else if (visitorName) {
+    greeting = `Welcome back, ${visitorName}! This is visit number ${newVisitCount}.`;
+  } else {
+    greeting = `Welcome back! You have visited ${newVisitCount} times.`;
+  }
+
+  // Optional: if no name stored, prompt for one via a second line.
+  const nameLine = visitorName
+    ? `We last saw you on ${formatDate(new Date())}.`
+    : `Enter your name below and we will remember you next time.`;
+
+  target.innerHTML = `
+    <span class="portal-greeting">${greeting}</span><br>
+    <span class="portal-sub">${nameLine}</span>
+  `;
+
+  // Simple inline form for storing the visitor's name.
+  if (!visitorName) {
+    const nameInput = document.createElement('input');
+    nameInput.type = 'text';
+    nameInput.id = 'visitor-name-input';
+    nameInput.placeholder = 'Your name';
+    nameInput.maxLength = 40;
+    nameInput.className = 'portal-input';
+
+    const saveBtn = document.createElement('button');
+    saveBtn.type = 'button';
+    saveBtn.className = 'btn portal-btn';
+    saveBtn.textContent = 'Remember Me';
+
+    saveBtn.addEventListener('click', () => {
+      const value = nameInput.value.trim();
+      if (value.length < 2) {
+        target.querySelector('.portal-sub').textContent = 'Please enter at least 2 characters.';
+        return;
+      }
+      writeStorage(NAME_KEY, value);
+      target.innerHTML = `
+        <span class="portal-greeting">Thanks, ${value}! We will remember you on your next visit.</span>
+      `;
+    });
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'portal-input-row';
+    wrapper.appendChild(nameInput);
+    wrapper.appendChild(saveBtn);
+    target.appendChild(wrapper);
+  }
+}
+
+/* =========================================================
+   4. MODULE: SERVICES CATALOG + FILTER (services.html)
+   ========================================================= */
+
+/**
+ * Render an array of service objects into #services-container.
+ * @param {Array} list
+ */
+function renderServices(list) {
+  const container = document.getElementById('services-container');
+  if (!container) return;
+
+  if (list.length === 0) {
+    container.innerHTML = `<p class="no-results">No services match this filter.</p>`;
+    return;
+  }
+
+  // Build the markup with .map() and template literals.
+  const html = list
+    .map(
+      (svc) => `
+        <article class="card" data-category="${svc.category}">
+          <span class="badge">${svc.categoryLabel}</span>
+          <h3>${svc.title}</h3>
+          <p>${svc.description}</p>
+          <p class="turnaround"><strong>Typical turnaround:</strong> ${svc.turnaround}</p>
+        </article>
+      `
+    )
+    .join('');
+
+  container.innerHTML = html;
+}
+
+/**
+ * Wire up the filter buttons on services.html.
+ * Uses array.filter() to narrow the list.
+ */
+function initServiceFilter() {
+  const buttons = document.querySelectorAll('.filter-btn');
+  const container = document.getElementById('services-container');
+  if (!container || buttons.length === 0) return;
+
+  // Initial render.
+  renderServices(services);
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter; // 'all' | 'printer' | 'it' | 'maintenance'
+
+      // Update active state on buttons.
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Conditional filter + array method.
+      const filtered = filter === 'all'
+        ? services
+        : services.filter((svc) => svc.category === filter);
+
+      renderServices(filtered);
+    });
+  });
+}
+
+/* =========================================================
+   5. MODULE: SERVICE ESTIMATOR (services.html)
+   ========================================================= */
+
+/**
+ * Map a service category to an estimated turnaround message.
+ * Uses a switch to demonstrate conditional branching.
+ * @param {string} value
+ * @returns {{ message: string, isError: boolean }}
+ */
+function estimateTurnaround(value) {
+  switch (value) {
+    case 'printer':
+      return { message: 'Printer diagnostic: typically completed within 24 hours.', isError: false };
+    case 'it':
+      return { message: 'Hardware / PC repair: typical turnaround is 48–72 hours.', isError: false };
+    case 'maintenance':
+      return { message: 'Preventative maintenance: scheduled within 3–5 business days.', isError: false };
+    case 'toner':
+      return { message: 'Toner & consumables: available same-day for in-stock items.', isError: false };
+    case 'network':
+      return { message: 'Network setup: on-site visit booked within 2 business days.', isError: false };
+    case '':
+      return { message: '', isError: false };
+    default:
+      return { message: 'Please choose a valid service type.', isError: true };
+  }
+}
+
+/**
+ * Wire the estimator <select> on services.html.
+ */
+function initEstimator() {
+  const select = document.getElementById('estimator-select');
+  const result = document.getElementById('estimator-result');
+  if (!select || !result) return;
+
+  select.addEventListener('change', (event) => {
+    const value = event.target.value;
+    const { message, isError } = estimateTurnaround(value);
+
+    result.classList.remove('success', 'error');
+
+    if (message === '') {
+      result.textContent = '';
+      return;
+    }
+
+    result.textContent = message;
+    result.classList.add(isError ? 'error' : 'success');
+
+    // Save the last viewed service to localStorage.
+    if (!isError) {
+      writeStorage('cedar3.lastService', value);
+    }
+  });
+
+  // Restore last viewed service on page load.
+  const last = readStorage('cedar3.lastService', null);
+  if (last) {
+    select.value = last;
+    const { message, isError } = estimateTurnaround(last);
+    result.textContent = message;
+    if (message) {
+      result.classList.add(isError ? 'error' : 'success');
+    }
+  }
+}
+
+/* =========================================================
+   6. MODULE: CONTACT FORM (contact.html)
+   ========================================================= */
+
+/**
+ * Validate a single form field.
+ * Returns { valid: boolean, message: string }
+ * @param {HTMLInputElement|HTMLTextAreaElement|HTMLSelectElement} field
+ */
+function validateField(field) {
+  const value = field.value.trim();
+  const name = field.name;
+
+  if (field.required && value === '') {
+    return { valid: false, message: `Please fill in the "${name}" field.` };
+  }
+
+  if (name === 'email' && value !== '') {
+    // Simple pattern — HTML5 <input type="email"> is stricter, but this is a backup.
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(value)) {
+      return { valid: false, message: 'Please enter a valid email address.' };
+    }
+  }
+
+  if (field.minLength > 0 && value.length < field.minLength) {
+    return { valid: false, message: `"${name}" must be at least ${field.minLength} characters.` };
+  }
+
+  if (field.maxLength > 0 && value.length > field.maxLength) {
+    return { valid: false, message: `"${name}" must be ${field.maxLength} characters or fewer.` };
+  }
+
+  return { valid: true, message: '' };
+}
+
+/**
+ * Wire up the contact form on contact.html.
+ * Validates, stores the submission in localStorage, and shows feedback.
+ */
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const feedback = document.getElementById('form-feedback');
+  if (!form || !feedback) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    feedback.textContent = '';
+    feedback.classList.remove('success', 'error');
+
+    const fields = form.querySelectorAll('input, textarea, select');
+    const errors = [];
+
+    // Validate every field with .forEach (array-like NodeList).
+    fields.forEach((field) => {
+      const { valid, message } = validateField(field);
+      if (!valid) errors.push(message);
+    });
+
+    // Consent checkbox needs its own check.
+    const consent = form.querySelector('#consent');
+    if (consent && !consent.checked) {
+      errors.push('Please tick the consent box before submitting.');
+    }
+
+    // Conditional branch: show errors OR success.
+    if (errors.length > 0) {
+      feedback.classList.add('error');
+      feedback.innerHTML = `
+        <strong>Please fix the following:</strong>
+        <ul>${errors.map((e) => `<li>${e}</li>`).join('')}</ul>
+      `;
+      return;
+    }
+
+    // Build a submission object from the form.
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    // Add a timestamp.
+    const submission = {
+      ...data,
+      submittedAt: new Date().toISOString()
+    };
+
+    // Read existing submissions from localStorage.
+    const existing = readStorage('cedar3.submissions', []);
+    existing.push(submission);
+    writeStorage('cedar3.submissions', existing);
+
+    // Success message.
+    feedback.classList.add('success');
+    feedback.innerHTML = `
+      <strong>Thank you, ${data.fullname}!</strong>
+      <p>Your support request for <em>${data.device}</em> has been logged. We will contact you at <em>${data.email}</em> within one business day.</p>
+    `;
+
+    // Remember the visitor's name for the home page portal.
+    if (data.fullname) {
+      writeStorage('cedar3.visitorName', data.fullname);
+    }
+
+    // Reset the form.
+    form.reset();
+  });
+
+  // Pre-fill the name field if we already know the visitor.
+  const storedName = readStorage('cedar3.visitorName', null);
+  const nameField = form.querySelector('#fullname');
+  if (storedName && nameField && !nameField.value) {
+    nameField.value = storedName;
+  }
+}
+
+/* =========================================================
+   7. BOOTSTRAP
+   ========================================================= */
+
+/**
+ * Run all page-specific initialisers.
+ * Each one exits quietly if its target element isn't on the page.
+ */
+function init() {
+  initVisitorPortal();
+  initServiceFilter();
+  initEstimator();
+  initContactForm();
+}
+
+document.addEventListener('DOMContentLoaded', init);
+
+
+===================================================================================
+
+
+IMAGES
+
+images/gallery-1.svg — Multifunction Printer Servicing
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Multifunction printer illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="60" y="180" width="280" height="40" rx="6" fill="#0B4F87"/>
+  <rect x="80" y="120" width="240" height="60" rx="6" fill="#2E7DB8"/>
+  <rect x="120" y="80" width="160" height="40" rx="6" fill="#9CCDE8"/>
+  <rect x="180" y="220" width="40" height="60" fill="#1F2933"/>
+  <circle cx="320" cy="200" r="6" fill="#1E7A46"/>
+  <text x="200" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">Printer Servicing</text>
+</svg>
+
+===============
+images/gallery-2.svg — Server & Network Infrastructure
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Server rack illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="140" y="40" width="120" height="220" rx="6" fill="#0B4F87"/>
+  <rect x="155" y="60" width="90" height="30" rx="4" fill="#2E7DB8"/>
+  <rect x="155" y="100" width="90" height="30" rx="4" fill="#2E7DB8"/>
+  <rect x="155" y="140" width="90" height="30" rx="4" fill="#2E7DB8"/>
+  <rect x="155" y="180" width="90" height="30" rx="4" fill="#9CCDE8"/>
+  <circle cx="168" cy="75" r="4" fill="#1E7A46"/>
+  <circle cx="168" cy="115" r="4" fill="#1E7A46"/>
+  <circle cx="168" cy="155" r="4" fill="#1E7A46"/>
+  <circle cx="168" cy="195" r="4" fill="#B3261E"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">Server Infrastructure</text>
+</svg>
+
+=============
+
+images/gallery-3.svg — Desktop Hardware Diagnostics
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Desktop computer illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="100" y="80" width="200" height="130" rx="8" fill="#0B4F87"/>
+  <rect x="115" y="95" width="170" height="100" rx="4" fill="#9CCDE8"/>
+  <rect x="160" y="215" width="80" height="10" fill="#1F2933"/>
+  <rect x="130" y="225" width="140" height="8" rx="3" fill="#52606D"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">PC Diagnostics</text>
+</svg>
+
+=====================
+
+images/gallery-4.svg — Printhead Cleaning & Calibration
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Printhead cleaning illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="80" y="120" width="240" height="60" rx="6" fill="#0B4F87"/>
+  <circle cx="130" cy="150" r="14" fill="#9CCDE8"/>
+  <circle cx="180" cy="150" r="14" fill="#2E7DB8"/>
+  <circle cx="230" cy="150" r="14" fill="#1E7A46"/>
+  <circle cx="280" cy="150" r="14" fill="#9CCDE8"/>
+  <path d="M110 200 Q200 240 290 200" stroke="#2E7DB8" stroke-width="4" fill="none" stroke-dasharray="6 6"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">Printhead Calibration</text>
+</svg>
+
+==================
+
+images/gallery-5.svg — Toner & Consumables Supply
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Toner cartridge illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="90" y="100" width="60" height="140" rx="6" fill="#0B4F87"/>
+  <rect x="170" y="80" width="60" height="160" rx="6" fill="#2E7DB8"/>
+  <rect x="250" y="120" width="60" height="120" rx="6" fill="#9CCDE8"/>
+  <rect x="100" y="115" width="40" height="20" fill="#9CCDE8"/>
+  <rect x="180" y="95" width="40" height="20" fill="#9CCDE8"/>
+  <rect x="260" y="135" width="40" height="20" fill="#FFFFFF"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">Toner Supply</text>
+</svg>
+
+=======================
+
+images/gallery-6.svg — On-Site Office Support
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="On-site office support illustration">
+  <rect width="400" height="300" fill="#F7FAFC"/>
+  <rect x="40" y="140" width="320" height="110" rx="8" fill="#0B4F87"/>
+  <rect x="70" y="80" width="80" height="60" rx="4" fill="#9CCDE8"/>
+  <rect x="160" y="80" width="80" height="60" rx="4" fill="#2E7DB8"/>
+  <rect x="250" y="80" width="80" height="60" rx="4" fill="#9CCDE8"/>
+  <rect x="180" y="180" width="40" height="70" fill="#1F2933"/>
+  <circle cx="200" cy="215" r="4" fill="#FFFFFF"/>
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#52606D">On-Site Support</text>
+</svg>
+
+=================
+
+
