@@ -1,139 +1,92 @@
-// ============================================
-// Cedar3 — Time Logs & Payroll
-// ============================================
+const Logs = {
+    init() {
+        this.render();
+    },
 
-window.Logs = (function () {
-    var allLogs = [];
+    getLogs() {
+        return JSON.parse(localStorage.getItem(CONFIG.STORAGE_KEYS.TIME_LOGS)) || [];
+    },
 
-    function rowHTML(log, isAdmin) {
-        var valueDisplay = isAdmin
-            ? Utils.formatZAR(log.earnedAmount || 0)
-            : '••••••';
+    render() {
+        const container = document.getElementById('logs-table-body');
+        if (!container) return;
 
-        return ''
-            + '<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">'
-            +   '<td class="p-3 font-bold text-slate-800 dark:text-slate-200">' + Utils.esc(log.employee || '—') + '</td>'
-            +   '<td class="p-3 text-slate-500 font-mono text-[11px]">' + Utils.formatDateTime(log.clockIn) + '</td>'
-            +   '<td class="p-3 text-slate-500 font-mono text-[11px]">' + Utils.formatDateTime(log.clockOut) + '</td>'
-            +   '<td class="p-3 font-mono font-bold text-emerald-600">' + Number(log.hoursWorked || 0).toFixed(2) + ' hrs</td>'
-            +   '<td class="p-3 text-slate-600 dark:text-slate-300 font-mono text-[11px] max-w-md truncate" title="' + Utils.esc(log.tasks || '') + '">' + Utils.esc(log.tasks || '') + '</td>'
-            +   '<td class="p-3 text-right font-mono font-bold text-slate-900 dark:text-white">' + valueDisplay + '</td>'
-            + '</tr>';
-    }
-
-    function render() {
-        var user = API.getUser();
-        var isAdmin = user && user.role === 'admin';
-
-        var searchEl = document.getElementById('log-search');
-        var filterEl = document.getElementById('log-tech-filter');
-        var search = (searchEl ? searchEl.value : '').toLowerCase();
-        var filterTech = filterEl ? filterEl.value : 'ALL';
-
-        var filtered = [];
-        for (var i = 0; i < allLogs.length; i++) {
-            var log = allLogs[i];
-            var matchSearch = !search
-                || (log.employee || '').toLowerCase().indexOf(search) !== -1
-                || (log.tasks || '').toLowerCase().indexOf(search) !== -1;
-            var matchTech = filterTech === 'ALL' || log.employee === filterTech;
-            if (matchSearch && matchTech) filtered.push(log);
-        }
-
-        var tbody = document.getElementById('logs-table-body');
-        var totalEl = document.getElementById('logs-total-value');
-        if (!tbody) return;
-
-        if (filtered.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="6" class="p-6 text-center text-slate-400 italic">No shift time logs recorded yet.</td></tr>';
-            if (totalEl) totalEl.textContent = isAdmin ? 'R0.00' : '••••••';
+        const logs = this.getLogs();
+        if (!logs.length) {
+            container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">No shift logs found.</p>`;
             return;
         }
 
-        var total = 0;
-        var html = '';
-        for (var j = 0; j < filtered.length; j++) {
-            total += Number(filtered[j].earnedAmount || 0);
-            html += rowHTML(filtered[j], isAdmin);
-        }
-        tbody.innerHTML = html;
+        container.innerHTML = `
+            <div class="flex justify-end mb-3">
+                <button onclick="Logs.exportCSV()" class="bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5 hover:bg-emerald-100 transition">
+                    <i class="fa-solid fa-file-csv"></i> Export CSV
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 font-bold text-slate-600 dark:text-slate-400">
+                            <th class="p-2.5">Staff</th>
+                            <th class="p-2.5">Clock In</th>
+                            <th class="p-2.5">Clock Out</th>
+                            <th class="p-2.5">Duration</th>
+                            <th class="p-2.5">Work Notes</th>
+                            <th class="p-2.5 text-right">Value (ZAR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${logs.map(l => `
+                            <tr class="border-b border-slate-200 dark:border-slate-700 text-xs">
+                                <td class="p-2.5 font-bold text-slate-900 dark:text-white">${l.emp || l.staff || '—'}</td>
+                                <td class="p-2.5">${window.Utils ? Utils.formatDate(l.startTime || l.clockIn) : (l.startTime || l.clockIn)}</td>
+                                <td class="p-2.5">${window.Utils ? Utils.formatDate(l.endTime || l.clockOut) : (l.endTime || l.clockOut)}</td>
+                                <td class="p-2.5 font-mono">${parseFloat(l.duration || l.hoursWorked || 0).toFixed(2)} hrs</td>
+                                <td class="p-2.5 max-w-xs truncate">${l.notes || l.tasks || '—'}</td>
+                                <td class="p-2.5 text-right font-bold text-emerald-600 dark:text-emerald-400">R${parseFloat(l.value || l.earnedAmount || 0).toFixed(2)}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        `;
+    },
 
-        if (totalEl) totalEl.textContent = isAdmin ? Utils.formatZAR(total) : '••••••';
-    }
-
-    async function refresh() {
-    var user = API.getUser();
-    var isAdmin = user && user.role === 'admin';
-
-    // Hide export button for techs
-    var exportBtn = document.getElementById('btn-export-logs');
-    if (exportBtn) {
-        if (isAdmin) exportBtn.classList.remove('hidden');
-        else exportBtn.classList.add('hidden');
-    }
-
-    // Hide "Clear History" button for techs (if you have one)
-    var clearBtn = document.getElementById('btn-clear-logs');
-    if (clearBtn) {
-        if (isAdmin) clearBtn.classList.remove('hidden');
-        else clearBtn.classList.add('hidden');
-    }
-
-    var res = await API.getLogs(true);
-    if (!res.ok) {
-        Utils.toast('Failed to load logs', 'error');
-        return;
-    }
-
-    async function refresh() {
-        var res = await API.getLogs(true);
-        if (!res.ok) {
-            Utils.toast('Failed to load logs', 'error');
+    exportCSV() {
+        const logs = this.getLogs();
+        if (!logs.length) {
+            if (window.Utils) Utils.showToast("No time logs to export", "error");
+            else alert("No time logs to export.");
             return;
         }
-        allLogs = res.data || [];
-        render();
-    }
 
-        function exportCSV() {
-        var user = API.getUser();
-        if (!user || user.role !== 'admin') {
-            Utils.toast('Only admins can export payroll', 'error');
-            return;
+        if (window.Utils && typeof Utils.exportToCSV === 'function') {
+            Utils.exportToCSV(`Cedar3_TimeLogs_${new Date().toISOString().slice(0, 10)}.csv`, logs);
+        } else {
+            // Standalone CSV export fallback
+            const headers = ["Staff", "Clock In", "Clock Out", "Duration (hrs)", "Notes", "Value (ZAR)"];
+            const rows = logs.map(l => [
+                `"${l.emp || l.staff || ''}"`,
+                `"${l.startTime || l.clockIn || ''}"`,
+                `"${l.endTime || l.clockOut || ''}"`,
+                `"${l.duration || l.hoursWorked || 0}"`,
+                `"${(l.notes || l.tasks || '').replace(/"/g, '""')}"`,
+                `"${l.value || l.earnedAmount || 0}"`
+            ]);
+
+            const csvContent = "data:text/csv;charset=utf-8," + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", `Cedar3_TimeLogs_${new Date().toISOString().slice(0, 10)}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
         }
-    
     }
-        var user = API.getUser();
-        var isAdmin = user && user.role === 'admin';
+};
 
-        var headers = ['ID', 'Employee', 'Clock In', 'Clock Out', 'Hours Worked', 'Tasks', 'Earned (ZAR)'];
-        var rows = [headers.join(',')];
-
-        for (var i = 0; i < allLogs.length; i++) {
-            var l = allLogs[i];
-            var tasks = (l.tasks || '').replace(/"/g, '""').replace(/\n/g, ' ');
-            rows.push([
-                l.id || '',
-                '"' + (l.employee || '') + '"',
-                '"' + (l.clockIn || '') + '"',
-                '"' + (l.clockOut || '') + '"',
-                Number(l.hoursWorked || 0).toFixed(2),
-                '"' + tasks + '"',
-                isAdmin ? Number(l.earnedAmount || 0).toFixed(2) : ''
-            ].join(','));
-        }
-
-        var blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8' });
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url;
-        a.download = 'Cedar3_Time_Logs_' + new Date().toISOString().slice(0, 10) + '.csv';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        Utils.toast('CSV exported', 'success');
-    }
-
-    return { refresh: refresh, render: render, exportCSV: exportCSV };
-})();
+// Global alias window mapping to prevent 'exportCSV is not defined' error
+window.exportCSV = function() {
+    Logs.exportCSV();
+};

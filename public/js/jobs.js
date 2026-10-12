@@ -1,531 +1,202 @@
+
 // ============================================
 // Cedar3 — Jobs Kanban Board
 // Full featured: create, edit, checklist, invoice, WhatsApp, S/N lookup
 // ============================================
 
-window.Jobs = (function () {
-    var STATUSES = ['Pending', 'In Progress', 'On Hold', 'Completed'];
-    var COLUMN_IDS = {
-        'Pending':     'kanban-pending',
-        'In Progress': 'kanban-in-progress',
-        'On Hold':     'kanban-on-hold',
-        'Completed':   'kanban-completed'
-    };
-    var COUNT_IDS = {
-        'Pending':     'count-pending',
-        'In Progress': 'count-in-progress',
-        'On Hold':     'count-on-hold',
-        'Completed':   'count-completed'
-    };
+const Jobs = {
+    init() {
+        this.render();
+    },
 
-    var allJobs = [];
-    var editingJobId = null;   // null = create mode, string = edit mode
+    getJobs() {
+        return JSON.parse(localStorage.getItem(CONFIG.STORAGE_KEYS.JOBS)) || [];
+    },
 
-    // ---------- Helpers ----------
+    saveJobs(jobs) {
+        localStorage.setItem(CONFIG.STORAGE_KEYS.JOBS, JSON.stringify(jobs));
+        this.render();
+    },
 
-    function findJob(id) {
-        for (var i = 0; i < allJobs.length; i++) {
-            if (allJobs[i].id === id) return allJobs[i];
-        }
-        return null;
-    }
-
-    function priorityBadge(p) {
-        if (p === 'High')   return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">HIGH</span>';
-        if (p === 'Urgent') return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-100 text-rose-800 animate-pulse">URGENT</span>';
-        return '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-600">NORMAL</span>';
-    }
-
-    function checklistProgress(job) {
-        var done = 0, total = 0;
-        if (job.checklist && job.checklist.length) {
-            total = job.checklist.length;
-            for (var i = 0; i < job.checklist.length; i++) {
-                if (job.checklist[i].done) done++;
-            }
-        }
-        return { done: done, total: total, pct: total > 0 ? Math.round((done / total) * 100) : 0 };
-    }
-
-    // ---------- Render ----------
-
-    function cardHTML(job) {
-        var prog = checklistProgress(job);
-
-        var statusOptions = '';
-        for (var s = 0; s < STATUSES.length; s++) {
-            var st = STATUSES[s];
-            statusOptions += '<option value="' + st + '"' + (job.status === st ? ' selected' : '') + '>' + st + '</option>';
-        }
-
-        return ''
-            + '<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">'
-            +   '<div class="flex justify-between items-start gap-2">'
-            +     '<span class="font-mono font-bold text-xs text-emerald-600 dark:text-emerald-400">' + Utils.esc(job.id) + '</span>'
-            +     '<div class="flex items-center gap-1">'
-            +       '<button onclick="Jobs.whatsApp(\'' + job.id + '\')" title="WhatsApp client" class="p-1 rounded bg-emerald-50 dark:bg-emerald-950 hover:bg-emerald-100 text-emerald-600 text-[11px]"><i class="fa-brands fa-whatsapp font-bold"></i></button>'
-            +       '<button onclick="Jobs.openInvoice(\'' + job.id + '\')" title="Invoice / Quote" class="p-1 rounded bg-slate-100 dark:bg-slate-700 hover:bg-blue-100 text-slate-600 dark:text-slate-300 hover:text-blue-600 text-[11px]"><i class="fa-solid fa-file-invoice-dollar"></i></button>'
-            +       '<button onclick="Jobs.openEdit(\'' + job.id + '\')" title="Edit job" class="p-1 rounded bg-slate-100 dark:bg-slate-700 hover:bg-emerald-100 text-slate-600 dark:text-slate-300 hover:text-emerald-600 text-[11px]"><i class="fa-solid fa-pen"></i></button>'
-            +     '</div>'
-            +   '</div>'
-            +   '<div>'
-            +     '<h5 class="font-bold text-xs text-slate-900 dark:text-white leading-snug">' + Utils.esc(job.device || 'Unnamed device') + '</h5>'
-            +     '<p class="text-[11px] text-slate-500 font-medium">' + Utils.esc(job.customer || '') + '</p>'
-            +     (job.phone ? '<p class="text-[10px] text-emerald-600 dark:text-emerald-400 mt-0.5"><i class="fa-solid fa-phone mr-1"></i>' + Utils.esc(job.phone) + '</p>' : '')
-            +     (job.sn ? '<p class="text-[10px] text-slate-400 mt-0.5"><i class="fa-solid fa-barcode mr-1"></i>' + Utils.esc(job.sn) + '</p>' : '')
-            +   '</div>'
-            +   '<div class="space-y-1">'
-            +     '<div class="flex justify-between items-center text-[10px] text-slate-500">'
-            +       '<span>Checklist</span>'
-            +       '<span>' + prog.pct + '% (' + prog.done + '/' + prog.total + ')</span>'
-            +     '</div>'
-            +     '<div class="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden">'
-            +       '<div class="bg-emerald-500 h-full rounded-full transition-all duration-300" style="width: ' + prog.pct + '%"></div>'
-            +     '</div>'
-            +   '</div>'
-            +   '<div class="pt-2 border-t border-slate-100 dark:border-slate-700/60 flex items-center justify-between text-xs gap-2">'
-            +     '<span class="font-semibold text-slate-600 dark:text-slate-400 truncate"><i class="fa-solid fa-user-gear mr-1"></i>' + Utils.esc(job.assignedTech || '—') + '</span>'
-            +     '<select onchange="Jobs.changeStatus(\'' + job.id + '\', this.value)" class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[11px] rounded px-1.5 py-1 outline-none">'
-            +       statusOptions
-            +     '</select>'
-            +   '</div>'
-            + '</div>';
-    }
-
-    function render() {
-        var searchEl = document.getElementById('job-search-input');
-        var filterEl = document.getElementById('job-tech-filter');
-        var search = (searchEl ? searchEl.value : '').toLowerCase();
-        var techFilter = filterEl ? filterEl.value : 'ALL';
-
-        var buckets = { 'Pending': [], 'In Progress': [], 'On Hold': [], 'Completed': [] };
-        for (var i = 0; i < allJobs.length; i++) {
-            var j = allJobs[i];
-            var matchSearch = !search
-                || (j.customer || '').toLowerCase().indexOf(search) !== -1
-                || (j.device || '').toLowerCase().indexOf(search) !== -1
-                || (j.id || '').toLowerCase().indexOf(search) !== -1
-                || (j.phone || '').toLowerCase().indexOf(search) !== -1
-                || (j.sn || '').toLowerCase().indexOf(search) !== -1;
-            var matchTech = techFilter === 'ALL' || j.assignedTech === techFilter;
-            if (matchSearch && matchTech && buckets[j.status]) {
-                buckets[j.status].push(j);
-            }
-        }
-
-        for (var k = 0; k < STATUSES.length; k++) {
-            var status = STATUSES[k];
-            var col = document.getElementById(COLUMN_IDS[status]);
-            var count = document.getElementById(COUNT_IDS[status]);
-            if (count) count.textContent = String(buckets[status].length);
-            if (!col) continue;
-
-            if (buckets[status].length === 0) {
-                col.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-6">No jobs here.</p>';
-                continue;
-            }
-
-            var html = '';
-            for (var b = 0; b < buckets[status].length; b++) {
-                html += cardHTML(buckets[status][b]);
-            }
-            col.innerHTML = html;
-        }
-    }
-
-    // ---------- Data sync ----------
-
-    async function refresh() {
-        var res = await API.getJobs(true);
-        if (!res.ok) {
-            Utils.toast('Failed to load jobs', 'error');
-            return;
-        }
-        allJobs = res.data || [];
-        render();
-    }
-
-    async function changeStatus(jobId, newStatus) {
-        var res = await API.updateJob(jobId, { status: newStatus });
-        if (res.ok) {
-            Utils.toast('Moved ' + jobId + ' to ' + newStatus, 'success');
-            await refresh();
+    // OPEN NEW JOB MODAL (Handles both function names)
+    openCreate() {
+        const modal = document.getElementById('modal-job');
+        if (modal) {
+            modal.classList.remove('hidden');
         } else {
-            Utils.toast((res.data && res.data.error) || 'Update failed', 'error');
+            console.error("Modal element '#modal-job' not found in DOM.");
         }
-    }
+    },
 
-    // ---------- Create / Edit Modal ----------
+    openJobModal() {
+        this.openCreate();
+    },
 
-    function openCreate() {
-        editingJobId = null;
-        document.getElementById('job-modal-title').innerHTML =
-            '<i class="fa-solid fa-file-invoice text-emerald-600"></i> New Job Ticket / Intake';
-        document.getElementById('job-form').reset();
-        document.getElementById('job-id').value = '';
-        renderChecklistEditor([]);
-        document.getElementById('modal-job').classList.remove('hidden');
-    }
-
-    function openEdit(jobId) {
-        var job = findJob(jobId);
-        if (!job) return;
-
-        editingJobId = jobId;
-        document.getElementById('job-modal-title').innerHTML =
-            '<i class="fa-solid fa-pen text-emerald-600"></i> Edit Job ' + Utils.esc(jobId);
-        document.getElementById('job-id').value = job.id;
-        document.getElementById('job-customer').value = job.customer || '';
-        document.getElementById('job-phone').value = job.phone || '';
-        document.getElementById('job-address').value = job.address || '';
-        document.getElementById('job-device').value = job.device || '';
-        document.getElementById('job-sn').value = job.sn || '';
-        document.getElementById('job-cables').value = job.cables || '';
-        document.getElementById('job-faults').value = job.faults || '';
-        document.getElementById('job-assigned-tech').value = job.assignedTech || 'Receptionist';
-        document.getElementById('job-priority').value = job.priority || 'Normal';
-        document.getElementById('job-status').value = job.status || 'Pending';
-        document.getElementById('job-followup').value = job.followup || 'Client Notified';
-        document.getElementById('job-tech-report').value = job.techReport || '';
-        document.getElementById('job-parts-needed').value = job.partsNeeded || '';
-        document.getElementById('job-cost').value = job.cost || 0;
-
-        renderChecklistEditor(job.checklist || []);
-        document.getElementById('modal-job').classList.remove('hidden');
-    }
-
-    function closeJobModal() {
-        document.getElementById('modal-job').classList.add('hidden');
-        editingJobId = null;
-    }
-
-    async function saveJob(e) {
-        e.preventDefault();
-
-        // Build job object from form
-        var jobIdInput = document.getElementById('job-id').value.trim();
-        var jobId = jobIdInput || ('JOB-' + (100 + Math.floor(Math.random() * 900)));
-
-        // Read checklist from DOM
-        var checklist = [];
-        var clItems = document.querySelectorAll('#checklist-editor [data-check-index]');
-        for (var i = 0; i < clItems.length; i++) {
-            var cb = clItems[i].querySelector('input[type="checkbox"]');
-            var txt = clItems[i].querySelector('input[type="text"]');
-            if (txt && txt.value.trim()) {
-                checklist.push({ task: txt.value.trim(), done: cb ? cb.checked : false });
-            }
+    // CLOSE NEW JOB MODAL
+    closeJobModal() {
+        const modal = document.getElementById('modal-job');
+        if (modal) {
+            modal.classList.add('hidden');
         }
+    },
 
-        var job = {
-            id: jobId,
-            customer: document.getElementById('job-customer').value.trim(),
-            phone: document.getElementById('job-phone').value.trim(),
-            address: document.getElementById('job-address').value.trim(),
-            device: document.getElementById('job-device').value.trim(),
-            sn: document.getElementById('job-sn').value.trim(),
-            cables: document.getElementById('job-cables').value.trim(),
-            faults: document.getElementById('job-faults').value.trim(),
-            assignedTech: document.getElementById('job-assigned-tech').value,
-            priority: document.getElementById('job-priority').value,
-            status: document.getElementById('job-status').value,
-            followup: document.getElementById('job-followup').value,
-            techReport: document.getElementById('job-tech-report').value.trim(),
-            partsNeeded: document.getElementById('job-parts-needed').value.trim(),
-            cost: parseFloat(document.getElementById('job-cost').value) || 0,
-            checklist: checklist
+    // SAVE JOB TICKET FORM
+    saveJob(e) {
+        if (e) e.preventDefault();
+        
+        const customerEl = document.getElementById('job-customer');
+        const phoneEl = document.getElementById('job-phone');
+        const deviceEl = document.getElementById('job-device');
+        const snEl = document.getElementById('job-sn');
+        const cablesEl = document.getElementById('job-cables');
+        const faultsEl = document.getElementById('job-faults');
+        const techEl = document.getElementById('job-assigned-tech');
+        const statusEl = document.getElementById('job-status');
+        const costEl = document.getElementById('job-cost');
+
+        const newJob = {
+            id: 'JOB-' + Math.floor(100 + Math.random() * 900),
+            customer: customerEl ? customerEl.value : '',
+            phone: phoneEl ? phoneEl.value : '',
+            device: deviceEl ? deviceEl.value : '',
+            sn: snEl ? snEl.value : '',
+            cables: cablesEl ? cablesEl.value : '',
+            faults: faultsEl ? faultsEl.value : '',
+            tech: techEl ? techEl.value : 'Receptionist',
+            status: statusEl ? statusEl.value : 'Pending',
+            cost: costEl ? costEl.value : '0.00'
         };
 
-        if (!job.customer || !job.device) {
-            Utils.toast('Customer and Device are required', 'warn');
+        const jobs = this.getJobs();
+        jobs.push(newJob);
+        this.saveJobs(jobs);
+
+        this.closeJobModal();
+        
+        const form = document.getElementById('job-form');
+        if (form) form.reset();
+
+        if (window.Utils) Utils.showToast("New Job Ticket Created!");
+    },
+
+    // S/N LOOKUP MODALS
+    openSNLookup() {
+        const modal = document.getElementById('modal-sn-history');
+        if (modal) modal.classList.remove('hidden');
+    },
+
+    doSNLookup() {
+        const queryEl = document.getElementById('sn-search-query');
+        const resultsBox = document.getElementById('sn-history-results');
+        if (!queryEl || !resultsBox) return;
+
+        const query = queryEl.value.toLowerCase().trim();
+        const jobs = this.getJobs();
+
+        if (!query) {
+            resultsBox.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">Enter a query above to search past repairs.</p>`;
             return;
         }
 
-        var res;
-        if (editingJobId) {
-            res = await API.updateJob(editingJobId, job);
-        } else {
-            res = await API.createJob(job);
-        }
+        const matched = jobs.filter(j => 
+            (j.sn && j.sn.toLowerCase().includes(query)) ||
+            (j.customer && j.customer.toLowerCase().includes(query)) ||
+            (j.device && j.device.toLowerCase().includes(query)) ||
+            (j.phone && j.phone.includes(query))
+        );
 
-        if (res.ok) {
-            Utils.toast(editingJobId ? 'Job updated' : 'Job ticket created', 'success');
-            closeJobModal();
-            await refresh();
-        } else {
-            Utils.toast((res.data && res.data.error) || 'Save failed', 'error');
-        }
-    }
-
-    // ---------- Checklist editor (inside modal) ----------
-
-    function renderChecklistEditor(items) {
-        var container = document.getElementById('checklist-editor');
-        if (!container) return;
-        container.innerHTML = '';
-        for (var i = 0; i < items.length; i++) {
-            container.appendChild(checklistRow(items[i].task, items[i].done));
-        }
-    }
-
-    function checklistRow(task, done) {
-        var row = document.createElement('div');
-        row.className = 'flex items-center gap-2 text-xs';
-        row.setAttribute('data-check-index', '1');
-        row.innerHTML = ''
-            + '<input type="checkbox" ' + (done ? 'checked' : '') + ' class="rounded">'
-            + '<input type="text" value="' + Utils.esc(task || '') + '" placeholder="Describe a step..." class="flex-1 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-1.5 outline-none focus:ring-2 focus:ring-emerald-500">'
-            + '<button type="button" class="text-rose-500 hover:text-rose-700 px-2" onclick="this.parentElement.remove()"><i class="fa-solid fa-xmark"></i></button>';
-        return row;
-    }
-
-    function addChecklistItem() {
-        var container = document.getElementById('checklist-editor');
-        if (container) container.appendChild(checklistRow('', false));
-    }
-
-    // ---------- S/N Lookup ----------
-
-    function openSNLookup() {
-        document.getElementById('sn-search-query').value = '';
-        document.getElementById('sn-history-results').innerHTML =
-            '<p class="text-xs text-slate-400 italic text-center py-6">Enter a serial number, phone, or client name above and press Lookup.</p>';
-        document.getElementById('modal-sn-history').classList.remove('hidden');
-        setTimeout(function () {
-            document.getElementById('sn-search-query').focus();
-        }, 100);
-    }
-
-    async function doSNLookup() {
-        var q = (document.getElementById('sn-search-query').value || '').trim();
-        var container = document.getElementById('sn-history-results');
-        if (!container) return;
-
-        if (!q) {
-            container.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-6">Please enter something to search.</p>';
+        if (!matched.length) {
+            resultsBox.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">No records found matching "${query}".</p>`;
             return;
         }
 
-        container.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-6">Searching…</p>';
+        resultsBox.innerHTML = matched.map(j => `
+            <div class="p-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-xs space-y-1">
+                <div class="flex justify-between font-bold">
+                    <span class="text-emerald-600 dark:text-emerald-400">${j.id} - ${j.device}</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] bg-slate-200 dark:bg-slate-700">${j.status}</span>
+                </div>
+                <p><strong>Client:</strong> ${j.customer} (${j.phone || 'No phone'})</p>
+                <p class="font-mono text-slate-500"><strong>S/N:</strong> ${j.sn}</p>
+                <p><strong>Fault:</strong> ${j.faults || 'None recorded'}</p>
+            </div>
+        `).join('');
+    },
 
-        var res = await API.lookupJobs(q);
-        if (!res.ok) {
-            container.innerHTML = '<p class="text-xs text-rose-500 text-center py-6">Lookup failed. Try again.</p>';
-            return;
-        }
+    render() {
+        // Kanban Rendering Logic
+        const jobs = this.getJobs();
+        const searchInput = document.getElementById('job-search-input');
+        const filterTech = document.getElementById('job-tech-filter');
+        
+        const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const selectedTech = filterTech ? filterTech.value : 'ALL';
 
-        var results = res.data || [];
-        if (results.length === 0) {
-            container.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-6">No matching repair records found.</p>';
-            return;
-        }
+        const filtered = jobs.filter(j => {
+            const matchesQuery = !q || 
+                (j.id && j.id.toLowerCase().includes(q)) ||
+                (j.customer && j.customer.toLowerCase().includes(q)) ||
+                (j.device && j.device.toLowerCase().includes(q)) ||
+                (j.sn && j.sn.toLowerCase().includes(q));
 
-        var html = '';
-        for (var i = 0; i < results.length; i++) {
-            var j = results[i];
-            html += ''
-                + '<div class="p-4 bg-slate-50 dark:bg-slate-900/80 rounded-xl border border-slate-200 dark:border-slate-700 text-xs space-y-2">'
-                +   '<div class="flex justify-between items-start">'
-                +     '<div>'
-                +       '<span class="font-mono font-bold text-emerald-600">' + Utils.esc(j.id) + '</span>'
-                +       '<span class="ml-2 font-bold text-slate-800 dark:text-slate-200">' + Utils.esc(j.device || '') + '</span>'
-                +     '</div>'
-                +     '<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-200 dark:bg-slate-700">' + Utils.esc(j.status || '') + '</span>'
-                +   '</div>'
-                +   '<div class="grid grid-cols-2 gap-2 text-[11px] text-slate-600 dark:text-slate-400 font-mono">'
-                +     '<p><strong>Client:</strong> ' + Utils.esc(j.customer || '') + ' (' + Utils.esc(j.phone || 'N/A') + ')</p>'
-                +     '<p><strong>S/N:</strong> ' + Utils.esc(j.sn || 'N/A') + '</p>'
-                +     '<p><strong>Assigned:</strong> ' + Utils.esc(j.assignedTech || '') + '</p>'
-                +     '<p><strong>Cost:</strong> ' + Utils.formatZAR(j.cost || 0) + '</p>'
-                +   '</div>'
-                +   '<div class="bg-white dark:bg-slate-800 p-2 rounded border border-slate-200 dark:border-slate-700 font-mono text-[11px]">'
-                +     '<p><strong>Faults:</strong> ' + Utils.esc(j.faults || 'N/A') + '</p>'
-                +     '<p class="mt-1 text-emerald-700 dark:text-emerald-400"><strong>Repair:</strong> ' + Utils.esc(j.techReport || 'In Progress') + '</p>'
-                +   '</div>'
-                + '</div>';
+            const matchesTech = selectedTech === 'ALL' || j.tech === selectedTech;
+
+            return matchesQuery && matchesTech;
+        });
+
+        const cols = { Pending: [], 'In Progress': [], 'On Hold': [], Completed: [] };
+        filtered.forEach(j => {
+            if (cols[j.status]) cols[j.status].push(j);
+            else cols.Pending.push(j);
+        });
+
+        const mapping = { 'Pending': 'pending', 'In Progress': 'in-progress', 'On Hold': 'on-hold', 'Completed': 'completed' };
+
+        for (let stage in cols) {
+            const key = mapping[stage];
+            const colEl = document.getElementById(`kanban-${key}`);
+            const countEl = document.getElementById(`count-${key}`);
+
+            if (countEl) countEl.innerText = cols[stage].length;
+
+            if (colEl) {
+                if (!cols[stage].length) {
+                    colEl.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-4">No jobs</p>`;
+                } else {
+                    colEl.innerHTML = cols[stage].map(j => `
+                        <div class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-3.5 shadow-sm space-y-2">
+                            <div class="flex justify-between items-start">
+                                <span class="font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400">${j.id}</span>
+                                <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700">${j.tech}</span>
+                            </div>
+                            <h5 class="font-bold text-xs text-slate-900 dark:text-white">${j.device}</h5>
+                            <p class="text-[11px] text-slate-500">${j.customer} (${j.phone || 'N/A'})</p>
+                            <p class="text-[11px] text-slate-600 dark:text-slate-400 font-mono bg-slate-50 dark:bg-slate-900/50 p-1.5 rounded">S/N: ${j.sn || 'N/A'}</p>
+                            <div class="pt-1 flex gap-1.5">
+                                <button onclick="Jobs.advanceStatus('${j.id}')" class="text-[10px] bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:bg-emerald-950/50 dark:text-emerald-300 px-2 py-1 rounded font-bold">Move &rarr;</button>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            }
         }
-        container.innerHTML = html;
+    },
+
+    advanceStatus(id) {
+        const jobs = this.getJobs();
+        const job = jobs.find(j => j.id === id);
+        if (job) {
+            const stages = ['Pending', 'In Progress', 'On Hold', 'Completed'];
+            let idx = (stages.indexOf(job.status) + 1) % stages.length;
+            job.status = stages[idx];
+            this.saveJobs(jobs);
+        }
+    },
+
+    refresh() {
+        this.render();
     }
+};
 
-    // ---------- Invoice Modal ----------
-
-    var activeInvoiceJobId = null;
-    var activeInvoiceMode = 'INVOICE';
-
-    function openInvoice(jobId) {
-        var job = findJob(jobId);
-        if (!job) return;
-
-        activeInvoiceJobId = jobId;
-        activeInvoiceMode = 'INVOICE';
-
-        document.getElementById('inv-client-name').textContent = job.customer || 'N/A';
-        document.getElementById('inv-client-phone').textContent = 'Phone: ' + (job.phone || 'N/A');
-        document.getElementById('inv-client-address').textContent = 'Address: ' + (job.address || 'N/A');
-        document.getElementById('inv-device-model').textContent = job.device || 'N/A';
-        document.getElementById('inv-sn').textContent = 'S/N: ' + (job.sn || 'N/A');
-        document.getElementById('inv-assigned-tech').textContent = 'Tech: ' + (job.assignedTech || '');
-        document.getElementById('inv-line-tech-notes').textContent = job.techReport || job.faults || 'Standard Diagnostic & Repair Service';
-        document.getElementById('inv-line-parts').textContent = job.partsNeeded || 'None specified / Replacement components';
-        document.getElementById('inv-labor-cost').textContent = Utils.formatZAR(job.cost || 0);
-        document.getElementById('inv-total-amount').textContent = Utils.formatZAR(job.cost || 0);
-        document.getElementById('inv-doc-num').textContent = 'INV-' + job.id;
-        document.getElementById('inv-doc-date').textContent = 'Date: ' + new Date().toISOString().slice(0, 10);
-        document.getElementById('inv-bank-ref').textContent = job.id + ' / ' + (job.customer || '').split(' ')[0];
-
-        setInvoiceMode('INVOICE');
-        document.getElementById('modal-invoice').classList.remove('hidden');
-    }
-
-    function setInvoiceMode(mode) {
-        activeInvoiceMode = mode;
-        var badge = document.getElementById('invoice-type-badge');
-        var btnInv = document.getElementById('btn-toggle-invoice');
-        var btnQuote = document.getElementById('btn-toggle-quote');
-        if (!badge || !btnInv || !btnQuote) return;
-
-        if (mode === 'QUOTE') {
-            badge.textContent = 'OFFICIAL QUOTATION';
-            badge.className = 'inline-block px-3 py-1 bg-blue-700 text-white font-mono font-bold text-sm rounded uppercase';
-            btnQuote.className = 'px-3 py-1.5 rounded-lg bg-blue-600 text-white text-xs font-bold';
-            btnInv.className = 'px-3 py-1.5 rounded-lg bg-slate-200 text-slate-800 text-xs font-bold';
-        } else {
-            badge.textContent = 'TAX INVOICE';
-            badge.className = 'inline-block px-3 py-1 bg-emerald-700 text-white font-mono font-bold text-sm rounded uppercase';
-            btnInv.className = 'px-3 py-1.5 rounded-lg bg-emerald-600 text-white text-xs font-bold';
-            btnQuote.className = 'px-3 py-1.5 rounded-lg bg-slate-200 text-slate-800 text-xs font-bold';
-        }
-    }
-
-    function sendInvoiceWhatsApp() {
-        if (!activeInvoiceJobId) return;
-        var job = findJob(activeInvoiceJobId);
-        if (!job) return;
-        if (!job.phone) {
-            Utils.toast('No phone number on file for this client', 'warn');
-            return;
-        }
-
-        var phone = String(job.phone).replace(/\D/g, '');
-        if (phone.charAt(0) === '0') phone = '27' + phone.slice(1);
-
-        var label = activeInvoiceMode === 'QUOTE' ? 'Quotation' : 'Tax Invoice';
-        var msg = 'Hi ' + (job.customer || 'there') + ', here is your Cedar3 Technology ' + label
-            + ' for ' + (job.device || 'your repair')
-            + ' (Ref: ' + job.id + ').\n\n'
-            + 'Total Due: ' + Utils.formatZAR(job.cost || 0) + '\n'
-            + 'Bank: FNB Cheque Account\n'
-            + 'Acc No: 62891042981\n'
-            + 'Branch: 250655\n'
-            + 'Reference: ' + job.id + '\n\n'
-            + 'Thank you for choosing Cedar3 Technology!';
-
-        window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(msg), '_blank');
-    }
-
-    function copyInvoiceText() {
-        if (!activeInvoiceJobId) return;
-        var job = findJob(activeInvoiceJobId);
-        if (!job) return;
-
-        var text = 'CUSTOMER: ' + (job.customer || '')
-            + '\nPHONE: ' + (job.phone || 'N/A')
-            + '\nADDRESS: ' + (job.address || 'N/A')
-            + '\nITEM: ' + (job.device || '') + ' (S/N: ' + (job.sn || 'N/A') + ')'
-            + '\nDESCRIPTION: ' + (job.techReport || job.faults || '')
-            + '\nAMOUNT: ' + Utils.formatZAR(job.cost || 0);
-
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(text).then(function () {
-                Utils.toast('Copied to clipboard', 'success');
-            });
-        } else {
-            alert(text);
-        }
-    }
-
-    // ---------- WhatsApp direct (from card) ----------
-
-    function whatsApp(jobId) {
-        var job = findJob(jobId);
-        if (!job) return;
-        if (!job.phone) {
-            Utils.toast('No client phone recorded for this ticket', 'error');
-            return;
-        }
-
-        var phone = String(job.phone).replace(/\D/g, '');
-        if (phone.charAt(0) === '0') phone = '27' + phone.slice(1);
-
-        var msg;
-        if (job.status === 'Completed') {
-            msg = 'Hi ' + job.customer + ', your ' + job.device
-                + ' repair (Ref: ' + job.id + ') is COMPLETE & READY FOR PICKUP at Cedar3 Technology! Total Due: '
-                + Utils.formatZAR(job.cost || 0) + '.';
-        } else if (job.status === 'On Hold') {
-            msg = 'Hi ' + job.customer + ', update on your ' + job.device
-                + ' (Ref: ' + job.id + '): Our technician (' + job.assignedTech
-                + ') is waiting for parts/approval. Please call us back!';
-        } else {
-            msg = 'Hi ' + job.customer + ', your ' + job.device
-                + ' repair ticket ' + job.id + ' is IN PROGRESS at Cedar3 Technology under '
-                + job.assignedTech + '. We will notify you when testing is complete!';
-        }
-
-        window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(msg), '_blank');
-        Utils.toast('Opening WhatsApp for ' + job.customer, 'success');
-    }
-
-    // ---------- Export ----------
-
-    function exportAllCSV() {
-        if (allJobs.length === 0) {
-            Utils.toast('No jobs to export', 'warn');
-            return;
-        }
-        var headers = ['InvoiceNumber', 'CustomerName', 'CustomerPhone', 'CustomerAddress', 'ItemName', 'ItemDescription', 'UnitPrice', 'Quantity'];
-        var rows = [headers.join(',')];
-        for (var i = 0; i < allJobs.length; i++) {
-            var j = allJobs[i];
-            rows.push([
-                '"' + (j.id || '') + '"',
-                '"' + (j.customer || '') + '"',
-                '"' + (j.phone || '') + '"',
-                '"' + (j.address || '') + '"',
-                '"' + (j.device || '') + '"',
-                '"' + (j.techReport || j.faults || '').replace(/"/g, '""') + '"',
-                Number(j.cost || 0).toFixed(2),
-                1
-            ].join(','));
-        }
-        var blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8' });
-        var url = URL.createObjectURL(blob);
-        var a = document.createElement('a');
-        a.href = url;
-        a.download = 'Cedar3_All_Jobs_' + new Date().toISOString().slice(0, 10) + '.csv';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-        Utils.toast('Exported all jobs', 'success');
-    }
-
-    return {
-        refresh: refresh,
-        render: render,
-        changeStatus: changeStatus,
-        openCreate: openCreate,
-        openEdit: openEdit,
-        closeJobModal: closeJobModal,
-        saveJob: saveJob,
-        addChecklistItem: addChecklistItem,
-        openSNLookup: openSNLookup,
-        doSNLookup: doSNLookup,
-        openInvoice: openInvoice,
-        setInvoiceMode: setInvoiceMode,
-        sendInvoiceWhatsApp: sendInvoiceWhatsApp,
-        copyInvoiceText: copyInvoiceText,
-        whatsApp: whatsApp,
-        exportAllCSV: exportAllCSV
-    };
-})();
+// Global fallback mapping
+window.openCreate = function() { Jobs.openCreate(); };
