@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar3 Technology — Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .pin-key {
+            transition: all 0.1s ease;
+        }
+        .pin-key:active {
+            transform: scale(0.95);
+        }
+        .pin-dot {
+            transition: background-color 0.15s ease;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 flex items-center justify-center p-4">
+
+    <div class="w-full max-w-5xl">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center justify-center gap-3 mb-3">
+                <div class="p-3 bg-emerald-600 text-white rounded-xl shadow-lg">
+                    <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                </div>
+                <div class="text-left">
+                    <h1 class="text-2xl font-bold text-white">Cedar3 Technology</h1>
+                    <p class="text-xs text-slate-400">Workshop Remote Management System</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Two Login Panels -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- ADMIN LOGIN -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-2xl border border-slate-200">
+                <div class="text-center mb-6">
+                    <div class="w-14 h-14 mx-auto rounded-full bg-amber-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-user-shield text-2xl text-amber-600"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-900">Administrator</h2>
+                    <p class="text-xs text-slate-500 mt-1">Remote monitoring & full access</p>
+                </div>
+
+                <form id="admin-form" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Username</label>
+                        <input type="text" id="admin-username" required value="charles"
+                               class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 uppercase mb-1">Password</label>
+                        <input type="password" id="admin-password" required
+                               class="w-full bg-slate-50 border border-slate-300 rounded-xl p-3 outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                    <button type="submit" id="admin-btn"
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <span>Sign In as Admin</span>
+                    </button>
+                    <p id="admin-error" class="text-xs text-rose-600 hidden text-center font-semibold"></p>
+                </form>
+            </div>
+
+            <!-- TECHNICIAN LOGIN -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-2xl border border-slate-200">
+                <div class="text-center mb-6">
+                    <div class="w-14 h-14 mx-auto rounded-full bg-emerald-100 flex items-center justify-center mb-3">
+                        <i class="fa-solid fa-user-gear text-2xl text-emerald-600"></i>
+                    </div>
+                    <h2 class="text-xl font-bold text-slate-900">Technician</h2>
+                    <p class="text-xs text-slate-500 mt-1">Quick PIN access for workshop floor</p>
+                </div>
+
+                <!-- Step 1: Who -->
+                <div id="tech-step-user">
+                    <label class="block text-xs font-semibold text-slate-600 uppercase mb-2 text-center">Select Your Name</label>
+                    <div class="grid grid-cols-3 gap-2 mb-4">
+                        <button type="button" onclick="selectTech('reception')" data-tech="reception"
+                                class="tech-btn p-3 rounded-xl border-2 border-slate-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-semibold text-xs flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-headset text-lg text-purple-500"></i>
+                            <span>Receptionist</span>
+                        </button>
+                        <button type="button" onclick="selectTech('talent')" data-tech="talent"
+                                class="tech-btn p-3 rounded-xl border-2 border-slate-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-semibold text-xs flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-microchip text-lg text-emerald-500"></i>
+                            <span>Talent</span>
+                        </button>
+                        <button type="button" onclick="selectTech('simba')" data-tech="simba"
+                                class="tech-btn p-3 rounded-xl border-2 border-slate-200 hover:border-emerald-500 hover:bg-emerald-50 transition font-semibold text-xs flex flex-col items-center gap-1">
+                            <i class="fa-solid fa-tools text-lg text-blue-500"></i>
+                            <span>Simba</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: PIN -->
+                <div id="tech-step-pin" class="hidden">
+                    <div class="flex items-center justify-between mb-3">
+                        <button type="button" onclick="backToUserSelect()" class="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1">
+                            <i class="fa-solid fa-arrow-left"></i> Back
+                        </button>
+                        <span id="tech-selected-name" class="text-sm font-bold text-slate-800"></span>
+                    </div>
+
+                    <!-- PIN dots -->
+                    <div class="flex justify-center gap-3 mb-5">
+                        <div class="pin-dot w-4 h-4 rounded-full bg-slate-200" data-slot="0"></div>
+                        <div class="pin-dot w-4 h-4 rounded-full bg-slate-200" data-slot="1"></div>
+                        <div class="pin-dot w-4 h-4 rounded-full bg-slate-200" data-slot="2"></div>
+                        <div class="pin-dot w-4 h-4 rounded-full bg-slate-200" data-slot="3"></div>
+                    </div>
+
+                    <!-- Keypad -->
+                    <div class="grid grid-cols-3 gap-2">
+                        <button type="button" onclick="pinKey('1')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">1</button>
+                        <button type="button" onclick="pinKey('2')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">2</button>
+                        <button type="button" onclick="pinKey('3')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">3</button>
+                        <button type="button" onclick="pinKey('4')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">4</button>
+                        <button type="button" onclick="pinKey('5')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">5</button>
+                        <button type="button" onclick="pinKey('6')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">6</button>
+                        <button type="button" onclick="pinKey('7')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">7</button>
+                        <button type="button" onclick="pinKey('8')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">8</button>
+                        <button type="button" onclick="pinKey('9')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">9</button>
+                        <button type="button" onclick="pinClear()" class="pin-key p-4 rounded-xl bg-amber-100 hover:bg-amber-200 font-bold text-sm">Clear</button>
+                        <button type="button" onclick="pinKey('0')" class="pin-key p-4 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-lg">0</button>
+                        <button type="button" onclick="pinBackspace()" class="pin-key p-4 rounded-xl bg-rose-100 hover:bg-rose-200 font-bold text-sm">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </button>
+                    </div>
+                    <p id="tech-error" class="text-xs text-rose-600 hidden text-center font-semibold mt-3"></p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-xs text-slate-500 mt-6">©2026 Cedar3 Technology · Workshop Management System</p>
+    </div>
+
+    <!-- Inside login.html -->
+<script src="scripts/config.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/api.js"></script>
+
+<script>
+      // If already logged in, go straight to home
+    if (API.isLoggedIn()) {
+        window.location.href = CONFIG.HOME_PAGE;
+    }
+
+    // ============ ADMIN LOGIN ============
+    document.getElementById('admin-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = document.getElementById('admin-btn');
+        const err = document.getElementById('admin-error');
+        const username = document.getElementById('admin-username').value.trim();
+        const password = document.getElementById('admin-password').value;
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Signing in...';
+        err.classList.add('hidden');
+
+        const res = API.loginAdmin(username, password);
+
+        if (res.ok) {
+            window.location.href = CONFIG.HOME_PAGE;
+        } else {
+            err.textContent = res.error || 'Login failed';
+            err.classList.remove('hidden');
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa-solid fa-right-to-bracket"></i> Sign In as Admin';
+        }
+    });
+
+    // ============ TECHNICIAN PIN LOGIN ============
+    let selectedTech = null;
+    let pinBuffer = '';
+
+    function selectTech(username) {
+        selectedTech = username;
+        pinBuffer = '';
+        updatePinDots();
+
+        // Highlight the selected button
+        document.querySelectorAll('.tech-btn').forEach(b => {
+            b.classList.remove('border-emerald-500', 'bg-emerald-50');
+            b.classList.add('border-slate-200');
+        });
+        const btn = document.querySelector(`.tech-btn[data-tech="${username}"]`);
+        if (btn) {
+            btn.classList.add('border-emerald-500', 'bg-emerald-50');
+            btn.classList.remove('border-slate-200');
+        }
+
+        // Show the selected name
+        const displayNames = { reception: 'Receptionist', talent: 'Talent', simba: 'Simba' };
+        const nameEl = document.getElementById('tech-selected-name');
+        if (nameEl) nameEl.textContent = displayNames[username] || username;
+
+        // Switch panels
+        const stepUser = document.getElementById('tech-step-user');
+        const stepPin = document.getElementById('tech-step-pin');
+        if (stepUser) stepUser.classList.add('hidden');
+        if (stepPin) stepPin.classList.remove('hidden');
+    }
+
+    function backToUserSelect() {
+        selectedTech = null;
+        pinBuffer = '';
+        const stepUser = document.getElementById('tech-step-user');
+        const stepPin = document.getElementById('tech-step-pin');
+        const err = document.getElementById('tech-error');
+        if (stepUser) stepUser.classList.remove('hidden');
+        if (stepPin) stepPin.classList.add('hidden');
+        if (err) err.classList.add('hidden');
+    }
+
+    function updatePinDots() {
+        document.querySelectorAll('.pin-dot').forEach((dot, i) => {
+            dot.className = 'pin-dot w-4 h-4 rounded-full ' +
+                (i < pinBuffer.length ? 'bg-emerald-500' : 'bg-slate-200');
+        });
+    }
+
+    function pinKey(digit) {
+        if (pinBuffer.length >= 4) return;
+        pinBuffer += digit;
+        updatePinDots();
+        if (pinBuffer.length === 4) {
+            setTimeout(attemptTechLogin, 200);
+        }
+    }
+
+    function pinClear() {
+        pinBuffer = '';
+        updatePinDots();
+    }
+
+    function pinBackspace() {
+        pinBuffer = pinBuffer.slice(0, -1);
+        updatePinDots();
+    }
+
+    function attemptTechLogin() {
+        const err = document.getElementById('tech-error');
+        err.classList.add('hidden');
+
+        const res = API.loginTech(selectedTech, pinBuffer);
+
+        if (res.ok) {
+            window.location.href = CONFIG.HOME_PAGE;
+        } else {
+            err.textContent = res.error || 'Wrong PIN';
+            err.classList.remove('hidden');
+            pinBuffer = '';
+            updatePinDots();
+            document.querySelectorAll('.pin-dot').forEach(d => d.classList.add('bg-rose-500'));
+            setTimeout(() => updatePinDots(), 500);
+        }
+    }
+
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if (!selectedTech) return;
+        if (e.key >= '0' && e.key <= '9') pinKey(e.key);
+        if (e.key === 'Backspace') pinBackspace();
+        if (e.key === 'Escape') backToUserSelect();
+    });
+</script>
+
+</body>
+</html>

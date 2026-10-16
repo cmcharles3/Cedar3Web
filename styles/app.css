@@ -1,0 +1,19 @@
+/* app.css — Cedar3 custom styles (Tailwind comes from CDN) */
+
+.custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 20px; }
+.dark .custom-scrollbar::-webkit-scrollbar-thumb { background-color: #334155; }
+
+.conn-checking { background-color: #f59e0b; animation: pulse 1.5s infinite; }
+.conn-online   { background-color: #22c55e; }
+.conn-offline  { background-color: #ef4444; }
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+
+@media print {
+  body * { visibility: hidden; }
+  #modal-invoice, #modal-invoice * { visibility: visible; }
+  #modal-invoice { position: absolute; left: 0; top: 0; width: 100%; background: white !important; padding: 0 !important; }
+  #modal-invoice .no-print { display: none !important; }
+}
