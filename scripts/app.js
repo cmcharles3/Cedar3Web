@@ -68,6 +68,18 @@ window.App = (function () {
             ClockIn.start();
         }
 
+        if (window.ClockIn && ClockIn.start) {
+            ClockIn.start();
+        }
+
+        // Pre-render so tab contents show instantly on first switch
+        if (window.Jobs && typeof Jobs.render === 'function') Jobs.render();
+        if (window.Logs && typeof Logs.render === 'function') Logs.render();
+
+        if (user.role === 'technician') {
+            setTimeout(() => switchTab('clockin'), 100);
+        }
+
         // Route technicians to clock-in AFTER rendering starts
         if (user.role === 'technician') {
             setTimeout(() => switchTab('clockin'), 100);
@@ -122,11 +134,22 @@ window.App = (function () {
             activeMobile.className = 'mobile-nav-btn flex-1 py-2 text-xs font-semibold text-center rounded-md bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-400 shadow-sm';
         }
 
-        if (tabId === 'dashboard' && window.Dashboard) Dashboard.refresh();
-        if (tabId === 'clockin' && window.ClockIn) ClockIn.refresh();
-        if (tabId === 'jobs' && window.Jobs) Jobs.refresh();
-        if (tabId === 'logs' && window.Logs) Logs.refresh();
-    }
+        if (tabId === 'dashboard' && window.Dashboard && typeof Dashboard.refresh === 'function') {
+            Dashboard.refresh();
+            }
+            if (tabId === 'clockin' && window.ClockIn) {
+                if (typeof ClockIn.refresh === 'function') ClockIn.refresh();
+                if (typeof ClockIn.start === 'function') ClockIn.start();
+            }
+            if (tabId === 'jobs' && window.Jobs) {
+                if (typeof Jobs.render === 'function') Jobs.render();
+                else if (typeof Jobs.refresh === 'function') Jobs.refresh();
+            }
+            if (tabId === 'logs' && window.Logs) {
+                if (typeof Logs.render === 'function') Logs.render();
+                else if (typeof Logs.refresh === 'function') Logs.refresh();
+            }
+        }
 
     function toggleDarkMode() {
         const isDark = document.documentElement.classList.toggle('dark');
