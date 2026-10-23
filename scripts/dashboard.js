@@ -1,4 +1,4 @@
-// ============================================
+﻿// ============================================
 // Cedar3 — Dashboard Tab (Admin Remote Monitoring)
 // ============================================
 
@@ -263,11 +263,65 @@ window.Dashboard = (function () {
         }, 1000);
     }
 
+        function downloadBackup() {
+        Utils.toast('Preparing backup…', 'info');
+        API.backupDB().then(function (blob) {
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'cedar3_backup_' + new Date().toISOString().slice(0, 10) + '.json';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+            Utils.toast('Backup downloaded successfully!', 'success');
+        }).catch(function (err) {
+            Utils.toast('Backup failed: ' + err.message, 'error');
+        });
+    }
+
+    function triggerRestore() {
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json,application/json';
+        input.onchange = function (e) {
+            var file = e.target.files[0];
+            if (!file) return;
+
+            if (!confirm('WARNING: This will overwrite the entire database with the backup file. All current data will be lost.\n\nAre you sure?')) return;
+
+            var reader = new FileReader();
+            reader.onload = async function (evt) {
+                try {
+                    var json = JSON.parse(evt.target.result);
+                    Utils.toast('Uploading database…', 'info');
+
+                    var res = await API.restoreDB(json);
+                    if (res.ok) {
+                        Utils.toast('Restore successful! Server is restarting…', 'success');
+                        setTimeout(function () {
+                            localStorage.clear();
+                            window.location.reload();
+                        }, 3000);
+                    } else {
+                        Utils.toast((res.data && res.data.error) || res.error || 'Restore failed.', 'error');
+                    }
+                } catch (err) {
+                    Utils.toast('Invalid JSON file.', 'error');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
     return {
         refresh: refresh,
         refreshActivity: refreshActivity,
         forceClockOut: forceClockOut,
         startTicker: startTicker,
+        downloadBackup: downloadBackup,
+        triggerRestore: triggerRestore,
         TECH_ORDER: TECH_ORDER
     };
 })();
