@@ -86,6 +86,7 @@ window.API = (function () {
         async lookupJobs(query) { return request('/api/jobs/lookup?q=' + encodeURIComponent(query)); },
         async createJob(job) { return request('/api/jobs', { method: 'POST', body: job }); },
         async updateJob(id, patch) { return request('/api/jobs/' + encodeURIComponent(id), { method: 'PATCH', body: patch }); },
+        async deleteJob(id) { return request('/api/jobs/' + encodeURIComponent(id), { method: 'DELETE' }); },
 
         async getLogs(all) { return request('/api/logs' + (all ? '?all=1' : '')); },
         async getAudit(limit) { return request('/api/audit?limit=' + (limit || 200)); },

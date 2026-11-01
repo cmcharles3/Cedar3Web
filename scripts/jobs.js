@@ -45,6 +45,18 @@ window.Jobs = (function () {
         }
         var pct = totalCount > 0 ? Math.round((doneCount / totalCount) * 100) : 0;
 
+        // --- Job Age Counter ---
+        var ageText = "";
+        if (job.status !== 'Completed') {
+            var createdDate = job.createdAt ? new Date(job.createdAt) : new Date();
+            if (!isNaN(createdDate.getTime())) {
+                var diffTime = Math.abs(new Date() - createdDate);
+                var diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                var ageColor = diffDays <= 1 ? 'text-emerald-700 bg-emerald-100' : (diffDays <= 3 ? 'text-amber-700 bg-amber-100' : 'text-rose-700 bg-rose-100');
+                ageText = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full ' + ageColor + '"><i class="fa-solid fa-hourglass-half mr-1"></i>' + diffDays + 'd</span>';
+            }
+        }
+
         var statusOptions = '';
         for (var s = 0; s < STATUSES.length; s++) {
             statusOptions += '<option value="' + STATUSES[s] + '"' + (job.status === STATUSES[s] ? ' selected' : '') + '>' + STATUSES[s] + '</option>';
@@ -60,10 +72,17 @@ window.Jobs = (function () {
             photoRow += '</div>';
         }
 
+        var user = API.getUser();
+        var isAdmin = user && user.role === 'admin';
+        var delBtn = isAdmin ? '<button onclick="Jobs.deleteJob(\'' + job.id + '\')" class="bg-rose-100 hover:bg-rose-200 text-rose-700 text-[11px] font-semibold py-1.5 px-2 rounded" title="Delete job"><i class="fa-solid fa-trash"></i></button>' : '';
+
         return '<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">'
             + '<div class="flex justify-between items-start gap-2">'
             +   '<span class="font-mono font-bold text-xs text-emerald-600">' + Utils.esc(job.id) + '</span>'
-            +   priorityBadge(job.priority)
+            +   '<div class="flex items-center gap-1 flex-wrap justify-end">'
+            +     ageText
+            +     priorityBadge(job.priority)
+            +   '</div>'
             + '</div>'
             + '<div>'
             +   '<h5 class="font-bold text-xs text-slate-900 dark:text-white">' + Utils.esc(job.device || '') + '</h5>'
@@ -85,6 +104,7 @@ window.Jobs = (function () {
             +   '<button onclick="Jobs.invoice(\'' + job.id + '\')" class="flex-1 bg-blue-50 text-blue-700 text-[11px] font-semibold py-1.5 rounded">Invoice</button>'
             +   '<button onclick="Jobs.openEdit(\'' + job.id + '\')" class="flex-1 bg-amber-50 text-amber-700 text-[11px] font-semibold py-1.5 rounded">Edit</button>'
             +   '<button onclick="Jobs.showWhatsAppMenu(event, \'' + job.id + '\')" class="bg-emerald-500 hover:bg-emerald-600 text-white text-[11px] font-semibold py-1.5 px-2 rounded"><i class="fa-brands fa-whatsapp"></i></button>'
+            +   delBtn
             + '</div>'
             + '</div>';
     }
@@ -137,6 +157,15 @@ window.Jobs = (function () {
         var res = await API.updateJob(jobId, { status: newStatus });
         if (res.ok) { Utils.toast('Moved to ' + newStatus, 'success'); await refresh(); }
         else Utils.toast('Update failed', 'error');
+    }
+
+    async function deleteJob(jobId) {
+        var job = findJob(jobId);
+        if (!job) return;
+        if (!confirm('Delete job ' + job.id + '?\n\nThis cannot be undone.')) return;
+        var res = await API.deleteJob(jobId);
+        if (res.ok) { Utils.toast('Job deleted', 'success'); await refresh(); }
+        else Utils.toast('Delete failed', 'error');
     }
 
     function viewJob(jobId) {
@@ -337,6 +366,7 @@ window.Jobs = (function () {
         doSNLookup: doSNLookup,
         sendWhatsApp: sendWhatsApp,
         showWhatsAppMenu: showWhatsAppMenu,
+        deleteJob: deleteJob,
         handlePhotoUpload: handlePhotoUpload,
         removePhoto: removePhoto,
         renderPhotoPreview: renderPhotoPreview,

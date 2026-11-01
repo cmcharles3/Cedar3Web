@@ -17,7 +17,7 @@ router.get('/low', requireAuth, (req, res) => {
 });
 
 // POST /api/inventory — create new item
-router.post('/', requireAuth, requireAdmin, (req, res) => {
+router.post('/', requireAuth,  (req, res) => {
     const item = req.body;
     if (!item || !item.sku || !item.name) {
         return res.status(400).json({ error: 'SKU and name required' });
@@ -48,7 +48,7 @@ router.post('/', requireAuth, requireAdmin, (req, res) => {
 });
 
 // PATCH /api/inventory/:id — edit item
-router.patch('/:id', requireAuth, requireAdmin, (req, res) => {
+router.patch('/:id', requireAuth,  (req, res) => {
     const item = db.inventory.find(i => i.id === req.params.id);
     if (!item) return res.status(404).json({ error: 'Item not found' });
     ['sku', 'name', 'category', 'unit', 'minQty', 'costPrice', 'sellPrice', 'supplier', 'location', 'notes'].forEach(k => {

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { db, save, audit } = require('../db');
-const { requireAuth, filterOwnership } = require('../middleware/authMiddleware');
+const { requireAuth, requireAdmin, filterOwnership } = require('../middleware/authMiddleware');
 
 router.get('/lookup', requireAuth, (req, res) => {
     const q = String(req.query.q || '').toLowerCase().trim();
@@ -51,6 +51,17 @@ router.patch('/:id', requireAuth, (req, res) => {
     save();
     audit(req.user.sub, 'JOB_UPDATED', { jobId: job.id });
     res.json({ ok: true, job });
+});
+
+// DELETE /api/jobs/:id — admin only
+router.delete('/:id', requireAuth, requireAdmin, (req, res) => {
+    const idx = db.jobs.findIndex(j => j.id === req.params.id);
+    if (idx === -1) return res.status(404).json({ error: 'Job not found' });
+    const job = db.jobs[idx];
+    db.jobs.splice(idx, 1);
+    save();
+    audit(req.user.sub, 'JOB_DELETED', { jobId: job.id, customer: job.customer });
+    res.json({ ok: true });
 });
 
 module.exports = router;

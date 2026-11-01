@@ -45,6 +45,17 @@ window.App = (function () {
             dataTimer = setInterval(function () {
                 if (currentTab === 'dashboard') Dashboard.refresh();
             }, CONFIG.POLL_INTERVAL);
+
+            // Auto clock-out check (runs every 90s on client side)
+            setInterval(function () {
+                fetch(window.CONFIG.API_BASE + '/api/sessions/auto-check', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + localStorage.getItem(window.CONFIG.TOKEN_KEY)
+                    }
+                }).catch(function () { /* ignore */ });
+            }, 90000);
         }
 
         if (window.ClockIn && ClockIn.start) {

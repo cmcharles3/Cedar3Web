@@ -174,3 +174,112 @@
 {"ts":"2026-10-23T15:57:03.837Z","actor":"charles","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Samsung Toner","name":"C808"}}
 {"ts":"2026-10-23T15:59:59.274Z","actor":"charles","action":"INVENTORY_ITEM_CREATED","details":{"sku":"D205","name":"D205"}}
 {"ts":"2026-10-23T16:03:06.261Z","actor":"charles","action":"INVENTORY_ITEM_CREATED","details":{"sku":"DR3504","name":"DR3405"}}
+{"ts":"2026-10-23T19:01:15.652Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-23T19:36:16.215Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-23T19:38:06.051Z","actor":"charles","action":"JOB_DELETED","details":{"jobId":"JOB-789","customer":"Affinity"}}
+{"ts":"2026-10-23T19:53:58.839Z","actor":"charles","action":"JOB_UPDATED","details":{"jobId":"JOB-394"}}
+{"ts":"2026-10-23T19:54:43.075Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-23T19:55:16.829Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-24T07:15:27.963Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-10-24T07:15:29.561Z","actor":"talent","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-24T07:30:55.758Z","actor":"tech:simba","action":"LOGIN","details":{}}
+{"ts":"2026-10-24T07:30:58.355Z","actor":"simba","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-24T13:37:18.867Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-24T13:40:16.573Z","actor":"charles","action":"JOB_DELETED","details":{"jobId":"JOB-999","customer":"Test Client"}}
+{"ts":"2026-10-24T16:47:14.272Z","actor":"simba","action":"CLOCK_OUT","details":{"hours":9.271088055555555}}
+{"ts":"2026-10-24T21:06:55.478Z","actor":"charles","action":"ADMIN_FORCE_ACTION","details":{"target":"talent"}}
+{"ts":"2026-10-26T07:06:39.961Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T07:07:19.010Z","actor":"reception","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-26T07:09:39.895Z","actor":"tech:simba","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T07:09:41.174Z","actor":"simba","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-26T07:11:40.024Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T12:18:31.882Z","actor":"reception","action":"JOB_CREATED","details":{"jobId":"JOB-872"}}
+{"ts":"2026-10-26T12:50:38.690Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T13:06:45.291Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"123","name":"321"}}
+{"ts":"2026-10-26T13:09:25.708Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Brother TN3467/3405","name":"TN3467"}}
+{"ts":"2026-10-26T13:11:21.829Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Epson L3250","name":"Epson L3250"}}
+{"ts":"2026-10-26T13:13:04.516Z","actor":"reception","action":"INVENTORY_SOLD","details":{"sku":"Epson L3250","qty":1,"type":"sale","jobId":"2382"}}
+{"ts":"2026-10-26T13:13:33.494Z","actor":"reception","action":"INVENTORY_SOLD","details":{"sku":"Brother TN3467/3405","qty":2,"type":"sale","jobId":"2382"}}
+{"ts":"2026-10-26T13:14:51.964Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Samsung D203E","name":"D203E"}}
+{"ts":"2026-10-26T13:18:58.270Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T13:31:56.565Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T13:31:56.696Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-26"}}
+{"ts":"2026-10-26T15:03:10.760Z","actor":"reception","action":"CLOCK_OUT","details":{"hours":7.931041388888889}}
+{"ts":"2026-10-26T15:09:47.655Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-26T20:18:07.591Z","actor":"charles","action":"ADMIN_FORCE_ACTION","details":{"target":"simba"}}
+{"ts":"2026-10-27T15:00:05.381Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-27T15:00:05.606Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-27"}}
+{"ts":"2026-10-28T07:25:14.487Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-28T07:25:17.475Z","actor":"reception","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-28T15:56:02.314Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-28T15:56:02.887Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-28"}}
+{"ts":"2026-10-29T06:06:22.201Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T06:06:51.395Z","actor":"charles","action":"ADMIN_FORCE_ACTION","details":{"target":"reception"}}
+{"ts":"2026-10-29T06:11:58.332Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T06:12:06.253Z","actor":"reception","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-29T06:12:13.759Z","actor":"tech:simba","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T06:12:16.684Z","actor":"simba","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-29T06:14:30.594Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T06:14:38.130Z","actor":"talent","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-29T06:40:50.397Z","actor":"simba","action":"JOB_CREATED","details":{"jobId":"JOB-696"}}
+{"ts":"2026-10-29T06:47:48.133Z","actor":"simba","action":"JOB_CREATED","details":{"jobId":"JOB-959"}}
+{"ts":"2026-10-29T06:52:56.459Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"gffyg","name":"ggyhg858"}}
+{"ts":"2026-10-29T06:56:03.281Z","actor":"simba","action":"JOB_CREATED","details":{"jobId":"JOB-347"}}
+{"ts":"2026-10-29T06:59:09.589Z","actor":"simba","action":"JOB_CREATED","details":{"jobId":"JOB-750"}}
+{"ts":"2026-10-29T16:36:14.507Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T16:36:14.644Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-29"}}
+{"ts":"2026-10-29T16:52:37.651Z","actor":"charles","action":"INVENTORY_ITEM_UPDATED","details":{"sku":"Printer"}}
+{"ts":"2026-10-29T16:53:16.488Z","actor":"charles","action":"INVENTORY_SOLD","details":{"sku":"Samsung Toner","qty":1,"type":"sale","jobId":null}}
+{"ts":"2026-10-29T18:08:05.879Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T18:50:35.002Z","actor":"charles","action":"JOB_DELETED","details":{"jobId":"JOB-672","customer":"Rojean"}}
+{"ts":"2026-10-29T19:41:21.785Z","actor":"system","action":"AUTO_CLOCK_OUT","details":{"employee":"reception","hours":8.798263055555555,"recordedClockOut":"2026-10-29T15:00:00.000Z","note":"Auto clock-out — exceeded 17:00 shift end"}}
+{"ts":"2026-10-29T19:41:21.788Z","actor":"system","action":"AUTO_CLOCK_OUT","details":{"employee":"simba","hours":8.795365555555556,"recordedClockOut":"2026-10-29T15:00:00.000Z","note":"Auto clock-out — exceeded 17:00 shift end"}}
+{"ts":"2026-10-29T19:41:21.790Z","actor":"system","action":"AUTO_CLOCK_OUT","details":{"employee":"talent","hours":8.756075,"recordedClockOut":"2026-10-29T15:00:00.000Z","note":"Auto clock-out — exceeded 17:00 shift end"}}
+{"ts":"2026-10-29T19:41:41.104Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T19:41:58.746Z","actor":"system","action":"AUTO_CLOCK_OUT","details":{"employee":"simba","hours":7,"recordedClockOut":"2026-10-29T15:00:00.000Z","note":"Auto clock-out — exceeded 17:00 shift end"}}
+{"ts":"2026-10-29T19:46:43.464Z","actor":"tech:simba","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T19:48:55.815Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T19:50:41.341Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T19:51:33.897Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-29T20:04:42.322Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T05:59:26.034Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T05:59:28.236Z","actor":"reception","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-30T06:03:14.761Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T06:03:17.292Z","actor":"talent","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-30T06:07:20.553Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T06:09:09.679Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T06:09:42.097Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T06:10:29.592Z","actor":"tech:simba","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T06:10:32.048Z","actor":"simba","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-30T11:24:46.815Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"HP CF 283X","name":"CF 283 CRG 737"}}
+{"ts":"2026-10-30T11:27:59.825Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Samsung Cartridge","name":"MLT - r116"}}
+{"ts":"2026-10-30T11:30:39.303Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"HP 1018 Series 3015 Series","name":"Q2612A"}}
+{"ts":"2026-10-30T11:33:09.298Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Canon Cartridge","name":"045 (CRG-045)"}}
+{"ts":"2026-10-30T11:33:30.509Z","actor":"reception","action":"INVENTORY_ITEM_UPDATED","details":{"sku":"Canon Cartridge"}}
+{"ts":"2026-10-30T11:35:38.506Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Canon GP 550 , 555","name":"Canon GP 550, 555"}}
+{"ts":"2026-10-30T11:37:15.391Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Brother Cartridge","name":"TN 469"}}
+{"ts":"2026-10-30T11:39:01.154Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Brother CartridgeS","name":"TN 211 / 311"}}
+{"ts":"2026-10-30T11:41:28.239Z","actor":"reception","action":"INVENTORY_ITEM_CREATED","details":{"sku":"Samsung T","name":"MLT - D111L"}}
+{"ts":"2026-10-30T11:44:41.932Z","actor":"reception","action":"INVENTORY_ITEM_UPDATED","details":{"sku":"HP .."}}
+{"ts":"2026-10-30T14:56:19.172Z","actor":"reception","action":"CLOCK_OUT","details":{"hours":8.947481944444444}}
+{"ts":"2026-10-30T15:00:04.310Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T15:00:04.446Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-30"}}
+{"ts":"2026-10-30T15:02:37.651Z","actor":"simba","action":"CLOCK_OUT","details":{"hours":8.868223055555555}}
+{"ts":"2026-10-30T15:05:03.058Z","actor":"system","action":"AUTO_CLOCK_OUT","details":{"employee":"talent","hours":8.945196666666666,"recordedClockOut":"2026-10-30T15:00:00.000Z","note":"Auto clock-out â€” exceeded 17:00 shift end"}}
+{"ts":"2026-10-30T16:38:04.813Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-30T16:38:21.265Z","actor":"charles","action":"SCHEDULE_COMPLETED","details":{"id":"SCH-1792699417868","title":"Call Apex Logistics"}}
+{"ts":"2026-10-31T07:15:09.833Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-10-31T07:15:11.434Z","actor":"talent","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-31T07:16:47.528Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-10-31T07:16:49.082Z","actor":"reception","action":"CLOCK_IN","details":{"jobId":"GENERAL"}}
+{"ts":"2026-10-31T10:25:59.687Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-31T12:48:00.384Z","actor":"reception","action":"CLOCK_OUT","details":{"hours":5.519806111111111}}
+{"ts":"2026-10-31T12:49:16.940Z","actor":"talent","action":"CLOCK_OUT","details":{"hours":5.568196111111111}}
+{"ts":"2026-10-31T15:00:04.218Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-10-31T15:00:04.351Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-10-31"}}
+{"ts":"2026-11-01T14:43:33.274Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-11-01T14:45:11.468Z","actor":"charles","action":"SCHEDULE_CREATED","details":{"id":"SCH-1793544311468","title":"Njabulo","priority":"high"}}
+{"ts":"2026-11-01T14:49:33.835Z","actor":"tech:reception","action":"LOGIN","details":{}}
+{"ts":"2026-11-01T14:49:57.415Z","actor":"tech:talent","action":"LOGIN","details":{}}
+{"ts":"2026-11-01T15:00:04.592Z","actor":"admin:charles","action":"LOGIN","details":{}}
+{"ts":"2026-11-01T15:00:04.835Z","actor":"charles","action":"DAILY_SUMMARY_GENERATED","details":{"date":"2026-11-01"}}

@@ -69,7 +69,6 @@ window.Dashboard = (function () {
     async function refresh() {
         var user = API.getUser();
 
-        // Technicians get a friendly message instead of the multi-tech view
         if (!user || user.role !== 'admin') {
             var container0 = document.getElementById('dashboard-cards');
             if (container0) {
@@ -93,7 +92,6 @@ window.Dashboard = (function () {
 
         var sessions = res.data || {};
 
-        // Always render cards (cheap - 3 divs). Avoids stale-detection bugs.
         var container = document.getElementById('dashboard-cards');
         if (container) {
             var html = '';
@@ -104,7 +102,6 @@ window.Dashboard = (function () {
             container.innerHTML = html;
         }
 
-        // Update live timer values
         for (var j = 0; j < TECH_ORDER.length; j++) {
             var tech = TECH_ORDER[j];
             var s = sessions[tech];
@@ -134,7 +131,6 @@ window.Dashboard = (function () {
     async function refreshActivity() {
         var user = API.getUser();
 
-        // Audit feed is admin-only
         if (!user || user.role !== 'admin') {
             var feed0 = document.getElementById('dash-activity-feed');
             var countEl0 = document.getElementById('activity-count');
@@ -198,6 +194,7 @@ window.Dashboard = (function () {
             LOGOUT: 'fa-right-from-bracket',
             CLOCK_IN: 'fa-play',
             CLOCK_OUT: 'fa-stop',
+            AUTO_CLOCK_OUT: 'fa-hourglass-end',
             JOB_CREATED: 'fa-plus-circle',
             JOB_UPDATED: 'fa-pen-to-square',
             LOG_CREATED: 'fa-file-lines',
@@ -210,6 +207,7 @@ window.Dashboard = (function () {
         if (action.indexOf('FAILED') !== -1) return 'text-rose-500';
         if (action === 'CLOCK_IN') return 'text-emerald-500';
         if (action === 'CLOCK_OUT') return 'text-slate-500';
+        if (action === 'AUTO_CLOCK_OUT') return 'text-amber-500';
         if (action.indexOf('ADMIN') === 0) return 'text-amber-500';
         if (action.indexOf('JOB') === 0) return 'text-blue-500';
         if (action === 'LOGIN') return 'text-emerald-500';
@@ -224,6 +222,7 @@ window.Dashboard = (function () {
         if (d.target) parts.push('target: ' + d.target);
         if (d.customer) parts.push('client: ' + d.customer);
         if (d.reason) parts.push('reason: ' + d.reason);
+        if (d.employee) parts.push('user: ' + d.employee);
         return parts.length ? Utils.esc(parts.join(' · ')) : '';
     }
 
@@ -263,65 +262,11 @@ window.Dashboard = (function () {
         }, 1000);
     }
 
-        function downloadBackup() {
-        Utils.toast('Preparing backup…', 'info');
-        API.backupDB().then(function (blob) {
-            var url = window.URL.createObjectURL(blob);
-            var a = document.createElement('a');
-            a.href = url;
-            a.download = 'cedar3_backup_' + new Date().toISOString().slice(0, 10) + '.json';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            window.URL.revokeObjectURL(url);
-            Utils.toast('Backup downloaded successfully!', 'success');
-        }).catch(function (err) {
-            Utils.toast('Backup failed: ' + err.message, 'error');
-        });
-    }
-
-    function triggerRestore() {
-        var input = document.createElement('input');
-        input.type = 'file';
-        input.accept = '.json,application/json';
-        input.onchange = function (e) {
-            var file = e.target.files[0];
-            if (!file) return;
-
-            if (!confirm('WARNING: This will overwrite the entire database with the backup file. All current data will be lost.\n\nAre you sure?')) return;
-
-            var reader = new FileReader();
-            reader.onload = async function (evt) {
-                try {
-                    var json = JSON.parse(evt.target.result);
-                    Utils.toast('Uploading database…', 'info');
-
-                    var res = await API.restoreDB(json);
-                    if (res.ok) {
-                        Utils.toast('Restore successful! Server is restarting…', 'success');
-                        setTimeout(function () {
-                            localStorage.clear();
-                            window.location.reload();
-                        }, 3000);
-                    } else {
-                        Utils.toast((res.data && res.data.error) || res.error || 'Restore failed.', 'error');
-                    }
-                } catch (err) {
-                    Utils.toast('Invalid JSON file.', 'error');
-                }
-            };
-            reader.readAsText(file);
-        };
-        input.click();
-    }
-
     return {
         refresh: refresh,
         refreshActivity: refreshActivity,
         forceClockOut: forceClockOut,
         startTicker: startTicker,
-        downloadBackup: downloadBackup,
-        triggerRestore: triggerRestore,
         TECH_ORDER: TECH_ORDER
     };
 })();
