@@ -1,10 +1,11 @@
 ﻿// ============================================
-// Cedar3 — Inventory Tab
+// Cedar3 — Inventory Tab (Expandable List View)
 // ============================================
 
 window.Inventory = (function () {
     var allItems = [];
     var editingItemId = null;
+    var expandedItemId = null;
 
     function findItem(id) {
         for (var i = 0; i < allItems.length; i++) if (allItems[i].id === id) return allItems[i];
@@ -22,38 +23,77 @@ window.Inventory = (function () {
         return { label: 'HEALTHY', color: 'emerald', icon: 'fa-check-circle' };
     }
 
-    function itemCardHTML(item) {
+    function toggleExpand(id) {
+        expandedItemId = (expandedItemId === id) ? null : id;
+        render();
+    }
+
+    function itemRowHTML(item) {
         var status = statusOf(item);
+        var isExpanded = expandedItemId === item.id;
         var barColor = status.color === 'rose' ? 'bg-rose-500' : (status.color === 'amber' ? 'bg-amber-500' : 'bg-emerald-500');
         var stockBar = Math.min(100, Math.round((item.qty / Math.max(item.minQty * 2, 1)) * 100));
 
-        return '<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">'
-            + '<div class="flex justify-between items-start gap-2">'
-            +   '<div class="min-w-0">'
-            +     '<div class="flex items-center gap-1.5 mb-1"><i class="fa-solid ' + categoryIcon(item.category) + ' text-slate-400 text-[10px]"></i><span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">' + Utils.esc(item.category || 'Other') + '</span></div>'
-            +     '<h5 class="font-bold text-sm text-slate-900 dark:text-white leading-snug">' + Utils.esc(item.name) + '</h5>'
-            +     '<p class="text-[10px] font-mono text-slate-500">' + Utils.esc(item.sku) + '</p>'
+        var expandedHTML = '';
+        if (isExpanded) {
+            expandedHTML = ''
+                + '<div class="px-4 pb-4 pt-3 bg-slate-50/90 dark:bg-slate-900/60 border-t border-slate-200 dark:border-slate-700 space-y-3">'
+                +   '<div class="flex flex-wrap items-center justify-between gap-2 text-xs">'
+                +     '<div class="flex items-baseline gap-2">'
+                +       '<span class="text-xl font-bold text-' + status.color + '-600">' + item.qty + '</span>'
+                +       '<span class="text-slate-500">' + Utils.esc(item.unit || 'each') + ' in stock (min: ' + item.minQty + ')</span>'
+                +     '</div>'
+                +     '<div class="flex flex-wrap gap-4 text-[11px] text-slate-600 dark:text-slate-300 font-mono">'
+                +       '<span><strong>Cost:</strong> ' + Utils.formatZAR(item.costPrice) + '</span>'
+                +       '<span><strong>Sell:</strong> ' + Utils.formatZAR(item.sellPrice) + '</span>'
+                +       (item.supplier ? '<span><strong>Supplier:</strong> ' + Utils.esc(item.supplier) + '</span>' : '')
+                +       (item.location ? '<span><strong>Location:</strong> ' + Utils.esc(item.location) + '</span>' : '')
+                +     '</div>'
+                +   '</div>'
+                +   '<div class="w-full bg-slate-200 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden"><div class="' + barColor + ' h-full rounded-full transition-all" style="width:' + stockBar + '%"></div></div>'
+                +   (item.notes ? '<p class="text-[11px] text-slate-500 dark:text-slate-400 font-mono bg-white dark:bg-slate-800 p-2 rounded border border-slate-200 dark:border-slate-700">' + Utils.esc(item.notes) + '</p>' : '')
+                +   '<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">'
+                +     '<button onclick="event.stopPropagation(); Inventory.openRestock(\'' + item.id + '\')" class="bg-blue-50 dark:bg-blue-950/60 hover:bg-blue-100 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800 text-xs font-semibold py-2 rounded-lg transition"><i class="fa-solid fa-plus mr-1.5"></i>Restock</button>'
+                +     '<button onclick="event.stopPropagation(); Inventory.openSell(\'' + item.id + '\')" class="bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800 text-xs font-semibold py-2 rounded-lg transition"><i class="fa-solid fa-cart-shopping mr-1.5"></i>Sell / Use</button>'
+                +     '<button onclick="event.stopPropagation(); Inventory.openReconcile(\'' + item.id + '\')" class="bg-amber-50 dark:bg-amber-950/60 hover:bg-amber-100 text-amber-700 dark:text-amber-300 border border-amber-200/60 dark:border-amber-800 text-xs font-semibold py-2 rounded-lg transition"><i class="fa-solid fa-clipboard-check mr-1.5"></i>Count</button>'
+                +     '<button onclick="event.stopPropagation(); Inventory.openEditItem(\'' + item.id + '\')" class="bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 text-xs font-semibold py-2 rounded-lg transition"><i class="fa-solid fa-pen mr-1.5"></i>Edit</button>'
+                +   '</div>'
+                + '</div>';
+        }
+
+        return '<div class="bg-white dark:bg-slate-800 rounded-xl border ' + (isExpanded ? 'border-emerald-500 ring-1 ring-emerald-500/30 shadow-md' : 'border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600') + ' overflow-hidden transition-all">'
+            + '<div onclick="Inventory.toggleExpand(\'' + item.id + '\')" class="px-4 py-3 flex items-center justify-between gap-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-700/40 select-none">'
+            +   '<div class="flex items-center gap-3 min-w-0 flex-1">'
+            +     '<div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-700/70 flex items-center justify-center text-slate-500 dark:text-slate-300 flex-shrink-0">'
+            +       '<i class="fa-solid ' + categoryIcon(item.category) + ' text-xs"></i>'
+            +     '</div>'
+            +     '<div class="min-w-0 flex-1">'
+            +       '<div class="flex items-center gap-2">'
+            +         '<span class="font-bold text-sm text-slate-900 dark:text-white truncate">' + Utils.esc(item.name) + '</span>'
+            +         '<span class="hidden sm:inline-block text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300">' + Utils.esc(item.sku) + '</span>'
+            +       '</div>'
+            +       '<div class="flex items-center gap-2 text-[11px] text-slate-400">'
+            +         '<span>' + Utils.esc(item.category || 'Other') + '</span>'
+            +         (item.location ? '<span>• ' + Utils.esc(item.location) + '</span>' : '')
+            +       '</div>'
+            +     '</div>'
             +   '</div>'
-            +   '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-' + status.color + '-100 text-' + status.color + '-800 whitespace-nowrap"><i class="fa-solid ' + status.icon + ' mr-1"></i>' + status.label + '</span>'
+            +   '<div class="flex items-center gap-3 sm:gap-5 flex-shrink-0">'
+            +     '<div class="text-right hidden md:block">'
+            +       '<span class="text-xs font-mono font-semibold text-slate-700 dark:text-slate-200">' + Utils.formatZAR(item.sellPrice) + '</span>'
+            +       '<span class="block text-[10px] text-slate-400">Sell</span>'
+            +     '</div>'
+            +     '<div class="text-right min-w-[60px]">'
+            +       '<span class="text-sm font-bold text-' + status.color + '-600">' + item.qty + '</span>'
+            +       '<span class="text-[10px] text-slate-400 ml-0.5">' + Utils.esc(item.unit || 'ea') + '</span>'
+            +     '</div>'
+            +     '<span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-' + status.color + '-100 text-' + status.color + '-800 whitespace-nowrap hidden sm:inline-flex items-center">'
+            +       '<i class="fa-solid ' + status.icon + ' mr-1"></i>' + status.label
+            +     '</span>'
+            +     '<i class="fa-solid fa-chevron-' + (isExpanded ? 'up text-emerald-600' : 'down text-slate-400') + ' text-xs w-4 text-center"></i>'
+            +   '</div>'
             + '</div>'
-            + '<div class="flex items-baseline gap-2">'
-            +   '<span class="text-2xl font-bold text-' + status.color + '-600">' + item.qty + '</span>'
-            +   '<span class="text-xs text-slate-400">' + Utils.esc(item.unit || 'each') + ' in stock</span>'
-            +   '<span class="text-[10px] text-slate-400 ml-auto">min: ' + item.minQty + '</span>'
-            + '</div>'
-            + '<div class="w-full bg-slate-100 dark:bg-slate-700 h-1.5 rounded-full overflow-hidden"><div class="' + barColor + ' h-full rounded-full transition-all" style="width:' + stockBar + '%"></div></div>'
-            + '<div class="grid grid-cols-2 gap-2 text-[11px] text-slate-600 dark:text-slate-400 font-mono pt-1 border-t border-slate-100 dark:border-slate-700">'
-            +   '<p><strong>Cost:</strong> ' + Utils.formatZAR(item.costPrice) + '</p>'
-            +   '<p class="text-right"><strong>Sell:</strong> ' + Utils.formatZAR(item.sellPrice) + '</p>'
-            +   (item.supplier ? '<p class="col-span-2 truncate"><strong>Supplier:</strong> ' + Utils.esc(item.supplier) + '</p>' : '')
-            +   (item.location ? '<p class="col-span-2"><strong>Location:</strong> ' + Utils.esc(item.location) + '</p>' : '')
-            + '</div>'
-            + '<div class="grid grid-cols-2 gap-1 pt-1">'
-            +   '<button onclick="Inventory.openRestock(\'' + item.id + '\')" class="bg-blue-50 dark:bg-blue-950/50 hover:bg-blue-100 text-blue-700 dark:text-blue-300 text-[11px] font-semibold py-1.5 rounded transition"><i class="fa-solid fa-plus mr-1"></i>Restock</button>'
-            +   '<button onclick="Inventory.openSell(\'' + item.id + '\')" class="bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100 text-emerald-700 dark:text-emerald-300 text-[11px] font-semibold py-1.5 rounded transition"><i class="fa-solid fa-cart-shopping mr-1"></i>Sell</button>'
-            +   '<button onclick="Inventory.openReconcile(\'' + item.id + '\')" class="bg-amber-50 dark:bg-amber-950/50 hover:bg-amber-100 text-amber-700 dark:text-amber-300 text-[11px] font-semibold py-1.5 rounded transition"><i class="fa-solid fa-clipboard-check mr-1"></i>Count</button>'
-            +   '<button onclick="Inventory.openEditItem(\'' + item.id + '\')" class="bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 text-slate-700 dark:text-slate-200 text-[11px] font-semibold py-1.5 rounded transition"><i class="fa-solid fa-pen mr-1"></i>Edit</button>'
-            + '</div>'
+            + expandedHTML
             + '</div>';
     }
 
@@ -83,10 +123,10 @@ window.Inventory = (function () {
 
         var grid = document.getElementById('inv-items-grid');
         if (filtered.length === 0) {
-            grid.innerHTML = '<p class="text-xs text-slate-400 italic col-span-full text-center py-6">No items match your filters. <button onclick="Inventory.openAddItem()" class="text-emerald-600 font-bold underline">Add the first one</button></p>';
+            grid.innerHTML = '<p class="text-xs text-slate-400 italic text-center py-8 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">No items match your filters. <button onclick="Inventory.openAddItem()" class="text-emerald-600 font-bold underline">Add the first one</button></p>';
         } else {
             var html = '';
-            for (var f = 0; f < filtered.length; f++) html += itemCardHTML(filtered[f]);
+            for (var f = 0; f < filtered.length; f++) html += itemRowHTML(filtered[f]);
             grid.innerHTML = html;
         }
 
@@ -291,6 +331,7 @@ window.Inventory = (function () {
     return {
         refresh: refresh,
         render: render,
+        toggleExpand: toggleExpand,
         openAddItem: openAddItem,
         openEditItem: openEditItem,
         saveItem: saveItem,
