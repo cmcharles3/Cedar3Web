@@ -13,7 +13,7 @@
       'position:fixed; bottom:20px; right:20px; z-index:99999; font-family:Segoe UI, Arial, sans-serif;';
 
     wrapper.innerHTML = `
-      <div id="c3-ps-panel" style="display:none; background:#ffffff; border:2px solid #1b365d; border-radius:8px; padding:14px; box-shadow:0 8px 24px rgba(0,0,0,0.22); margin-bottom:10px; width:270px; color:#1e293b;">
+      <div id="c3-ps-panel" style="display:none; background:#ffffff; border:2px solid #1b365d; border-radius:8px; padding:14px; box-shadow:0 8px 24px rgba(0,0,0,0.22); margin-bottom:10px; width:275px; color:#1e293b;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #e2e8f0; padding-bottom:6px;">
           <strong style="color:#1b365d; font-size:14px;">Technician Payslip</strong>
           <button type="button" id="c3-ps-close" style="background:none; border:none; font-size:16px; cursor:pointer; color:#64748b;">&times;</button>
@@ -21,9 +21,9 @@
 
         <label style="display:block; font-size:12px; font-weight:600; margin-bottom:4px;">Select Staff Member:</label>
         <select id="c3-ps-tech" style="width:100%; padding:7px; border-radius:4px; border:1px solid #94a3b8; margin-bottom:10px; background:#fff;">
-          <option value="talent">Talent</option>
-          <option value="simba">Simba</option>
-          <option value="reception">Receptionist</option>
+          <option value="talent">Talent (R 6,000.00)</option>
+          <option value="simba">Simba (R 4,500.00)</option>
+          <option value="reception">Receptionist (R 3,500.00)</option>
         </select>
 
         <label style="display:block; font-size:12px; font-weight:600; margin-bottom:4px;">From Date:</label>
@@ -41,7 +41,7 @@
         </button>
       </div>
 
-      <button type="button" id="c3-ps-toggle" style="float:right; background:#1b365d; color:#fff; border:2px solid #fff; padding:10px 16px; border-radius:30px; cursor:pointer; font-weight:bold; font-size:13px; box-shadow:0 4px 12px rgba(0,0,0,0.25);">
+      <button type="button" id="c3-ps-toggle" style="float:right; background:#1b365d; color:#fff; border:2px solid #fff; padding:10px 18px; border-radius:30px; cursor:pointer; font-weight:bold; font-size:13px; box-shadow:0 4px 12px rgba(0,0,0,0.28);">
         Print Payslip
       </button>
     `;
@@ -58,21 +58,47 @@
     document.getElementById('c3-ps-btn').addEventListener('click', generatePayslipPopup);
   }
 
-  async function fetchWorkshopDB() {
-    if (window.db && window.db.employees && window.db.jobs) return window.db;
-    if (window.state && window.state.employees && window.state.jobs) return window.state;
+  function getAuthHeaders() {
+    const token =
+      localStorage.getItem('token') ||
+      localStorage.getItem('authToken') ||
+      localStorage.getItem('cedar3_token') ||
+      sessionStorage.getItem('token') ||
+      '';
+    return token ? { Authorization: `Bearer ${token}` } : {};
+  }
 
-    const endpoints = ['/api/db', '/api/data', '/api/state', '/data/workshop-db.json'];
-    for (const url of endpoints) {
-      try {
-        const res = await fetch(url, { cache: 'no-store' });
-        if (res.ok) {
-          const data = await res.json();
-          if (data && data.employees && data.jobs) return data;
-        }
-      } catch (_) {}
-    }
-    throw new Error('Could not load workshop-db.json');
+  async function apiGet(url) {
+    const res = await fetch(url, { headers: getAuthHeaders(), cache: 'no-store' });
+    if (!res.ok) return null;
+    return res.json();
+  }
+
+  async function fetchWorkshopData() {
+    // 1. Try direct static file first if served
+    const directDb = await apiGet('/data/workshop-db.json');
+    if (directDb && directDb.employees && directDb.jobs) return directDb;
+
+    // 2. Otherwise combine your Express API endpoints (/api/jobs, /api/logs, /api/sessions)
+    const [jobsRes, logsRes, sessRes, empRes] = await Promise.all([
+      apiGet('/api/jobs'),
+      apiGet('/api/logs'),
+      apiGet('/api/sessions'),
+      apiGet('/api/admin/employees')
+    ]);
+
+    const jobs = Array.isArray(jobsRes) ? jobsRes : (jobsRes && jobsRes.jobs) || [];
+    const logs = Array.isArray(logsRes) ? logsRes : (logsRes && logsRes.logs) || [];
+    const sessions = (sessRes && sessRes.sessions) || sessRes || {};
+
+    const defaultEmployees = {
+      talent: { displayName: 'Talent', role: 'tech', monthlyRate: 6000 },
+      simba: { displayName: 'Simba', role: 'tech', monthlyRate: 4500 },
+      reception: { displayName: 'Receptionist', role: 'reception', monthlyRate: 3500 }
+    };
+    const employees = (empRes && (empRes.employees || empRes)) || defaultEmployees;
+
+    return { employees, jobs, logs, sessions };
   }
 
   function toSASTDate(isoStr) {
@@ -105,17 +131,10 @@
       return;
     }
 
-    let db;
-    try {
-      db = await fetchWorkshopDB();
-    } catch (err) {
-      alert('Unable to load database. Check scripts/api.js endpoint.');
-      return;
-    }
-
+    const db = await fetchWorkshopData();
     const emp = (db.employees || {})[empKey];
     if (!emp) {
-      alert(`Technician "${empKey}" not found.`);
+      alert(`Staff member "${empKey}" not found.`);
       return;
     }
 
