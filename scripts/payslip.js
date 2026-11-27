@@ -1,43 +1,60 @@
 ﻿(function () {
   function injectPayslipUI() {
-    if (document.getElementById('cedar3-payslip-bar')) return;
-
-    const target =
-      document.querySelector('#logs-section, #logs, [data-tab="logs"], #dashboard-section, #dashboard, main') ||
-      document.body;
-
-    const bar = document.createElement('div');
-    bar.id = 'cedar3-payslip-bar';
-    bar.style.cssText =
-      'display:flex; flex-wrap:wrap; gap:10px; align-items:center; background:#f1f5f9; padding:12px 15px; border-radius:6px; margin:12px 0; border:1px solid #cbd5e1; font-family:inherit; color:#1e293b;';
+    if (document.getElementById('cedar3-payslip-widget')) return;
 
     const now = new Date();
     const yyyy = now.getFullYear();
     const mm = String(now.getMonth() + 1).padStart(2, '0');
     const dd = String(now.getDate()).padStart(2, '0');
 
-    bar.innerHTML = `
-      <strong style="color:#1b365d;">Technician Payslip:</strong>
-      <select id="c3-ps-tech" style="padding:6px 10px; border-radius:4px; border:1px solid #94a3b8; background:#fff;">
-        <option value="talent">Talent</option>
-        <option value="simba">Simba</option>
-        <option value="reception">Receptionist</option>
-      </select>
-      <label style="font-size:13px;">From:
-        <input type="date" id="c3-ps-start" value="${yyyy}-${mm}-01" style="padding:5px; border-radius:4px; border:1px solid #94a3b8;">
-      </label>
-      <label style="font-size:13px;">To:
-        <input type="date" id="c3-ps-end" value="${yyyy}-${mm}-${dd}" style="padding:5px; border-radius:4px; border:1px solid #94a3b8;">
-      </label>
-      <label style="font-size:13px; cursor:pointer;">
-        <input type="checkbox" id="c3-ps-sat"> Include Saturdays
-      </label>
-      <button type="button" id="c3-ps-btn" style="background:#1b365d; color:#fff; border:none; padding:7px 14px; border-radius:4px; cursor:pointer; font-weight:600;">
+    const wrapper = document.createElement('div');
+    wrapper.id = 'cedar3-payslip-widget';
+    wrapper.style.cssText =
+      'position:fixed; bottom:20px; right:20px; z-index:99999; font-family:Segoe UI, Arial, sans-serif;';
+
+    wrapper.innerHTML = `
+      <div id="c3-ps-panel" style="display:none; background:#ffffff; border:2px solid #1b365d; border-radius:8px; padding:14px; box-shadow:0 8px 24px rgba(0,0,0,0.22); margin-bottom:10px; width:270px; color:#1e293b;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #e2e8f0; padding-bottom:6px;">
+          <strong style="color:#1b365d; font-size:14px;">Technician Payslip</strong>
+          <button type="button" id="c3-ps-close" style="background:none; border:none; font-size:16px; cursor:pointer; color:#64748b;">&times;</button>
+        </div>
+
+        <label style="display:block; font-size:12px; font-weight:600; margin-bottom:4px;">Select Staff Member:</label>
+        <select id="c3-ps-tech" style="width:100%; padding:7px; border-radius:4px; border:1px solid #94a3b8; margin-bottom:10px; background:#fff;">
+          <option value="talent">Talent</option>
+          <option value="simba">Simba</option>
+          <option value="reception">Receptionist</option>
+        </select>
+
+        <label style="display:block; font-size:12px; font-weight:600; margin-bottom:4px;">From Date:</label>
+        <input type="date" id="c3-ps-start" value="${yyyy}-${mm}-01" style="width:100%; box-sizing:border-box; padding:6px; border-radius:4px; border:1px solid #94a3b8; margin-bottom:10px;">
+
+        <label style="display:block; font-size:12px; font-weight:600; margin-bottom:4px;">To Date:</label>
+        <input type="date" id="c3-ps-end" value="${yyyy}-${mm}-${dd}" style="width:100%; box-sizing:border-box; padding:6px; border-radius:4px; border:1px solid #94a3b8; margin-bottom:10px;">
+
+        <label style="display:flex; align-items:center; gap:6px; font-size:12px; cursor:pointer; margin-bottom:12px;">
+          <input type="checkbox" id="c3-ps-sat"> Include Saturdays as workdays
+        </label>
+
+        <button type="button" id="c3-ps-btn" style="width:100%; background:#1b365d; color:#fff; border:none; padding:9px; border-radius:4px; cursor:pointer; font-weight:bold; font-size:13px;">
+          Generate &amp; Print Payslip
+        </button>
+      </div>
+
+      <button type="button" id="c3-ps-toggle" style="float:right; background:#1b365d; color:#fff; border:2px solid #fff; padding:10px 16px; border-radius:30px; cursor:pointer; font-weight:bold; font-size:13px; box-shadow:0 4px 12px rgba(0,0,0,0.25);">
         Print Payslip
       </button>
     `;
 
-    target.prepend(bar);
+    document.body.appendChild(wrapper);
+
+    const panel = document.getElementById('c3-ps-panel');
+    document.getElementById('c3-ps-toggle').addEventListener('click', () => {
+      panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    });
+    document.getElementById('c3-ps-close').addEventListener('click', () => {
+      panel.style.display = 'none';
+    });
     document.getElementById('c3-ps-btn').addEventListener('click', generatePayslipPopup);
   }
 
@@ -84,7 +101,7 @@
     const includeSat = document.getElementById('c3-ps-sat').checked;
 
     if (!startDate || !endDate) {
-      alert('Please select both Start and End dates.');
+      alert('Please select both From and To dates.');
       return;
     }
 
@@ -92,7 +109,7 @@
     try {
       db = await fetchWorkshopDB();
     } catch (err) {
-      alert('Unable to load database. Ensure you are logged into the workshop system.');
+      alert('Unable to load database. Check scripts/api.js endpoint.');
       return;
     }
 
