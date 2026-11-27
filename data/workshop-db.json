@@ -68,7 +68,7 @@
       "faults": "-ADF Paper Jam",
       "assignedTech": "Simba",
       "priority": "High",
-      "status": "On Hold",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -76,8 +76,8 @@
       "photos": [],
       "createdAt": "2026-10-20T12:41:34.400Z",
       "createdBy": "simba",
-      "updatedAt": "2026-10-20T12:44:27.067Z",
-      "updatedBy": "reception"
+      "updatedAt": "2026-11-11T05:52:23.114Z",
+      "updatedBy": "simba"
     },
     {
       "id": "JOB-231",
@@ -276,7 +276,7 @@
       "faults": "Power Supply Flex Cable Replacement \nLaser Unit Service \nPickup Roller Service",
       "assignedTech": "Talent",
       "priority": "Normal",
-      "status": "In Progress",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -284,7 +284,7 @@
       "photos": [],
       "createdAt": "2026-10-23T06:35:06.548Z",
       "createdBy": "reception",
-      "updatedAt": "2026-11-05T10:42:09.606Z",
+      "updatedAt": "2026-11-09T14:56:13.645Z",
       "updatedBy": "reception"
     },
     {
@@ -490,7 +490,7 @@
       "faults": "Not Printing Well",
       "assignedTech": "Simba",
       "priority": "Normal",
-      "status": "In Progress",
+      "status": "On Hold",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -498,7 +498,7 @@
       "photos": [],
       "createdAt": "2026-11-02T14:57:06.153Z",
       "createdBy": "simba",
-      "updatedAt": "2026-11-06T13:40:34.330Z",
+      "updatedAt": "2026-11-11T08:37:51.086Z",
       "updatedBy": "simba"
     },
     {
@@ -512,7 +512,7 @@
       "faults": "NO PICKING UP\nABNORMAL SHUTDOWN",
       "assignedTech": "Talent",
       "priority": "Normal",
-      "status": "On Hold",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -520,7 +520,7 @@
       "photos": [],
       "createdAt": "2026-11-02T15:10:13.924Z",
       "createdBy": "talent",
-      "updatedAt": "2026-11-03T12:38:18.890Z",
+      "updatedAt": "2026-11-20T14:35:28.023Z",
       "updatedBy": "talent"
     },
     {
@@ -534,14 +534,16 @@
       "faults": "xx",
       "assignedTech": "Receptionist",
       "priority": "Normal",
-      "status": "Pending",
+      "status": "On Hold",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 450,
       "photos": [],
       "createdAt": "2026-11-03T07:33:11.730Z",
-      "createdBy": "reception"
+      "createdBy": "reception",
+      "updatedAt": "2026-11-09T14:57:11.167Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-741",
@@ -554,14 +556,16 @@
       "faults": "xx",
       "assignedTech": "Receptionist",
       "priority": "Normal",
-      "status": "Pending",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 450,
       "photos": [],
       "createdAt": "2026-11-03T07:34:43.977Z",
-      "createdBy": "reception"
+      "createdBy": "reception",
+      "updatedAt": "2026-11-18T08:20:22.171Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-854",
@@ -574,14 +578,16 @@
       "faults": "xxx",
       "assignedTech": "Receptionist",
       "priority": "Normal",
-      "status": "Pending",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 450,
       "photos": [],
       "createdAt": "2026-11-03T07:35:47.287Z",
-      "createdBy": "reception"
+      "createdBy": "reception",
+      "updatedAt": "2026-11-09T14:15:21.447Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-401",
@@ -594,14 +600,16 @@
       "faults": "Not printing well \n(Part Needed: BK Cartridge)",
       "assignedTech": "Simba",
       "priority": "Normal",
-      "status": "On Hold",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 0,
       "photos": [],
       "createdAt": "2026-11-03T12:27:03.390Z",
-      "createdBy": "reception"
+      "createdBy": "reception",
+      "updatedAt": "2026-11-11T08:37:56.651Z",
+      "updatedBy": "simba"
     },
     {
       "id": "JOB-182",
@@ -614,7 +622,7 @@
       "faults": "WIFI CONNECTION FALIURE\nFIRMWARE UPDATE \nPRINTHEAD SERVICE",
       "assignedTech": "Talent",
       "priority": "Normal",
-      "status": "On Hold",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -622,8 +630,8 @@
       "photos": [],
       "createdAt": "2026-11-03T12:34:20.483Z",
       "createdBy": "talent",
-      "updatedAt": "2026-11-03T14:51:49.330Z",
-      "updatedBy": "talent"
+      "updatedAt": "2026-11-07T13:12:41.371Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-342",
@@ -636,7 +644,7 @@
       "faults": "Needs Cartridge",
       "assignedTech": "Simba",
       "priority": "Normal",
-      "status": "On Hold",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -644,8 +652,8 @@
       "photos": [],
       "createdAt": "2026-11-03T12:52:31.976Z",
       "createdBy": "simba",
-      "updatedAt": "2026-11-05T10:43:04.672Z",
-      "updatedBy": "simba"
+      "updatedAt": "2026-11-09T14:56:04.987Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-289",
@@ -658,14 +666,16 @@
       "faults": "Printer not printing suspecting LSU unit",
       "assignedTech": "Talent",
       "priority": "Normal",
-      "status": "In Progress",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 449.96,
       "photos": [],
       "createdAt": "2026-11-03T14:51:41.191Z",
-      "createdBy": "talent"
+      "createdBy": "talent",
+      "updatedAt": "2026-11-20T06:08:26.763Z",
+      "updatedBy": "talent"
     },
     {
       "id": "JOB-126",
@@ -722,22 +732,24 @@
       "faults": "paperja",
       "assignedTech": "Receptionist",
       "priority": "Normal",
-      "status": "In Progress",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
       "cost": 450,
       "photos": [],
       "createdAt": "2026-11-05T16:13:02.724Z",
-      "createdBy": "reception"
+      "createdBy": "reception",
+      "updatedAt": "2026-11-18T08:20:26.705Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-721",
       "customer": "Flamingo",
-      "phone": "xxxx",
+      "phone": "0734946531",
       "address": "",
       "device": "Epson M3170",
-      "sn": "xx",
+      "sn": "XX",
       "cables": "NONE",
       "faults": "Not Printing",
       "assignedTech": "Simba",
@@ -750,13 +762,13 @@
       "photos": [],
       "createdAt": "2026-11-06T10:45:03.803Z",
       "createdBy": "simba",
-      "updatedAt": "2026-11-06T13:40:25.191Z",
-      "updatedBy": "simba"
+      "updatedAt": "2026-11-07T13:14:03.425Z",
+      "updatedBy": "reception"
     },
     {
       "id": "JOB-275",
       "customer": "Trevor",
-      "phone": "xx",
+      "phone": "0623106996",
       "address": "",
       "device": "Canon G2411",
       "sn": "KLPE92887",
@@ -764,7 +776,7 @@
       "faults": "xx",
       "assignedTech": "Simba",
       "priority": "Normal",
-      "status": "Pending",
+      "status": "Completed",
       "followup": "Client Notified",
       "techReport": "",
       "partsNeeded": "",
@@ -772,11 +784,829 @@
       "photos": [],
       "createdAt": "2026-11-06T10:46:22.473Z",
       "createdBy": "simba",
-      "updatedAt": "2026-11-06T11:15:01.974Z",
+      "updatedAt": "2026-11-07T13:14:40.324Z",
+      "updatedBy": "reception"
+    },
+    {
+      "id": "JOB-882",
+      "customer": "Vossie",
+      "phone": "0662267465",
+      "address": "",
+      "device": "Epson L3260",
+      "sn": "X8KV030167",
+      "cables": "Power Supply",
+      "faults": "Maintenance Box",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 450,
+      "photos": [],
+      "createdAt": "2026-11-09T14:11:55.729Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-20T14:35:14.099Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-854",
+      "customer": "Trevor",
+      "phone": "0623106996",
+      "address": "",
+      "device": "Xerox WC3335",
+      "sn": "XXX",
+      "cables": "NONE",
+      "faults": "Scan to Network Folder Setup (1x Laptop)",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 450,
+      "photos": [],
+      "createdAt": "2026-11-10T07:08:45.472Z",
+      "createdBy": "simba"
+    },
+    {
+      "id": "JOB-633",
+      "customer": "Professor SOMO",
+      "phone": "0767039982",
+      "address": "",
+      "device": "Brother DCP - T830DW",
+      "sn": "E83560J5H827294",
+      "cables": "Power Supply, USB",
+      "faults": "NOT PRINTING",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-10T13:52:31.231Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-12T07:29:12.273Z",
       "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-197",
+      "customer": "Aves Holdings",
+      "phone": "xxxx",
+      "address": "",
+      "device": "bizhub 224",
+      "sn": "n/a",
+      "cables": "",
+      "faults": "hvps exchanging  284 to bizhub 224",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 450,
+      "photos": [],
+      "createdAt": "2026-11-11T08:10:00.944Z",
+      "createdBy": "talent",
+      "updatedAt": "2026-11-20T06:08:32.348Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-586",
+      "customer": "Thabang",
+      "phone": "068 392 6765",
+      "address": "",
+      "device": "Samsung M4070FR",
+      "sn": "ZEFFBJFF90000PN",
+      "cables": "N/A",
+      "faults": "Not copying well",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-11T08:37:42.662Z",
+      "createdBy": "simba",
+      "updatedAt": "2026-11-20T08:19:00.092Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-730",
+      "customer": "Chris Mncube",
+      "phone": "0662291813",
+      "address": "",
+      "device": "Epson L3050",
+      "sn": "X4PQ068075",
+      "cables": "N/A",
+      "faults": "Print Head Service \nMaintenance Kit License",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 1000,
+      "photos": [],
+      "createdAt": "2026-11-13T14:51:26.073Z",
+      "createdBy": "reception"
+    },
+    {
+      "id": "JOB-662",
+      "customer": "Ontsepeng",
+      "phone": "0738163320",
+      "address": "",
+      "device": "Canon Image Runner 1643if",
+      "sn": "2TT10925",
+      "cables": "Power Supply",
+      "faults": "Fuser Unit Paper Jam",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 1450,
+      "photos": [],
+      "createdAt": "2026-11-18T07:07:09.843Z",
+      "createdBy": "reception"
+    },
+    {
+      "id": "JOB-370",
+      "customer": "Wikus",
+      "phone": "0826716090",
+      "address": "",
+      "device": "Canon G4411",
+      "sn": "KLPG37133",
+      "cables": "N/A",
+      "faults": "ERROR 6800",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-18T07:09:57.120Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-20T14:35:37.364Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-552",
+      "customer": "Kaylee",
+      "phone": "0843090067",
+      "address": "",
+      "device": "Epson L3260",
+      "sn": "X8KV021877",
+      "cables": "N/A",
+      "faults": "Replacing it with Epson L3060",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-18T07:17:35.629Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-20T06:09:04.112Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-756",
+      "customer": "R.Ferreie",
+      "phone": "0824579342",
+      "address": "",
+      "device": "Epson L3250",
+      "sn": "X8JM120761",
+      "cables": "N/A",
+      "faults": "Print Head Service \nInk System Service",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-18T07:19:14.108Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-20T06:09:11.753Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-785",
+      "customer": "DTE",
+      "phone": "0823862793",
+      "address": "",
+      "device": "HP Officejet Pro 8620",
+      "sn": "CN56MFK2BN",
+      "cables": "N/A",
+      "faults": "Missing / Failed Printhead",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-18T07:25:37.750Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-20T11:03:39.629Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-515",
+      "customer": "Engie",
+      "phone": "0662528028",
+      "address": "",
+      "device": "Epson L3210",
+      "sn": "X8HP123722",
+      "cables": "N/A",
+      "faults": "Not Printing Colour",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 1250,
+      "photos": [],
+      "createdAt": "2026-11-18T08:18:05.529Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-18T13:25:17.464Z",
+      "updatedBy": "reception"
+    },
+    {
+      "id": "JOB-159",
+      "customer": "Irmgard",
+      "phone": "xxx",
+      "address": "",
+      "device": "Hp LaserJet 1320",
+      "sn": "CNMKR55661",
+      "cables": "N/A",
+      "faults": "Paper Jam",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-18T09:29:05.919Z",
+      "createdBy": "reception",
+      "updatedAt": "2026-11-19T08:49:26.425Z",
+      "updatedBy": "simba"
+    },
+    {
+      "id": "JOB-205",
+      "customer": "Naseeha mayet",
+      "phone": "078426 2287",
+      "address": "",
+      "device": "Epson L3250",
+      "sn": "X4PQ046777",
+      "cables": "N/A",
+      "faults": "Maintenance kit licence and printhead service",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T06:20:40.290Z",
+      "createdBy": "talent",
+      "updatedAt": "2026-11-20T14:35:19.965Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-139",
+      "customer": "otshepeng",
+      "phone": "xxxx",
+      "address": "",
+      "device": "Canon imagerunner 1643if",
+      "sn": "2TT10925",
+      "cables": "N/A",
+      "faults": "Paper jam on fuser unit..fuser film needs replacement",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T06:27:44.936Z",
+      "createdBy": "talent",
+      "updatedAt": "2026-11-20T06:28:54.197Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-443",
+      "customer": "Iqra Academy",
+      "phone": "xx",
+      "address": "",
+      "device": "Hp Smart Tank 530",
+      "sn": "CN2B44S1CV",
+      "cables": "POWER SUPPLY",
+      "faults": "Not Printing Well (Cyan, Magenta)",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 1100,
+      "photos": [],
+      "createdAt": "2026-11-20T08:18:53.643Z",
+      "createdBy": "simba"
+    },
+    {
+      "id": "JOB-239",
+      "customer": "Heidi",
+      "phone": "076 345 2837",
+      "address": "",
+      "device": "Canon Maxify MB5440",
+      "sn": "AENF146B",
+      "cables": "N/A",
+      "faults": "Not Printing",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T11:09:25.476Z",
+      "createdBy": "talent",
+      "updatedAt": "2026-11-20T14:25:34.659Z",
+      "updatedBy": "talent"
+    },
+    {
+      "id": "JOB-157",
+      "customer": "Heidi",
+      "phone": "076 345 2837",
+      "address": "",
+      "device": "Hp Officejet Pro 7740",
+      "sn": "CN15R751CP",
+      "cables": "N/A",
+      "faults": "Not Printing",
+      "assignedTech": "Simba",
+      "priority": "Normal",
+      "status": "Pending",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T11:12:06.554Z",
+      "createdBy": "simba"
+    },
+    {
+      "id": "JOB-516",
+      "customer": "mancho",
+      "phone": "xxxx",
+      "address": "",
+      "device": "hp pagewide managed p55250dw",
+      "sn": "CN 695DYOP9",
+      "cables": "NONE",
+      "faults": "NOT PRINTING \nPRINTER CAME WITHOUT CARTRIDGES",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "On Hold",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T14:23:48.021Z",
+      "createdBy": "talent"
+    },
+    {
+      "id": "JOB-618",
+      "customer": "DANNOTA",
+      "phone": "xxxx",
+      "address": "",
+      "device": "HP COLOR LASERJET MANAGED MFP E77825",
+      "sn": "XXX",
+      "cables": "NONE",
+      "faults": "Printer was leaving tonner on the right edges \ncleaned the bk imaging unit",
+      "assignedTech": "Talent",
+      "priority": "Normal",
+      "status": "Completed",
+      "followup": "Client Notified",
+      "techReport": "",
+      "partsNeeded": "",
+      "cost": 0,
+      "photos": [],
+      "createdAt": "2026-11-20T14:35:00.501Z",
+      "createdBy": "talent"
     }
   ],
   "logs": [
+    {
+      "id": "LOG-1795705548207-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-26T06:22:42.266Z",
+      "clockOut": "2026-11-26T15:00:00.000Z",
+      "hoursWorked": 8.621592777777778,
+      "earnedAmount": 136.54106209150328,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795705548206-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-26T06:13:29.984Z",
+      "clockOut": "2026-11-26T15:00:00.000Z",
+      "hoursWorked": 8.775004444444445,
+      "earnedAmount": 238.23541478129715,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795705548205-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-26T06:05:09.523Z",
+      "clockOut": "2026-11-26T15:00:00.000Z",
+      "hoursWorked": 8.914021388888889,
+      "earnedAmount": 181.50722285067872,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795619142719-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-25T06:11:34.475Z",
+      "clockOut": "2026-11-25T15:00:00.000Z",
+      "hoursWorked": 8.807090277777778,
+      "earnedAmount": 179.32989253393666,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795619142712-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-25T06:10:14.195Z",
+      "clockOut": "2026-11-25T15:00:00.000Z",
+      "hoursWorked": 8.829390277777778,
+      "earnedAmount": 239.7119532428356,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795619142704-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-25T06:09:39.420Z",
+      "clockOut": "2026-11-25T15:00:00.000Z",
+      "hoursWorked": 8.83905,
+      "earnedAmount": 139.98495475113123,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795532727881-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-24T06:17:07.492Z",
+      "clockOut": "2026-11-24T15:00:00.000Z",
+      "hoursWorked": 8.714585555555555,
+      "earnedAmount": 236.5950829562594,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795532727880-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-24T06:14:05.437Z",
+      "clockOut": "2026-11-24T15:00:00.000Z",
+      "hoursWorked": 8.765156388888888,
+      "earnedAmount": 178.47603506787328,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795532727879-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-24T06:10:35.158Z",
+      "clockOut": "2026-11-24T15:00:00.000Z",
+      "hoursWorked": 8.823567222222222,
+      "earnedAmount": 139.73975238813475,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795446312385-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-23T08:12:30.472Z",
+      "clockOut": "2026-11-23T15:00:00.000Z",
+      "hoursWorked": 6.791535555555556,
+      "earnedAmount": 138.289185520362,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795446312384-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-23T06:19:37.409Z",
+      "clockOut": "2026-11-23T15:00:00.000Z",
+      "hoursWorked": 8.672941944444444,
+      "earnedAmount": 235.46448717948718,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795446312383-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-23T06:02:51.052Z",
+      "clockOut": "2026-11-23T15:00:00.000Z",
+      "hoursWorked": 8.952485555555555,
+      "earnedAmount": 141.78144544997485,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795273504961-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-21T07:17:43.697Z",
+      "clockOut": "2026-11-21T15:00:00.000Z",
+      "hoursWorked": 7.704528611111111,
+      "earnedAmount": 209.1727224736048,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795273504960-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-21T07:17:10.089Z",
+      "clockOut": "2026-11-21T15:00:00.000Z",
+      "hoursWorked": 7.713864166666666,
+      "earnedAmount": 157.06963235294117,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795187114855-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-20T06:08:44.765Z",
+      "clockOut": "2026-11-20T15:00:00.000Z",
+      "hoursWorked": 8.854231944444445,
+      "earnedAmount": 180.2897907239819,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795187114853-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-20T06:08:15.595Z",
+      "clockOut": "2026-11-20T15:00:00.000Z",
+      "hoursWorked": 8.862334722222222,
+      "earnedAmount": 240.6063725490196,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795100739850-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-19T06:13:49.882Z",
+      "clockOut": "2026-11-19T15:00:00.000Z",
+      "hoursWorked": 8.769477222222223,
+      "earnedAmount": 178.56401583710408,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795100739849-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-19T06:11:22.205Z",
+      "clockOut": "2026-11-19T15:00:00.000Z",
+      "hoursWorked": 8.810498611111111,
+      "earnedAmount": 239.19905731523377,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795100739847-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-19T06:05:15.109Z",
+      "clockOut": "2026-11-19T15:00:00.000Z",
+      "hoursWorked": 8.912469722222221,
+      "earnedAmount": 141.14771053293111,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795014326645-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-18T06:42:17.580Z",
+      "clockOut": "2026-11-18T15:00:00.000Z",
+      "hoursWorked": 8.295116666666667,
+      "earnedAmount": 225.20678733031676,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795014326644-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-18T06:42:04.219Z",
+      "clockOut": "2026-11-18T15:00:00.000Z",
+      "hoursWorked": 8.298828055555555,
+      "earnedAmount": 168.98066176470587,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1795014326643-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-18T06:10:47.989Z",
+      "clockOut": "2026-11-18T15:00:00.000Z",
+      "hoursWorked": 8.820003055555556,
+      "earnedAmount": 139.6833063097034,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794927910015-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-17T06:16:06.236Z",
+      "clockOut": "2026-11-17T15:00:00.000Z",
+      "hoursWorked": 8.731601111111111,
+      "earnedAmount": 138.28327551533434,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794927910014-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-17T06:15:42.831Z",
+      "clockOut": "2026-11-17T15:00:00.000Z",
+      "hoursWorked": 8.7381025,
+      "earnedAmount": 237.2335520361991,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794841543115-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-16T06:07:58.596Z",
+      "clockOut": "2026-11-16T15:00:00.000Z",
+      "hoursWorked": 8.867056666666667,
+      "earnedAmount": 240.7345701357466,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794841543114-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-16T06:07:40.845Z",
+      "clockOut": "2026-11-16T15:00:00.000Z",
+      "hoursWorked": 8.8719875,
+      "earnedAmount": 140.50658936651584,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794662620784",
+      "employee": "reception",
+      "clockIn": "2026-11-14T07:00:19.480Z",
+      "clockOut": "2026-11-14T13:23:40.784Z",
+      "hoursWorked": 6.389251111111111,
+      "earnedAmount": 101.18723479135244,
+      "tasks": "Cleaned the Kitchen"
+    },
+    {
+      "id": "LOG-1794582153618",
+      "employee": "reception",
+      "clockIn": "2026-11-13T07:45:27.269Z",
+      "clockOut": "2026-11-13T15:02:33.616Z",
+      "hoursWorked": 7.285096388888889,
+      "earnedAmount": 115.37482968828559,
+      "tasks": "Did quotations \nReceived one printer and it went out same time"
+    },
+    {
+      "id": "LOG-1794495956125-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-12T06:17:44.195Z",
+      "clockOut": "2026-11-12T15:00:00.000Z",
+      "hoursWorked": 8.704390277777778,
+      "earnedAmount": 177.2387160633484,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794412419271-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-11T06:02:02.030Z",
+      "clockOut": "2026-11-11T15:00:00.000Z",
+      "hoursWorked": 8.966102777777778,
+      "earnedAmount": 243.42360482654598,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794412419087-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-11T05:51:55.286Z",
+      "clockOut": "2026-11-11T15:00:00.000Z",
+      "hoursWorked": 9.134642777777778,
+      "earnedAmount": 185.99951357466063,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794384298538",
+      "employee": "reception",
+      "clockIn": "2026-11-11T06:03:09.382Z",
+      "clockOut": "2026-11-11T08:04:58.537Z",
+      "hoursWorked": 2.030320833333333,
+      "earnedAmount": 32.154402337858215,
+      "tasks": "Going out to a client Aves Aviation"
+    },
+    {
+      "id": "LOG-1794323082415",
+      "employee": "talent",
+      "clockIn": "2026-11-10T06:05:48.318Z",
+      "clockOut": "2026-11-10T15:04:42.415Z",
+      "hoursWorked": 8.981693611111112,
+      "earnedAmount": 243.84688536953243,
+      "tasks": "sold epson l3050 used a different printhead which i fixed \nhp laser jet pro cm1415 fn color mfp printer not aligning tried fixing yellow changed slightly only magenta seems not to change still working on it"
+    },
+    {
+      "id": "LOG-1794322929737",
+      "employee": "simba",
+      "clockIn": "2026-11-10T05:59:35.674Z",
+      "clockOut": "2026-11-10T15:02:09.737Z",
+      "hoursWorked": 9.042795277777778,
+      "earnedAmount": 184.12931561085972,
+      "tasks": "Worked wwith Epson m3170 and its working now\nworked with brother T830DW and still needs check up"
+    },
+    {
+      "id": "LOG-1794322721310",
+      "employee": "reception",
+      "clockIn": "2026-11-10T05:51:08.996Z",
+      "clockOut": "2026-11-10T14:58:41.309Z",
+      "hoursWorked": 9.1256425,
+      "earnedAmount": 144.52375,
+      "tasks": "Cleaned the office \nCleaned x2 printers \nMade quotations \nReceived x4 cartridges \nMade calls enquiring about the imaging units for Bizhub C364E"
+    },
+    {
+      "id": "LOG-1794236717003-talent",
+      "employee": "talent",
+      "clockIn": "2026-11-09T06:47:26.592Z",
+      "clockOut": "2026-11-09T15:00:00.000Z",
+      "hoursWorked": 8.20928,
+      "earnedAmount": 222.87638009049772,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794236717002-simba",
+      "employee": "simba",
+      "clockIn": "2026-11-09T06:33:25.238Z",
+      "clockOut": "2026-11-09T15:00:00.000Z",
+      "hoursWorked": 8.442989444444445,
+      "earnedAmount": 171.91607466063348,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794236716995-reception",
+      "employee": "reception",
+      "clockIn": "2026-11-09T06:33:14.969Z",
+      "clockOut": "2026-11-09T15:00:00.000Z",
+      "hoursWorked": 8.445841944444444,
+      "earnedAmount": 133.75767785319255,
+      "tasks": "Auto clock-out: end of shift",
+      "autoClockOut": true
+    },
+    {
+      "id": "LOG-1794059687576",
+      "employee": "simba",
+      "clockIn": "2026-11-07T07:21:07.813Z",
+      "clockOut": "2026-11-07T13:54:47.576Z",
+      "hoursWorked": 6.561045277777778,
+      "earnedAmount": 133.59594457013574,
+      "tasks": "-WORKED WITH EPSON 3170 FOR FLAMINGO - ITS WORING NOW \n-WORKED WITH CANON G2410 FROM TREVOR - ITS WORKING NOW\n-WORKED WITH CANOBN C1127iF - STILL WORKING ON IT."
+    },
+    {
+      "id": "LOG-1794057284982",
+      "employee": "reception",
+      "clockIn": "2026-11-07T07:10:06.485Z",
+      "clockOut": "2026-11-07T13:14:44.982Z",
+      "hoursWorked": 6.077360277777778,
+      "earnedAmount": 96.24778720462545,
+      "tasks": "Looked at the Epson M2170 but wasn't able to fix the printer \nCleaned the HP Color LaserJet E77825\nNo printer was received \nOne collection was made and paid through EFT"
+    },
     {
       "id": "LOG-1793983033343",
       "employee": "simba",
@@ -1126,8 +1956,2455 @@
       "tasks": "12"
     }
   ],
-  "sessions": {},
+  "sessions": {
+    "reception": {
+      "clockInTime": "2026-11-27T06:05:33.223Z",
+      "jobId": "GENERAL"
+    },
+    "simba": {
+      "clockInTime": "2026-11-27T06:13:08.599Z",
+      "jobId": "GENERAL"
+    },
+    "talent": {
+      "clockInTime": "2026-11-27T06:13:22.620Z",
+      "jobId": "GENERAL"
+    }
+  },
   "auditLog": [
+    {
+      "ts": "2026-11-27T13:05:13.479Z",
+      "actor": "charles",
+      "action": "SCHEDULE_COMPLETED",
+      "details": {
+        "id": "SCH-1793544311468",
+        "title": "Njabulo"
+      }
+    },
+    {
+      "ts": "2026-11-27T13:05:11.566Z",
+      "actor": "charles",
+      "action": "SCHEDULE_COMPLETED",
+      "details": {
+        "id": "SCH-1792732485443",
+        "title": "Aves Aviation Training Academy ;- Valentine"
+      }
+    },
+    {
+      "ts": "2026-11-27T12:56:01.462Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T12:54:12.611Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T12:46:29.940Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T10:57:25.022Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T06:30:15.481Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T06:13:22.620Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:13:21.196Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T06:13:17.409Z",
+      "actor": "tech:talent",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong PIN"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:13:08.599Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:12:25.429Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-27T06:09:36.428Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:09:35.170Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:05:33.223Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-27T06:05:31.415Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T15:05:48.207Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.621592777777778,
+        "recordedClockOut": "2026-11-26T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-26T15:05:48.206Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.775004444444445,
+        "recordedClockOut": "2026-11-26T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-26T15:05:48.205Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.914021388888889,
+        "recordedClockOut": "2026-11-26T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-26T15:00:04.308Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "ts": "2026-11-26T15:00:04.173Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T13:20:17.620Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T13:20:03.050Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password"
+      }
+    },
+    {
+      "ts": "2026-11-26T13:20:00.732Z",
+      "actor": "admin:charles",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong password"
+      }
+    },
+    {
+      "ts": "2026-11-26T06:23:02.800Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T06:22:42.266Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-26T06:22:38.423Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T06:13:29.984Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-26T06:13:27.769Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-26T06:05:09.523Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-26T06:05:07.816Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T15:05:42.719Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.807090277777778,
+        "recordedClockOut": "2026-11-25T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-25T15:05:42.712Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.829390277777778,
+        "recordedClockOut": "2026-11-25T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-25T15:05:42.705Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.83905,
+        "recordedClockOut": "2026-11-25T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-25T15:00:05.276Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "ts": "2026-11-25T15:00:04.608Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T13:30:16.240Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T13:04:14.323Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T06:11:34.475Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-25T06:11:32.557Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T06:10:14.195Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-25T06:10:11.968Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T06:09:39.420Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-25T06:09:37.675Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-25T05:48:44.221Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-24T15:05:27.881Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.714585555555555,
+        "recordedClockOut": "2026-11-24T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-24T15:05:27.880Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.765156388888888,
+        "recordedClockOut": "2026-11-24T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-24T15:05:27.879Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.823567222222222,
+        "recordedClockOut": "2026-11-24T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-24T15:00:04.289Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "ts": "2026-11-24T15:00:04.180Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-24T06:17:07.492Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-24T06:17:04.606Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-24T06:14:15.407Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-24T06:14:05.437Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-24T06:14:02.353Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-24T06:10:35.159Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-24T06:10:33.385Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-23T15:05:12.385Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 6.791535555555556,
+        "recordedClockOut": "2026-11-23T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-23T15:05:12.384Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.672941944444444,
+        "recordedClockOut": "2026-11-23T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-23T15:05:12.383Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.952485555555555,
+        "recordedClockOut": "2026-11-23T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-23T15:00:04.307Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-23"
+      }
+    },
+    {
+      "ts": "2026-11-23T15:00:04.175Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-23T08:12:30.472Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-23T08:12:28.709Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-23T08:12:21.809Z",
+      "actor": "tech:simba",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong PIN"
+      }
+    },
+    {
+      "ts": "2026-11-23T06:19:37.409Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-23T06:19:33.646Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-23T06:02:51.052Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-23T06:02:48.471Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-23T06:02:06.570Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-23"
+      }
+    },
+    {
+      "ts": "2026-11-23T06:02:05.898Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-21T15:05:04.961Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 7.704528611111111,
+        "recordedClockOut": "2026-11-21T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-21T15:05:04.960Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 7.713864166666666,
+        "recordedClockOut": "2026-11-21T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-21T15:00:04.179Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-21"
+      }
+    },
+    {
+      "ts": "2026-11-21T15:00:04.047Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-21T07:32:20.355Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-21T07:24:33.209Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-21T07:17:43.697Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-21T07:17:39.798Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-21T07:17:10.090Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-21T07:17:03.942Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T15:05:14.855Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.854231944444445,
+        "recordedClockOut": "2026-11-20T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-20T15:05:14.853Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.862334722222222,
+        "recordedClockOut": "2026-11-20T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-20T15:00:04.172Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "ts": "2026-11-20T15:00:04.046Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T14:35:37.364Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-370"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:35:28.023Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-249"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:35:19.965Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-205"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:35:14.099Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-882"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:35:00.502Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-618"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:25:34.659Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-239"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:23:48.021Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-516"
+      }
+    },
+    {
+      "ts": "2026-11-20T14:19:47.214Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T11:12:06.554Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-157"
+      }
+    },
+    {
+      "ts": "2026-11-20T11:10:13.994Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T11:09:25.476Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-239"
+      }
+    },
+    {
+      "ts": "2026-11-20T11:07:04.904Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T11:03:39.629Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-20T09:42:20.248Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-20T09:25:45.881Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-20T08:24:57.715Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T08:24:37.432Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T08:19:11.896Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-20T08:19:00.092Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-586"
+      }
+    },
+    {
+      "ts": "2026-11-20T08:18:53.643Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-443"
+      }
+    },
+    {
+      "ts": "2026-11-20T08:15:03.633Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T06:28:54.197Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-139"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:28:50.274Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-139"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:27:52.530Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-205"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:27:44.936Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-139"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:20:40.290Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-205"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:10:02.996Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T06:09:49.530Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T06:09:11.753Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-756"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:09:04.112Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-552"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:08:54.677Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T06:08:44.765Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:08:43.263Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-20T06:08:32.348Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-197"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:08:26.763Z",
+      "actor": "talent",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-289"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:08:15.595Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-20T06:08:13.441Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T15:05:39.850Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.769477222222223,
+        "recordedClockOut": "2026-11-19T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-19T15:05:39.849Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.810498611111111,
+        "recordedClockOut": "2026-11-19T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-19T15:05:39.848Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.912469722222221,
+        "recordedClockOut": "2026-11-19T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-19T15:00:04.140Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-19"
+      }
+    },
+    {
+      "ts": "2026-11-19T15:00:04.013Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T08:49:26.425Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-159"
+      }
+    },
+    {
+      "ts": "2026-11-19T08:48:35.524Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T08:48:05.162Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T08:47:37.867Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-756"
+      }
+    },
+    {
+      "ts": "2026-11-19T08:47:14.331Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T08:46:50.762Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T06:13:49.882Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-19T06:13:48.142Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T06:11:22.205Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-19T06:11:20.454Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-19T06:05:15.109Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-19T06:05:12.576Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T15:05:26.645Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.295116666666667,
+        "recordedClockOut": "2026-11-18T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-18T15:05:26.644Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.298828055555555,
+        "recordedClockOut": "2026-11-18T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-18T15:05:26.643Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.820003055555556,
+        "recordedClockOut": "2026-11-18T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-18T15:00:04.176Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-18"
+      }
+    },
+    {
+      "ts": "2026-11-18T15:00:04.047Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T13:25:17.464Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T13:24:59.584Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-552"
+      }
+    },
+    {
+      "ts": "2026-11-18T13:24:45.037Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-552"
+      }
+    },
+    {
+      "ts": "2026-11-18T09:29:05.919Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-159"
+      }
+    },
+    {
+      "ts": "2026-11-18T09:27:23.774Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T09:27:20.025Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T09:22:07.050Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-586"
+      }
+    },
+    {
+      "ts": "2026-11-18T09:21:56.210Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T08:20:26.705Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-460"
+      }
+    },
+    {
+      "ts": "2026-11-18T08:20:22.171Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-741"
+      }
+    },
+    {
+      "ts": "2026-11-18T08:20:13.171Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T08:18:05.529Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-515"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:25:53.070Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:25:37.750Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-785"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:19:14.108Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-756"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:17:35.630Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-552"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:09:57.120Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-370"
+      }
+    },
+    {
+      "ts": "2026-11-18T07:07:09.843Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-662"
+      }
+    },
+    {
+      "ts": "2026-11-18T06:42:33.743Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T06:42:17.580Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-18T06:42:15.727Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T06:42:04.219Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-18T06:42:03.035Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T06:33:52.762Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-18T06:10:47.989Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-18T06:10:27.561Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-17T15:05:10.015Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.731601111111111,
+        "recordedClockOut": "2026-11-17T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-17T15:05:10.014Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.7381025,
+        "recordedClockOut": "2026-11-17T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-17T15:00:04.093Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-17"
+      }
+    },
+    {
+      "ts": "2026-11-17T15:00:03.972Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-17T06:16:06.236Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-17T06:16:02.697Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-17T06:15:42.831Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-17T06:15:37.828Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-16T15:05:43.115Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.867056666666667,
+        "recordedClockOut": "2026-11-16T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-16T15:05:43.115Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.8719875,
+        "recordedClockOut": "2026-11-16T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-16T15:00:04.090Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-16"
+      }
+    },
+    {
+      "ts": "2026-11-16T15:00:03.971Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-16T06:07:58.596Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-16T06:07:55.602Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-16T06:07:40.845Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-16T06:07:38.039Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-15T17:08:09.273Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-15"
+      }
+    },
+    {
+      "ts": "2026-11-15T17:08:08.015Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-14T15:00:04.690Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-14"
+      }
+    },
+    {
+      "ts": "2026-11-14T15:00:04.469Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-14T13:23:40.785Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 6.389251111111111
+      }
+    },
+    {
+      "ts": "2026-11-14T07:00:19.480Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-14T07:00:16.904Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-13T15:02:33.619Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 7.285096388888889
+      }
+    },
+    {
+      "ts": "2026-11-13T15:00:04.410Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ts": "2026-11-13T15:00:04.255Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-13T14:51:26.074Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-730"
+      }
+    },
+    {
+      "ts": "2026-11-13T10:54:31.810Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Printer",
+        "qty": 1,
+        "type": "sale",
+        "jobId": null
+      }
+    },
+    {
+      "ts": "2026-11-13T10:54:20.534Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Printer",
+        "qty": 1,
+        "type": "sale",
+        "jobId": null
+      }
+    },
+    {
+      "ts": "2026-11-13T07:46:10.084Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-13T07:45:56.691Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-13T07:45:39.795Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-13T07:45:27.269Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-13T07:45:25.566Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-12T15:05:56.126Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.704390277777778,
+        "recordedClockOut": "2026-11-12T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-12T15:00:04.459Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-12"
+      }
+    },
+    {
+      "ts": "2026-11-12T15:00:04.266Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-12T07:29:12.273Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-633"
+      }
+    },
+    {
+      "ts": "2026-11-12T06:17:44.195Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-12T06:17:42.369Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T17:24:24.936Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T15:59:27.665Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-11"
+      }
+    },
+    {
+      "ts": "2026-11-11T15:59:27.505Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T15:53:39.271Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.966102777777778,
+        "recordedClockOut": "2026-11-11T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-11T15:53:39.129Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 9.134642777777778,
+        "recordedClockOut": "2026-11-11T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-11T09:10:35.969Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-586"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:49:31.364Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-586"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:48:25.738Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-633"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:38:04.232Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-633"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:37:56.651Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-401"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:37:51.086Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-922"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:37:42.662Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-586"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:16:52.532Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T08:10:20.768Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T08:10:06.109Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T08:10:00.944Z",
+      "actor": "talent",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-197"
+      }
+    },
+    {
+      "ts": "2026-11-11T08:05:10.226Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T08:04:58.538Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 2.030320833333333
+      }
+    },
+    {
+      "ts": "2026-11-11T06:03:09.382Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-11T06:02:57.994Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T06:02:02.030Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-11T06:01:58.038Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-11T05:52:23.114Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-434"
+      }
+    },
+    {
+      "ts": "2026-11-11T05:51:55.286Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-11T05:51:53.074Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T16:49:52.152Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T15:04:42.415Z",
+      "actor": "talent",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 8.981693611111112
+      }
+    },
+    {
+      "ts": "2026-11-10T15:02:26.088Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T15:02:09.737Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.042795277777778
+      }
+    },
+    {
+      "ts": "2026-11-10T15:00:46.479Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T15:00:04.100Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-10"
+      }
+    },
+    {
+      "ts": "2026-11-10T15:00:03.972Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T14:58:41.310Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 9.1256425
+      }
+    },
+    {
+      "ts": "2026-11-10T13:52:31.231Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-633"
+      }
+    },
+    {
+      "ts": "2026-11-10T13:38:43.216Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP 570",
+        "name": "H - CE251A / CE401A"
+      }
+    },
+    {
+      "ts": "2026-11-10T13:36:47.880Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP Colour Laserjet",
+        "name": "CE400A / CE250A Black"
+      }
+    },
+    {
+      "ts": "2026-11-10T07:09:17.208Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T07:08:45.472Z",
+      "actor": "simba",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-854"
+      }
+    },
+    {
+      "ts": "2026-11-10T07:05:55.762Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T06:05:48.318Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-10T06:05:46.080Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T06:05:42.310Z",
+      "actor": "tech:talent",
+      "action": "LOGIN_FAILED",
+      "details": {
+        "reason": "Wrong PIN"
+      }
+    },
+    {
+      "ts": "2026-11-10T05:59:35.674Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-10T05:59:34.085Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-10T05:51:08.996Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-10T05:51:06.939Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T15:05:17.003Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "talent",
+        "hours": 8.20928,
+        "recordedClockOut": "2026-11-09T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-09T15:05:17.002Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "simba",
+        "hours": 8.442989444444445,
+        "recordedClockOut": "2026-11-09T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-09T15:05:16.999Z",
+      "actor": "system",
+      "action": "AUTO_CLOCK_OUT",
+      "details": {
+        "employee": "reception",
+        "hours": 8.445841944444444,
+        "recordedClockOut": "2026-11-09T15:00:00.000Z",
+        "note": "Auto clock-out â€” exceeded 17:00 shift end"
+      }
+    },
+    {
+      "ts": "2026-11-09T15:00:09.638Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-09"
+      }
+    },
+    {
+      "ts": "2026-11-09T15:00:09.182Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T14:57:11.167Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-548"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:57:07.933Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-741"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:56:13.645Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-791"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:56:04.987Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-342"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:56:00.448Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-342"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:40:28.187Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "HP",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:40:08.077Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "HP .",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:40:03.812Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "HP..",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:39:59.696Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "HP...",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:39:52.348Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_UPDATED",
+      "details": {
+        "sku": "HP ."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:39:36.150Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_UPDATED",
+      "details": {
+        "sku": "HP.."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:39:04.645Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP...",
+        "name": "CB/543/323/213 Magenta"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:37:59.721Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP..",
+        "name": "CB/542/322/212 Black"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:34:10.423Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP .",
+        "name": "CB/541/321/211  Black"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:33:23.878Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "HP",
+        "name": "CB/540/320/210  Black"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:31:51.154Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Pantum",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "."
+      }
+    },
+    {
+      "ts": "2026-11-09T14:31:08.751Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "Pantum",
+        "name": "Pantum PC110"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:29:18.841Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Canon Cartridge",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "X1 Magenta x1 Cyan"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:29:08.172Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Canon Cartridge",
+        "qty": 1,
+        "type": "sale",
+        "jobId": "X1 Magenta x1 Cyan"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:28:20.947Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_UPDATED",
+      "details": {
+        "sku": "Canon Cartridge"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:27:34.041Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_UPDATED",
+      "details": {
+        "sku": "Canon Cartridge"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:26:17.932Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_UPDATED",
+      "details": {
+        "sku": "Canon 054 Black"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:26:04.298Z",
+      "actor": "reception",
+      "action": "INVENTORY_SOLD",
+      "details": {
+        "sku": "Canon 054",
+        "qty": 2,
+        "type": "sale",
+        "jobId": null
+      }
+    },
+    {
+      "ts": "2026-11-09T14:25:31.005Z",
+      "actor": "reception",
+      "action": "INVENTORY_ITEM_CREATED",
+      "details": {
+        "sku": "Canon 054",
+        "name": "Canon 045 / 054"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:15:21.448Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-854"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:12:03.748Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-882"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:11:55.729Z",
+      "actor": "reception",
+      "action": "JOB_CREATED",
+      "details": {
+        "jobId": "JOB-882"
+      }
+    },
+    {
+      "ts": "2026-11-09T14:07:44.404Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T10:09:11.037Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T06:57:24.680Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T06:47:26.592Z",
+      "actor": "talent",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-09T06:47:24.949Z",
+      "actor": "tech:talent",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T06:34:18.937Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T06:33:25.238Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-09T06:33:23.349Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-09T06:33:14.969Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-09T06:33:13.262Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-08T15:00:05.103Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-08"
+      }
+    },
+    {
+      "ts": "2026-11-08T15:00:04.727Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T18:37:04.271Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T15:00:04.390Z",
+      "actor": "charles",
+      "action": "DAILY_SUMMARY_GENERATED",
+      "details": {
+        "date": "2026-11-07"
+      }
+    },
+    {
+      "ts": "2026-11-07T15:00:04.253Z",
+      "actor": "admin:charles",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T13:54:47.576Z",
+      "actor": "simba",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 6.561045277777778
+      }
+    },
+    {
+      "ts": "2026-11-07T13:14:44.982Z",
+      "actor": "reception",
+      "action": "CLOCK_OUT",
+      "details": {
+        "hours": 6.077360277777778
+      }
+    },
+    {
+      "ts": "2026-11-07T13:14:40.324Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-275"
+      }
+    },
+    {
+      "ts": "2026-11-07T13:14:03.425Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-721"
+      }
+    },
+    {
+      "ts": "2026-11-07T13:12:41.371Z",
+      "actor": "reception",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-182"
+      }
+    },
+    {
+      "ts": "2026-11-07T11:03:54.561Z",
+      "actor": "simba",
+      "action": "JOB_UPDATED",
+      "details": {
+        "jobId": "JOB-275"
+      }
+    },
+    {
+      "ts": "2026-11-07T08:15:07.519Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T07:21:20.782Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T07:21:07.813Z",
+      "actor": "simba",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-07T07:21:06.097Z",
+      "actor": "tech:simba",
+      "action": "LOGIN",
+      "details": {}
+    },
+    {
+      "ts": "2026-11-07T07:10:06.485Z",
+      "actor": "reception",
+      "action": "CLOCK_IN",
+      "details": {
+        "jobId": "GENERAL"
+      }
+    },
+    {
+      "ts": "2026-11-07T07:10:03.880Z",
+      "actor": "tech:reception",
+      "action": "LOGIN",
+      "details": {}
+    },
     {
       "ts": "2026-11-06T16:37:13.344Z",
       "actor": "simba",
@@ -4094,7 +7371,7 @@
       "name": "D203E",
       "category": "Consumables",
       "unit": "each",
-      "qty": 2,
+      "qty": 0,
       "minQty": 3,
       "costPrice": 350,
       "sellPrice": 1300,
@@ -4102,7 +7379,7 @@
       "location": "",
       "notes": "",
       "createdAt": "2026-10-22T19:15:30.054Z",
-      "updatedAt": "2026-10-29T16:52:37.651Z"
+      "updatedAt": "2026-11-13T10:54:31.810Z"
     },
     {
       "id": "INV-1792771023837",
@@ -4283,18 +7560,18 @@
     {
       "id": "INV-1793359989298",
       "sku": "Canon Cartridge",
-      "name": "045 (CRG-045)",
+      "name": "045 (CRG-045) Cyan",
       "category": "Ink",
       "unit": "each",
-      "qty": 5,
+      "qty": 3,
       "minQty": 3,
       "costPrice": 150,
       "sellPrice": 450,
-      "supplier": "Colourink",
+      "supplier": "ICS",
       "location": "",
       "notes": "X3 Cyan \nx1 Yellow \nx1 Magenta \nBlack no stock",
       "createdAt": "2026-10-30T11:33:09.298Z",
-      "updatedAt": "2026-10-30T11:33:30.509Z"
+      "updatedAt": "2026-11-09T14:29:18.841Z"
     },
     {
       "id": "INV-1793360138506",
@@ -4359,6 +7636,134 @@
       "notes": "",
       "createdAt": "2026-10-30T11:41:28.239Z",
       "updatedAt": "2026-10-30T11:41:28.239Z"
+    },
+    {
+      "id": "INV-1794234331003",
+      "sku": "Canon 054 Black",
+      "name": "Canon 045 / 054",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 150,
+      "sellPrice": 450,
+      "supplier": "ICS",
+      "location": "",
+      "notes": "..",
+      "createdAt": "2026-11-09T14:25:31.004Z",
+      "updatedAt": "2026-11-09T14:26:17.932Z"
+    },
+    {
+      "id": "INV-1794234668751",
+      "sku": "Pantum",
+      "name": "Pantum PC110",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 230,
+      "sellPrice": 0,
+      "supplier": "ICS",
+      "location": "",
+      "notes": "bought for the repairs for the Aves Printers",
+      "createdAt": "2026-11-09T14:31:08.751Z",
+      "updatedAt": "2026-11-09T14:31:51.154Z"
+    },
+    {
+      "id": "INV-1794234803878",
+      "sku": "HP",
+      "name": "CB/540/320/210  Black",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 120,
+      "sellPrice": 450,
+      "supplier": "ICS",
+      "location": "",
+      "notes": "REPAIRS",
+      "createdAt": "2026-11-09T14:33:23.878Z",
+      "updatedAt": "2026-11-09T14:40:28.187Z"
+    },
+    {
+      "id": "INV-1794234850423",
+      "sku": "HP .",
+      "name": "CB/541/321/211  Cyan",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 120,
+      "sellPrice": 450,
+      "supplier": "ICS",
+      "location": "",
+      "notes": "REPAIRS",
+      "createdAt": "2026-11-09T14:34:10.423Z",
+      "updatedAt": "2026-11-09T14:40:08.077Z"
+    },
+    {
+      "id": "INV-1794235079721",
+      "sku": "HP..",
+      "name": "CB/542/322/212 Yellow",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 120,
+      "sellPrice": 0,
+      "supplier": "ICS",
+      "location": "",
+      "notes": "..",
+      "createdAt": "2026-11-09T14:37:59.721Z",
+      "updatedAt": "2026-11-09T14:40:03.812Z"
+    },
+    {
+      "id": "INV-1794235144644",
+      "sku": "HP...",
+      "name": "CB/543/323/213 Magenta",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 0,
+      "minQty": 3,
+      "costPrice": 120,
+      "sellPrice": 0,
+      "supplier": "ICS",
+      "location": "",
+      "notes": ".",
+      "createdAt": "2026-11-09T14:39:04.644Z",
+      "updatedAt": "2026-11-09T14:39:59.696Z"
+    },
+    {
+      "id": "INV-1794317807879",
+      "sku": "HP Colour Laserjet",
+      "name": "CE400A / CE250A Black",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 1,
+      "minQty": 3,
+      "costPrice": 372,
+      "sellPrice": 0,
+      "supplier": "CHANEL PORT",
+      "location": "..",
+      "notes": ".",
+      "createdAt": "2026-11-10T13:36:47.879Z",
+      "updatedAt": "2026-11-10T13:36:47.879Z"
+    },
+    {
+      "id": "INV-1794317923216",
+      "sku": "HP 570",
+      "name": "H - CE251A / CE401A",
+      "category": "Ink",
+      "unit": "each",
+      "qty": 1,
+      "minQty": 3,
+      "costPrice": 382,
+      "sellPrice": 0,
+      "supplier": "CHANEL PORT",
+      "location": "..",
+      "notes": "..",
+      "createdAt": "2026-11-10T13:38:43.216Z",
+      "updatedAt": "2026-11-10T13:38:43.216Z"
     }
   ],
   "inventorySales": [
@@ -4409,6 +7814,166 @@
       "type": "sale",
       "soldBy": "charles",
       "ts": "2026-10-29T16:53:16.488Z"
+    },
+    {
+      "id": "SALE-1794234364269",
+      "itemId": "INV-1794234331003",
+      "sku": "Canon 054",
+      "itemName": "Canon 045 / 054",
+      "qty": 2,
+      "unitPrice": 450,
+      "total": 900,
+      "unitCost": 150,
+      "profit": 600,
+      "client": "Assess tech",
+      "jobId": null,
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:26:04.269Z"
+    },
+    {
+      "id": "SALE-1794234548172",
+      "itemId": "INV-1793359989298",
+      "sku": "Canon Cartridge",
+      "itemName": "045 (CRG-045) Cyan",
+      "qty": 1,
+      "unitPrice": 450,
+      "total": 450,
+      "unitCost": 150,
+      "profit": 300,
+      "client": "Assess tech",
+      "jobId": "X1 Magenta x1 Cyan",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:29:08.172Z"
+    },
+    {
+      "id": "SALE-1794234558841",
+      "itemId": "INV-1793359989298",
+      "sku": "Canon Cartridge",
+      "itemName": "045 (CRG-045) Cyan",
+      "qty": 1,
+      "unitPrice": 450,
+      "total": 450,
+      "unitCost": 150,
+      "profit": 300,
+      "client": "Assess tech",
+      "jobId": "X1 Magenta x1 Cyan",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:29:18.841Z"
+    },
+    {
+      "id": "SALE-1794234711154",
+      "itemId": "INV-1794234668751",
+      "sku": "Pantum",
+      "itemName": "Pantum PC110",
+      "qty": 1,
+      "unitPrice": 230,
+      "total": 230,
+      "unitCost": 230,
+      "profit": 0,
+      "client": "Aves Technics Aviation",
+      "jobId": ".",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:31:51.154Z"
+    },
+    {
+      "id": "SALE-1794235199696",
+      "itemId": "INV-1794235144644",
+      "sku": "HP...",
+      "itemName": "CB/543/323/213 Magenta",
+      "qty": 1,
+      "unitPrice": 0,
+      "total": 0,
+      "unitCost": 120,
+      "profit": -120,
+      "client": "Aves Technics Aviation",
+      "jobId": ".",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:39:59.696Z"
+    },
+    {
+      "id": "SALE-1794235203812",
+      "itemId": "INV-1794235079721",
+      "sku": "HP..",
+      "itemName": "CB/542/322/212 Yellow",
+      "qty": 1,
+      "unitPrice": 0,
+      "total": 0,
+      "unitCost": 120,
+      "profit": -120,
+      "client": "Aves Technics Aviation",
+      "jobId": ".",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:40:03.812Z"
+    },
+    {
+      "id": "SALE-1794235208077",
+      "itemId": "INV-1794234850423",
+      "sku": "HP .",
+      "itemName": "CB/541/321/211  Cyan",
+      "qty": 1,
+      "unitPrice": 450,
+      "total": 450,
+      "unitCost": 120,
+      "profit": 330,
+      "client": "Aves Technics Aviation",
+      "jobId": ".",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:40:08.077Z"
+    },
+    {
+      "id": "SALE-1794235228187",
+      "itemId": "INV-1794234803878",
+      "sku": "HP",
+      "itemName": "CB/540/320/210  Black",
+      "qty": 1,
+      "unitPrice": 450,
+      "total": 450,
+      "unitCost": 120,
+      "profit": 330,
+      "client": "Aves Technics Aviation",
+      "jobId": ".",
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-09T14:40:28.187Z"
+    },
+    {
+      "id": "SALE-1794567260534",
+      "itemId": "INV-1792696530054",
+      "sku": "Printer",
+      "itemName": "D203E",
+      "qty": 1,
+      "unitPrice": 1300,
+      "total": 1300,
+      "unitCost": 350,
+      "profit": 950,
+      "client": "reclam",
+      "jobId": null,
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-13T10:54:20.534Z"
+    },
+    {
+      "id": "SALE-1794567271809",
+      "itemId": "INV-1792696530054",
+      "sku": "Printer",
+      "itemName": "D203E",
+      "qty": 1,
+      "unitPrice": 1300,
+      "total": 1300,
+      "unitCost": 350,
+      "profit": 950,
+      "client": "reclam",
+      "jobId": null,
+      "type": "sale",
+      "soldBy": "reception",
+      "ts": "2026-11-13T10:54:31.810Z"
     }
   ],
   "inventoryPurchases": [],
@@ -4443,10 +8008,11 @@
       "notes": "Meeting. Client rescheduled & he will come to the office.",
       "assignedTo": "charles",
       "createdBy": "charles",
-      "completed": false,
-      "completedAt": null,
+      "completed": true,
+      "completedAt": "2026-11-27T13:05:11.566Z",
       "createdAt": "2026-10-23T05:14:45.443Z",
-      "updatedAt": "2026-10-23T13:16:47.601Z"
+      "updatedAt": "2026-10-23T13:16:47.601Z",
+      "completedBy": "charles"
     },
     {
       "id": "SCH-1793544311468",
@@ -4460,12 +8026,353 @@
       "notes": "",
       "assignedTo": "charles",
       "createdBy": "charles",
-      "completed": false,
-      "completedAt": null,
-      "createdAt": "2026-11-01T14:45:11.468Z"
+      "completed": true,
+      "completedAt": "2026-11-27T13:05:13.479Z",
+      "createdAt": "2026-11-01T14:45:11.468Z",
+      "completedBy": "charles"
     }
   ],
   "dailySummaries": [
+    {
+      "id": "SUM-1795705204308",
+      "date": "2026-11-26",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-26T15:00:04.308Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795618805276",
+      "date": "2026-11-25",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-25T15:00:05.276Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795532404289",
+      "date": "2026-11-24",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-24T15:00:04.289Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795446004307",
+      "date": "2026-11-23",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-23T15:00:04.307Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795413726570",
+      "date": "2026-11-23",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-23T06:02:06.570Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795273204179",
+      "date": "2026-11-21",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-21T15:00:04.179Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795186804172",
+      "date": "2026-11-20",
+      "jobsCreated": 7,
+      "jobsUpdated": 12,
+      "jobsCompleted": 9,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-20T15:00:04.172Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795100404140",
+      "date": "2026-11-19",
+      "jobsCreated": 0,
+      "jobsUpdated": 2,
+      "jobsCompleted": 1,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-19T15:00:04.140Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1795014004176",
+      "date": "2026-11-18",
+      "jobsCreated": 7,
+      "jobsUpdated": 6,
+      "jobsCompleted": 3,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-18T15:00:04.176Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794927604093",
+      "date": "2026-11-17",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-17T15:00:04.093Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794841204090",
+      "date": "2026-11-16",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-16T15:00:04.090Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794762489273",
+      "date": "2026-11-15",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-15T17:08:09.273Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794668404689",
+      "date": "2026-11-14",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 6.39,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-14T15:00:04.690Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794582004410",
+      "date": "2026-11-13",
+      "jobsCreated": 1,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 12,
+      "outOfStockAlerts": 11,
+      "inventoryRevenue": 2600,
+      "generatedAt": "2026-11-13T15:00:04.410Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794495604459",
+      "date": "2026-11-12",
+      "jobsCreated": 0,
+      "jobsUpdated": 1,
+      "jobsCompleted": 1,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 13,
+      "outOfStockAlerts": 10,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-12T15:00:04.459Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794412767664",
+      "date": "2026-11-11",
+      "jobsCreated": 2,
+      "jobsUpdated": 5,
+      "jobsCompleted": 2,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 20.13,
+      "lowStockAlerts": 13,
+      "outOfStockAlerts": 10,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-11T15:59:27.665Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794322804100",
+      "date": "2026-11-10",
+      "jobsCreated": 2,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 9.13,
+      "lowStockAlerts": 13,
+      "outOfStockAlerts": 10,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-10T15:00:04.100Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794236409638",
+      "date": "2026-11-09",
+      "jobsCreated": 1,
+      "jobsUpdated": 6,
+      "jobsCompleted": 3,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 11,
+      "outOfStockAlerts": 10,
+      "inventoryRevenue": 2930,
+      "generatedAt": "2026-11-09T15:00:09.638Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794150005103",
+      "date": "2026-11-08",
+      "jobsCreated": 0,
+      "jobsUpdated": 0,
+      "jobsCompleted": 0,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 0,
+      "lowStockAlerts": 10,
+      "outOfStockAlerts": 4,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-08T15:00:05.103Z",
+      "generatedBy": "charles"
+    },
+    {
+      "id": "SUM-1794063604390",
+      "date": "2026-11-07",
+      "jobsCreated": 0,
+      "jobsUpdated": 3,
+      "jobsCompleted": 3,
+      "scheduleTotal": 0,
+      "scheduleCompleted": 0,
+      "schedulePending": 0,
+      "scheduleCriticalPending": 0,
+      "technicianHours": 12.64,
+      "lowStockAlerts": 10,
+      "outOfStockAlerts": 4,
+      "inventoryRevenue": 0,
+      "generatedAt": "2026-11-07T15:00:04.390Z",
+      "generatedBy": "charles"
+    },
     {
       "id": "SUM-1793977204411",
       "date": "2026-11-06",
